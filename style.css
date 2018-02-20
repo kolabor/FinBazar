@@ -3477,28 +3477,43 @@ input[type="submit"]:hover
 }
 .icon-list {
 	display: block;
-	width: 100%;	
+	width: 92%;	
 	position: relative;
 }
 .section-icon li {
-	display: block;
+	display:table-cell;
 	float: left;
 	text-align: center; 
-	background-color: #0f0615;;
-    border-radius: 70%;
-
-
+    width: 25%;
+    height: auto;
 }
 
 .icon-small {
 	position: relative;
-    display: block;
-    width: 100px;
-	height: 100px;
+    display: table-cell !important;
+    vertical-align: middle !important;
     margin-left: auto;
     margin-right: auto;
-    font-size: 30px;
+    font-size: 50px;
     text-align: center;
     color: #fff;
+    width: 100px;
+    height: 100px;
+    border-radius: 50% !important;
+    background-color: #0f0615 !important;
+
+ 
+}
+.icon-list h4 {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 20px;
 }
 
+.icon-small:hover {
+	background-color: #db2152!important;
+	color: #fff!important;
+}
+.icon-list h4:hover {
+	color: #db2152!important;
+}
