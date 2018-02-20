@@ -343,3 +343,40 @@ function deposit_offers_custom_post_type()
     register_post_type('Deposit Offers', $args);
 
 }
+
+add_action('init', 'cards_custom_post_type');
+
+function cards_custom_post_type()
+{
+  $labels = array(
+
+        'name'  => __( 'Cards', 'finmarket' ),
+        'singular_name' => __( 'Cards', 'finmarket' ),
+        'add_new'  => __( 'Add New Cards', 'finmarket' ),
+        'add_new_item' => __( 'Add New Cards', 'finmarket' ), 
+        'edit_item' => __( 'Edit Cards', 'finmarket' ),
+        'new_item' => __( 'New Cards', 'finmarket' ),
+        'all_items' => __( 'All Cards', 'finmarket' ),
+        'view_items' => __( 'Search Cards', 'finmarket' ),
+        'not_found' => __( 'No Cards found', 'finmarket' ),
+        'not_found_in_trash' => __( 'No Cards found in trash', 'finmarket' ),
+        'menu_name' => __( 'Cards', 'finmarket' ),
+
+      );
+
+      $args = array(
+        'can_export' => true,
+        'labels' => $labels,
+        'supports'  => array('thumbnail', 'title'),
+        'menu_icon' => 'dashicons-welcome-write-blog',
+        'hierarchical' => false,
+        'show_ui' => true,
+        'show_in_nav_menus' => false,
+        'menu_position' => 4,
+        'public' => true
+
+      );
+ 
+    register_post_type('Cards', $args);
+
+}

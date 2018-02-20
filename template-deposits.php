@@ -52,7 +52,7 @@ echo "<div class='deposits_form'>";
           
 		</div>
 		<div class="acf_sidebar_container">
-	       <?php //get_sidebar(); ?>
+	       <?php get_sidebar(); ?>
 		</div>	
 	</div>
 </div>
