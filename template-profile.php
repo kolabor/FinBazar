@@ -25,7 +25,7 @@ if(isset($_SESSION['username'])) {
     'user_login'    =>      $user_login,
     'user_pass'     =>      $user_password,
     'user_email'    =>      $user_email,
-    'role'          =>      'Administrator'
+    'role'          =>      'Author'
 );
 
 $creds = array();
