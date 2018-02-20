@@ -3472,3 +3472,32 @@ input[type="submit"]:hover
 
 
 /* ado icons */
+.section-icon{
+	padding: 0;
+}
+.icon-list {
+	display: block;
+	width: 100%;	
+	position: relative;
+}
+.section-icon li {
+	display: inline-block;
+	float: left;
+	width: 25%;
+	text-align: center;
+
+}
+
+.icon-small {
+	position: relative;
+    display: block;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+    text-align: center;
+    background-color: #0f0615;
+    border-radius: 70%;
+    padding:25px;
+    color: #fff;
+}
