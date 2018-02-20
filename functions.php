@@ -438,15 +438,13 @@ function myStartSession() {
 }
 
 function wpb_kolabor_register_custom_css() {
-wp_register_style('my_stylesheet', get_stylesheet_directory_uri() . '/css/custom.css', __FILE__);
+wp_register_style('my_stylesheet', get_stylesheet_directory_uri() . '/CSS/ionicons.min.css', __FILE__);
 wp_enqueue_style('my_stylesheet');
-wp_register_script('my_amazing_script', get_template_directory_uri() . '/js/testing.js', array('jquery'),'1.1', true);
-wp_enqueue_script('my_amazing_script');
 }
-}
+
 add_action( 'wp_enqueue_scripts', 'wpb_kolabor_register_custom_css' );
 
-
+}
 
  
   
