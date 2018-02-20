@@ -1,7 +1,7 @@
 <?php
 /**
  *
- * Template Name: houshold
+ * Template Name: Cards
  *
  */
 acf_form_head();
@@ -12,7 +12,7 @@ get_header(); ?>
 <?php get_template_part('pageheader'); ?>
 <img src="/wp-content/themes/albar/images/loans_header.jpg" style="width: 100%; height: auto;" />
 <div class="site-body site-pad">
-	<div class="site-container loans form_box">
+	<div class="site-container cards form_box">
 		<div class="acf_form_container">
                
   <?php 
@@ -31,14 +31,14 @@ get_header(); ?>
 <?php endwhile; // end of the loop. ?>
 <?php  
 
-echo "<div class='household_form'>";
+echo "<div class='cards_form'>";
                acf_form(array(
 	                'post_content' => false,
 	                'post_title' => true,
 					'post_id'		=> 'new_post',
 					'return' => "/profile",
 					'new_post'		=> array(
-						'post_type'		=> 'household',
+						'post_type'		=> 'cards',
 						'post_status'		=> 'publish'
 					),
 					'submit_value'		=> 'Поднесете',
