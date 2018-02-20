@@ -11,39 +11,26 @@
 
 $args = array(
   'labels'  =>  array(
-            //'all_items'           =>  'Gallery',
-            'menu_name'           =>  'Forms',
-            //'singular_name'       =>  'Gallery',
-            //'edit_item'           =>  'Edit Gallery',
-            //'new_item'            =>  'New Gallery',
-            //'view_item'           =>  'View Gallery',
-            //'items_archive'       =>  'Gallery Archive',
-            //'search_items'        =>  'Search Portfolio',
-            //'not_found'           =>  'No galleries found',
-            //'not_found_in_trash'  =>  'No galleries found in trash' 
-          ),
-  'supports'    =>  array( 'title', 'editor', 'author', 'revisions' ),        
+
+            'menu_name'  =>  'Forms',
+
+          ),    
+
   'menu_position' =>  5,
   'public'    =>  true
+
 );
 register_post_type( 'Forms', $args );
  
  $args = array(
   'labels'  =>  array(
-            //'all_items'           =>  'Gallery',
-            'menu_name'           =>  'Offers',
-            //'singular_name'       =>  'Gallery',
-            //'edit_item'           =>  'Edit Gallery',
-            //'new_item'            =>  'New Gallery',
-            //'view_item'           =>  'View Gallery',
-            //'items_archive'       =>  'Gallery Archive',
-            //'search_items'        =>  'Search Portfolio',
-            //'not_found'           =>  'No galleries found',
-            //'not_found_in_trash'  =>  'No galleries found in trash' 
-          ),
-  'supports'    =>  array( 'title', 'editor', 'author', 'revisions' ),        
+
+            'menu_name' => 'Offers',
+          ),      
+
   'menu_position' =>  5,
   'public'    =>  true
+
 );
 register_post_type( 'Offers', $args );
 
