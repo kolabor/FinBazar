@@ -7,10 +7,10 @@
 get_header(); ?>
 
 <?php get_template_part('pageheader'); ?>
-	
+ 
 
 <div class="site-body site-pad">
-	<div class="site-container loans form_box">
+ <div class="site-container loans form_box">
   
 <?php 
 /*User Login programaticly starts here*/
@@ -46,7 +46,7 @@ echo $user_login. "<br>"; ?>
 <h1><b>KOLABOR</b></h1>
 <?php else : echo 'FAIL!'; ?>
 
-<?php endif; 
+<?php endif;
 
 }
 else
@@ -64,6 +64,6 @@ else
 ?>
                
  
-	</div>
-</div>
+ </div>
+</div> 
 <?php get_footer(); ?>
