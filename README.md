@@ -1,2 +1,0 @@
-# FinBazar
-projekti i finbazar
