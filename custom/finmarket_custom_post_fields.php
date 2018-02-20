@@ -319,11 +319,11 @@ function deposit_offers_custom_post_type()
         'add_new_item' => __( 'Add New Deposit Offer', 'finmarket' ), 
         'edit_item' => __( 'Edit Deposit Offer', 'finmarket' ),
         'new_item' => __( 'New Deposit Offer', 'finmarket' ),
-        'all_items' => __( 'All Deposit Offers', 'finmarket' ),
-        'view_items' => __( 'Search Deposit Offers', 'finmarket' ),
+        'all_items' => __( 'All Deposit Offer', 'finmarket' ),
+        'view_items' => __( 'Search Deposit Offer', 'finmarket' ),
         'not_found' => __( 'No Deposit Offer found', 'finmarket' ),
-        'not_found_in_trash' => __( 'No Deposit Offers found in trash', 'finmarket' ),
-        'menu_name' => __( 'Deposit Offers', 'finmarket' ),
+        'not_found_in_trash' => __( 'No Deposit Offer found in trash', 'finmarket' ),
+        'menu_name' => __( 'Deposit Offer', 'finmarket' ),
 
       );
 
@@ -340,7 +340,7 @@ function deposit_offers_custom_post_type()
 
       );
  
-    register_post_type('Deposit Offers', $args);
+    register_post_type('Deposit Offer', $args);
   }
 
 
