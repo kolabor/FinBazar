@@ -438,7 +438,8 @@ function myStartSession() {
 }
 
 function wpb_kolabor_register_custom_css() {
-wp_register_style('my_stylesheet', get_stylesheet_directory_uri() . '/CSS/ionicons.min.css', __FILE__);
+//wp_register_style('my_stylesheet', get_stylesheet_directory_uri() . '/CSS/ionicons.min.css', __FILE__);
+wp_register_style('my_stylesheet', 'http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css', __FILE__);
 wp_enqueue_style('my_stylesheet');
 }
 
