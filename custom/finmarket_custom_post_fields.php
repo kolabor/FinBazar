@@ -7,79 +7,47 @@
  */
 
 //Credit custom post type
-add_action('init', 'finmarket_credit_custom_post_type');
 
-function finmarket_credit_custom_post_type()
-{
-  $labels = array(
 
-      	'name'  => __( 'Loans', 'finmarket' ),
-      	'singular_name' => __( 'Loan', 'finmarket' ),
-      	'add_new'  => __( 'Add New Loan', 'finmarket' ),
-      	'add_new_item' => __( 'Add New Loan', 'finmarket' ), 
-      	'edit_item' => __( 'Edit Loan', 'finmarket' ),
-      	'new_item' => __( 'New Loan', 'finmarket' ),
-      	'all_items' => __( 'All Loans', 'finmarket' ),
-      	'view_items' => __( 'Search Loans', 'finmarket' ),
-      	'not_found' => __( 'No Loans found', 'finmarket' ),
-      	'not_found_in_trash' => __( 'No clinic found in trash', 'finmarket' ),
-      	'menu_name' => __( 'Loans', 'finmarket' ),
-
-      );
-
-      $args = array(
-        'can_export' => true,
-      	'labels' => $labels,
-      	'supports'  => array('thumbnail', 'title'),
-      	'menu_icon' => 'dashicons-welcome-write-blog',
-      	'hierarchical' => false,
-      	'show_ui' => true,
-      	'show_in_nav_menus' => false,
-      	'menu_position' => 4,
-      	'public' => true
-
-      );
+$args = array(
+  'labels'  =>  array(
+            //'all_items'           =>  'Gallery',
+            'menu_name'           =>  'Forms',
+            //'singular_name'       =>  'Gallery',
+            //'edit_item'           =>  'Edit Gallery',
+            //'new_item'            =>  'New Gallery',
+            //'view_item'           =>  'View Gallery',
+            //'items_archive'       =>  'Gallery Archive',
+            //'search_items'        =>  'Search Portfolio',
+            //'not_found'           =>  'No galleries found',
+            //'not_found_in_trash'  =>  'No galleries found in trash' 
+          ),
+  'supports'    =>  array( 'title', 'editor', 'author', 'revisions' ),        
+  'menu_position' =>  5,
+  'public'    =>  true
+);
+register_post_type( 'Forms', $args );
  
-    register_post_type('Loans', $args);
+ $args = array(
+  'labels'  =>  array(
+            //'all_items'           =>  'Gallery',
+            'menu_name'           =>  'Offers',
+            //'singular_name'       =>  'Gallery',
+            //'edit_item'           =>  'Edit Gallery',
+            //'new_item'            =>  'New Gallery',
+            //'view_item'           =>  'View Gallery',
+            //'items_archive'       =>  'Gallery Archive',
+            //'search_items'        =>  'Search Portfolio',
+            //'not_found'           =>  'No galleries found',
+            //'not_found_in_trash'  =>  'No galleries found in trash' 
+          ),
+  'supports'    =>  array( 'title', 'editor', 'author', 'revisions' ),        
+  'menu_position' =>  5,
+  'public'    =>  true
+);
+register_post_type( 'Offers', $args );
 
-}
 
-add_action('init', 'finmarket_deposits_custom_post_type');
-
-function finmarket_deposits_custom_post_type()
-{
-  $labels = array(
-
-        'name'  => __( 'Deposits', 'finmarket' ),
-        'singular_name' => __( 'Deposit', 'finmarket' ),
-        'add_new'  => __( 'Add New Deposit', 'finmarket' ),
-        'add_new_item' => __( 'Add New Deposit', 'finmarket' ), 
-        'edit_item' => __( 'Edit Deposit', 'finmarket' ),
-        'new_item' => __( 'New Deposit', 'finmarket' ),
-        'all_items' => __( 'All Deposits', 'finmarket' ),
-        'view_items' => __( 'Search Deposits', 'finmarket' ),
-        'not_found' => __( 'No Deposits found', 'finmarket' ),
-        'not_found_in_trash' => __( 'No clinic found in trash', 'finmarket' ),
-        'menu_name' => __( 'Deposits', 'finmarket' ),
-
-      );
-
-      $args = array(
-        'can_export' => true,
-        'labels' => $labels,
-        'supports'  => array('thumbnail', 'title'),
-        'menu_icon' => 'dashicons-welcome-write-blog',
-        'hierarchical' => false,
-        'show_ui' => true,
-        'show_in_nav_menus' => false,
-        'menu_position' => 4,
-        'public' => true
-
-      );
- 
-    register_post_type('Deposit', $args);
-
-}
 
 add_action('init', 'finmarket_auto_liability_custom_post_type');
 
@@ -109,7 +77,7 @@ function finmarket_auto_liability_custom_post_type()
         'hierarchical' => false,
         'show_ui' => true,
         'show_in_nav_menus' => false,
-        'menu_position' => 4,
+        'show_in_menu' => 'edit.php?post_type=forms',
         'public' => true
 
       );
@@ -117,6 +85,8 @@ function finmarket_auto_liability_custom_post_type()
     register_post_type('Auto liability', $args);
 
 }
+
+
 
 
 add_action('init', 'finmarket_casco_custom_post_type');
@@ -147,7 +117,7 @@ function finmarket_casco_custom_post_type()
         'hierarchical' => false,
         'show_ui' => true,
         'show_in_nav_menus' => false,
-        'menu_position' => 4,
+        'show_in_menu' => 'edit.php?post_type=forms',
         'public' => true
 
       );
@@ -185,7 +155,7 @@ function finmarket_health_travel_custom_post_type()
         'hierarchical' => false,
         'show_ui' => true,
         'show_in_nav_menus' => false,
-        'menu_position' => 4,
+        'show_in_menu' => 'edit.php?post_type=forms',
         'public' => true
 
       );
@@ -224,7 +194,7 @@ function finmarket_houshold_custom_post_type()
         'hierarchical' => false,
         'show_ui' => true,
         'show_in_nav_menus' => false,
-        'menu_position' => 4,
+        'show_in_menu' => 'edit.php?post_type=forms',
         'public' => true
 
       );
@@ -261,7 +231,7 @@ function finmarket_life_insurance_custom_post_type()
         'hierarchical' => false,
         'show_ui' => true,
         'show_in_nav_menus' => false,
-        'menu_position' => 4,
+        'show_in_menu' => 'edit.php?post_type=forms',
         'public' => true
 
       );
@@ -298,7 +268,7 @@ function loan_offers_custom_post_type()
         'hierarchical' => false,
         'show_ui' => true,
         'show_in_nav_menus' => false,
-        'menu_position' => 4,
+        'show_in_menu' => 'edit.php?post_type=offers',
         'public' => true
 
       );
@@ -319,11 +289,11 @@ function deposit_offers_custom_post_type()
         'add_new_item' => __( 'Add New Deposit Offer', 'finmarket' ), 
         'edit_item' => __( 'Edit Deposit Offer', 'finmarket' ),
         'new_item' => __( 'New Deposit Offer', 'finmarket' ),
-        'all_items' => __( 'All Deposit Offers', 'finmarket' ),
-        'view_items' => __( 'Search Deposit Offers', 'finmarket' ),
+        'all_items' => __( 'All Deposit Offer', 'finmarket' ),
+        'view_items' => __( 'Search Deposit Offer', 'finmarket' ),
         'not_found' => __( 'No Deposit Offer found', 'finmarket' ),
-        'not_found_in_trash' => __( 'No Deposit Offers found in trash', 'finmarket' ),
-        'menu_name' => __( 'Deposit Offers', 'finmarket' ),
+        'not_found_in_trash' => __( 'No Deposit Offer found in trash', 'finmarket' ),
+        'menu_name' => __( 'Deposit Offer', 'finmarket' ),
 
       );
 
@@ -335,12 +305,49 @@ function deposit_offers_custom_post_type()
         'hierarchical' => false,
         'show_ui' => true,
         'show_in_nav_menus' => false,
-        'menu_position' => 4,
+        'show_in_menu' => 'edit.php?post_type=offers',
         'public' => true
 
       );
  
-    register_post_type('Deposit Offers', $args);
+    register_post_type('Deposit Offer', $args);
+  }
+
+
+ add_action('init', 'card_offers_custom_post_type');
+
+function card_offers_custom_post_type()
+{
+  $labels = array(
+
+        'name'  => __( 'Card Offer', 'finmarket' ),
+        'singular_name' => __( 'Card Offer', 'finmarket' ),
+        'add_new'  => __( 'Add New Card Offer', 'finmarket' ),
+        'add_new_item' => __( 'Add New Card Offer', 'finmarket' ), 
+        'edit_item' => __( 'Edit Card Offer', 'finmarket' ),
+        'new_item' => __( 'New Card Offer', 'finmarket' ),
+        'all_items' => __( 'All Card Offer', 'finmarket' ),
+        'view_items' => __( 'Search Card Offer', 'finmarket' ),
+        'not_found' => __( 'No Card Offer found', 'finmarket' ),
+        'not_found_in_trash' => __( 'No Card Offer found in trash', 'finmarket' ),
+        'menu_name' => __( 'Card Offer', 'finmarket' ),
+
+      );
+
+      $args = array(
+        'can_export' => true,
+        'labels' => $labels,
+        'supports'  => array('thumbnail', 'title'),
+        'menu_icon' => 'dashicons-welcome-write-blog',
+        'hierarchical' => false,
+        'show_ui' => true,
+        'show_in_nav_menus' => false,
+        'show_in_menu' => 'edit.php?post_type=offers',
+        'public' => true
+
+      );
+ 
+    register_post_type('Card Offer', $args);
 
 }
 
@@ -372,7 +379,7 @@ function cards_custom_post_type()
         'hierarchical' => false,
         'show_ui' => true,
         'show_in_nav_menus' => false,
-        'menu_position' => 4,
+        'show_in_menu' => 'edit.php?post_type=forms',
         'public' => true
 
       );
@@ -380,3 +387,4 @@ function cards_custom_post_type()
     register_post_type('Cards', $args);
 
 }
+
