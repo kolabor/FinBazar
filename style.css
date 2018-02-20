@@ -3473,7 +3473,7 @@ input[type="submit"]:hover
 
 /* ado icons */
 .section-icon{
-	padding: 0;
+	margin-top: 30px;
 }
 .icon-list {
 	display: block;
@@ -3481,23 +3481,24 @@ input[type="submit"]:hover
 	position: relative;
 }
 .section-icon li {
-	display: inline-block;
+	display: block;
 	float: left;
-	width: 25%;
-	text-align: center;
+	text-align: center; 
+	background-color: #0f0615;;
+    border-radius: 70%;
+
 
 }
 
 .icon-small {
 	position: relative;
     display: block;
-    height: auto;
+    width: 100px;
+	height: 100px;
     margin-left: auto;
     margin-right: auto;
     font-size: 30px;
     text-align: center;
-    background-color: #0f0615;
-    border-radius: 70%;
-    padding:25px;
     color: #fff;
 }
+
