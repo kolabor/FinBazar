@@ -3146,7 +3146,7 @@ body.show-main-menu #page {
 /*Custom AX srtyle */
 .form_box .acf_form_container
 {
-	width: 100% !important;
+	width: 75% !important;
 	height: auto;
 	float: left;
 	display: inline-block;
@@ -3465,4 +3465,9 @@ input[type="submit"]:hover
 .button:hover {
 	background: #db2152 !important;
 }
+.site-body.site-pad
+{
+	border: none !important;
+}
+
 
