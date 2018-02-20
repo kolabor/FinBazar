@@ -45,6 +45,11 @@ function acf_save_loan_post( $post_id )
  	if ($get_post_type == 'lifeinsurance') 
  	{require 'finmarket_custom_life-insurance_fields.php';}
 
+ else 
+
+ 	if ($get_post_type == 'cards') 
+ 	{require 'finmarket_save_cards_posts.php';}
+
 }
 add_action('acf/save_post', 'acf_save_loan_post', 1);
 
