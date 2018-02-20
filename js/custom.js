@@ -44,6 +44,11 @@
 
                $(".lifeinsurance_form #acf-_post_title").val('Applicant: '+ $(this).val());
           })
+          /*Cards jQuery form */
+          $('.cards_form #acf-field_5a8becd7445c8-field_5a8becd8d9900').on('input',function(){
+
+               $(".cards_form #acf-_post_title").val('Applicant: '+ $(this).val());
+          })
 
         // Add button to sub-menu item to show nested pages / Only used on mobile
         $( '.navigation-main li.page_item_has_children, .navigation-main li.menu-item-has-children' ).prepend( '<span class="menu-dropdown-btn"><i class="fa fa-angle-down"></i></span>' );
