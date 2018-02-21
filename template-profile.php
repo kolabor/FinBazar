@@ -48,7 +48,7 @@ do_action( 'wp_login', $user_login );
 if ( is_user_logged_in() ) : echo 'SUCCESS'."<br>"; 
 
 echo '<p>' . $post_type . '</p>';
-echo $user_login. "<br>"; echo $user_post. "<br>"; ?>
+echo $user_login. "<br>"; echo $user_post. "<br>";?>
 <h1><b>KOLABOR</b></h1>
 <?php else : echo 'FAIL!'; ?>
 
