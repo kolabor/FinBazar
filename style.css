@@ -3540,3 +3540,29 @@ input[type="submit"]:hover
 .icon-list h4:hover {
 	color: #db2152!important;
 }
+
+/* vertical menu ado*/
+
+.vertical-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #0f0615;
+    overflow: hidden;
+ 
+}
+
+.vertical-menu li a {
+	width: auto;
+    display: block;
+    color: #fff!important;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+}
+.vertical-menu li a:hover {
+    background-color: #db2152;
+    color: #fff;
+}
