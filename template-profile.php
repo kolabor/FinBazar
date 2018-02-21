@@ -20,6 +20,10 @@ if(isset($_SESSION['username'])) {
     $user_login     = esc_attr($_SESSION['username']);
     $user_password  = esc_attr($_SESSION['password']);
     $user_email     = esc_attr($_SESSION['username']);
+    $user_post  = esc_attr($_SESSION['posttype']);
+ 
+   
+
 
     $user_data = array(
     'user_login'    =>      $user_login,
@@ -28,10 +32,12 @@ if(isset($_SESSION['username'])) {
     'role'          =>      'Author'
 );
 
+
 $creds = array();
 $creds['user_login'] = $user_login;
 $creds['user_password'] = $user_password;
 $creds['remember'] = true;
+
 
 $user = wp_signon( $creds, false );
 
@@ -42,7 +48,9 @@ wp_set_auth_cookie( $userID, true, false );
 do_action( 'wp_login', $user_login );
 
 if ( is_user_logged_in() ) : echo 'SUCCESS'."<br>"; 
-echo $user_login. "<br>"; ?>
+
+echo '<p>' . $post_type . '</p>';
+echo $user_login. "<br>"; echo $user_post. "<br>"; ?>
 <h1><b>KOLABOR</b></h1>
 <?php else : echo 'FAIL!'; ?>
 
