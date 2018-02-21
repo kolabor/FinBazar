@@ -8,27 +8,38 @@
 
 //Credit custom post type
 
-
-$args = array(
+ $args = array(
   'labels'  =>  array(
 
-            'menu_name'  =>  'Forms',
+            'menu_name' => 'Forms',
+          ),  
+    'capabilities'  =>  array(
+            'capability_type' => 'posts',
+            'create_posts' => 'do_not_allow',
+    ),    
 
-          ),    
-
-  'menu_position' =>  5,
+  'map_meta_cap' => true, 
+  'menu_position' => 5,
   'public'    =>  true
 
 );
 register_post_type( 'Forms', $args );
- 
+
+
+
  $args = array(
   'labels'  =>  array(
 
             'menu_name' => 'Offers',
           ),      
 
-  'menu_position' =>  5,
+    'capabilities'  =>  array(
+            'capability_type' => 'posts',
+            'create_posts' => 'do_not_allow',
+    ),
+
+  'map_meta_cap' => true,
+  'menu_position' => 5,
   'public'    =>  true
 
 );
