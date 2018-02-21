@@ -2730,8 +2730,8 @@ div.wpcf7 {
 }
 
 .footer-widgets .widgettitle {
-	color: #303030;
-    font-size: 14px;
+	color: #FEFEFE;
+    font-size: 16px;
     margin: 0;
     padding: 0 0 15px;
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
@@ -3565,4 +3565,7 @@ input[type="submit"]:hover
 .vertical-menu li a:hover {
     background-color: #db2152;
     color: #fff;
+}
+.footer-widgets{
+	 background-color: #828282;
 }

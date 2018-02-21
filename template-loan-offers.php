@@ -31,14 +31,14 @@ get_header(); ?>
 <?php endwhile; // end of the loop. ?>
 <?php  
 
-echo "<div class='loans_offers_form'>";
+echo "<div class='loansoffers_form'>";
                acf_form(array(
 	                'post_content' => false,
 	                'post_title' => true,
 					'post_id'		=> 'new_post',
 					'return' => "/profile",
 					'new_post'		=> array(
-						'post_type'		=> 'loans_offers',
+						'post_type'		=> 'loansoffers',
 						'post_status'		=> 'publish'
 					),
 					'submit_value'		=> 'Поднесете',
