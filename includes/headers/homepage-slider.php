@@ -61,7 +61,7 @@ if( $slider_cats ) :
                     <img src="<?php echo get_template_directory_uri() ?>/images/demo/1.jpg" alt="<?php esc_attr_e('Demo Slide One', 'albar') ?>" />
                     
                     <h3>
-                        <?php _e( 'ADOOOO', 'albar' ); ?>
+                        <?php _e( 'Направете повеќе.', 'albar' ); ?>
                     </h3>
                     
                 </div>
@@ -71,7 +71,7 @@ if( $slider_cats ) :
                     <img src="<?php echo get_template_directory_uri() ?>/images/demo/2.jpg" alt="<?php esc_attr_e('Demo Slide Two', 'albar') ?>" />
                     
                     <h3>
-                        <?php _e( 'The Ados', 'albar' ); ?>
+                        <?php _e( 'Тука е по лесно за вас', 'albar' ); ?>
                     </h3>
                     
                 </div>        
@@ -81,7 +81,7 @@ if( $slider_cats ) :
                     <img src="<?php echo get_template_directory_uri() ?>/images/demo/3.jpg" alt="<?php esc_attr_e('Demo Slide Three', 'albar') ?>" />
                     
                     <h3>
-                        <?php _e( 'Ado Baba', 'albar' ); ?>
+                        <?php _e( 'Живот нема граници', 'albar' ); ?>
                     </h3>
                     
                 </div>
@@ -91,7 +91,7 @@ if( $slider_cats ) :
                     <img src="<?php echo get_template_directory_uri() ?>/images/demo/4.jpg" alt="<?php esc_attr_e('Demo Slide Four', 'albar') ?>" />
                     
                     <h3>
-                        <?php _e( 'Niki ', 'albar' ); ?>
+                        <?php _e( 'Патувањето е радост', 'albar' ); ?>
                     </h3>
                     
                 </div> <div class="alba-home-slider-block">
@@ -99,7 +99,7 @@ if( $slider_cats ) :
                     <img src="<?php echo get_template_directory_uri() ?>/images/demo/5.jpg" alt="<?php esc_attr_e('Demo Slide Five', 'albar') ?>" />
                     
                     <h3>
-                        <?php _e( 'Niki baba', 'albar' ); ?>
+                        <?php _e( 'Пази каде газиш', 'albar' ); ?>
                     </h3>
                     
                 </div>

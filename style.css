@@ -3588,3 +3588,8 @@ input[type="submit"]:hover
 	width:100% !important;
 	border: none !important;
 }
+.alba-home-slider-block h3 {
+	text-shadow:3px 3px #000;
+	border-bottom: 1px solid #0f0615;
+
+}
