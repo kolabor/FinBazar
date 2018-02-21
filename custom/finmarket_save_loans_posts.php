@@ -12,6 +12,7 @@
    $_SESSION['posttype'] = $get_post_type;
 
 
+
     $userdata = array(
     'user_login'  =>  $name,
     'user_email'  =>  $email,

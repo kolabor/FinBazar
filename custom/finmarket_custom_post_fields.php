@@ -26,7 +26,6 @@
 register_post_type( 'Forms', $args );
 
 
-
  $args = array(
   'labels'  =>  array(
 
