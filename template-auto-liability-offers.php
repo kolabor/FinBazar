@@ -14,13 +14,8 @@ get_header(); ?>
 <div class="site-body site-pad">
 	<div class="site-container loans form_box">
 		<div class="acf_form_container">
-               
-  <?php 
-     if(isset($_GET['updated']) && $_GET['updated'] == true)
-     { 
-     	  echo '<h2>'.__( 'Вашето барање е регистрирано!', 'albar' ).'</h2>';
-     	  echo '<p>'.__( '<p>Ви благодариме, нашиот тим од <b>Finmarket</b> внимателно и професионално ќе го прегледа вашето барање и ќе ве контактира!</p>', 'albar' ).'</p>';
 
+<<<<<<< HEAD
      	}
       else 
       {
@@ -49,10 +44,9 @@ echo "<div class='autoliabilityoffers_form'>";
              }
 			?>
           
+=======
+>>>>>>> 98629323eef645bfd476d334eff0227ea8f13e6e
 		</div>
-		<div class="acf_sidebar_container">
-	       <?php get_sidebar(); ?>
-		</div>	
 	</div>
 </div>
 <?php get_footer(); ?>

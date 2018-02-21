@@ -58,20 +58,48 @@ if( $slider_cats ) :
                 
                 <div class="alba-home-slider-block">
                     
-                    <img src="<?php echo get_template_directory_uri() ?>/images/demo/dummy_img_01.jpg" alt="<?php esc_attr_e('Demo Slide One', 'albar') ?>" />
+                    <img src="<?php echo get_template_directory_uri() ?>/images/demo/1.jpg" alt="<?php esc_attr_e('Demo Slide One', 'albar') ?>" />
                     
                     <h3>
-                        <?php _e( 'Beautifully Simple', 'albar' ); ?>
+                        <?php _e( 'ADOOOO', 'albar' ); ?>
                     </h3>
                     
                 </div>
                 
                 <div class="alba-home-slider-block">
                     
-                    <img src="<?php echo get_template_directory_uri() ?>/images/demo/dummy_img_02.jpg" alt="<?php esc_attr_e('Demo Slide Two', 'albar') ?>" />
+                    <img src="<?php echo get_template_directory_uri() ?>/images/demo/2.jpg" alt="<?php esc_attr_e('Demo Slide Two', 'albar') ?>" />
                     
                     <h3>
-                        <?php _e( 'Build Easily', 'albar' ); ?>
+                        <?php _e( 'The Ados', 'albar' ); ?>
+                    </h3>
+                    
+                </div>        
+
+                <div class="alba-home-slider-block">
+                    
+                    <img src="<?php echo get_template_directory_uri() ?>/images/demo/3.jpg" alt="<?php esc_attr_e('Demo Slide Three', 'albar') ?>" />
+                    
+                    <h3>
+                        <?php _e( 'Ado Baba', 'albar' ); ?>
+                    </h3>
+                    
+                </div>
+                
+                <div class="alba-home-slider-block">
+                    
+                    <img src="<?php echo get_template_directory_uri() ?>/images/demo/4.jpg" alt="<?php esc_attr_e('Demo Slide Four', 'albar') ?>" />
+                    
+                    <h3>
+                        <?php _e( 'Niki ', 'albar' ); ?>
+                    </h3>
+                    
+                </div> <div class="alba-home-slider-block">
+                    
+                    <img src="<?php echo get_template_directory_uri() ?>/images/demo/5.jpg" alt="<?php esc_attr_e('Demo Slide Five', 'albar') ?>" />
+                    
+                    <h3>
+                        <?php _e( 'Niki baba', 'albar' ); ?>
                     </h3>
                     
                 </div>

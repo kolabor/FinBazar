@@ -20,7 +20,11 @@ if(isset($_SESSION['username'])) {
     $user_login     = esc_attr($_SESSION['username']);
     $user_password  = esc_attr($_SESSION['password']);
     $user_email     = esc_attr($_SESSION['username']);
+<<<<<<< HEAD
     $user_post      = esc_attr($_SESSION['posttype']);
+=======
+    $user_post 		= esc_attr($_SESSION['posttype']);
+>>>>>>> 98629323eef645bfd476d334eff0227ea8f13e6e
 
 
     $user_data = array(
