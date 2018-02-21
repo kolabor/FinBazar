@@ -20,6 +20,7 @@ if(isset($_SESSION['username'])) {
     $user_login     = esc_attr($_SESSION['username']);
     $user_password  = esc_attr($_SESSION['password']);
     $user_email     = esc_attr($_SESSION['username']);
+    $user_post 		= esc_attr($_SESSION['posttype']);
 
 
     $user_data = array(
@@ -48,7 +49,6 @@ if ( is_user_logged_in() ) : echo 'SUCCESS'."<br>";
 
 echo '<p>' . $post_type . '</p>';
 echo $user_login. "<br>"; echo $user_post. "<br>"; ?>
->>>>>>> 58168ce6e1987724f9c04bfae9127240b1236742
 <h1><b>KOLABOR</b></h1>
 <?php else : echo 'FAIL!'; ?>
 
