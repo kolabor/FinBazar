@@ -3474,14 +3474,17 @@ input[type="submit"]:hover
 /* ado icons */
 .section-icon{
 	margin-top: 30px;
+	text-align: center;
 }
 .icon-list {
-	display: block;
-	width: 92%;	
+	display:inline-table;
+	width: 92%;
+	margin: auto;	
 	position: relative;
+
 }
 .section-icon li {
-	display:table-cell;
+	display:inline;
 	float: left;
 	text-align: center; 
     width: 25%;
@@ -3501,18 +3504,38 @@ input[type="submit"]:hover
     height: 100px;
     border-radius: 50% !important;
     background-color: #0f0615 !important;
-
- 
 }
+.section-icon h2 {
+	font-weight: bold;
+	font-size: 45px;
+	word-spacing: 2px;
+	text-align: center;
+	margin-bottom: 70px;
+	letter-spacing: 1px;
+	color: #0f0615;
+}
+
+.section-icon h2:after {
+	display: block;
+	height: 2px;
+	background-color: #db2152;
+	content: " ";
+	width: 100px;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
 .icon-list h4 {
 	width: 100%;
 	text-align: center;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
+	font-weight: bold;
 }
 
 .icon-small:hover {
 	background-color: #db2152!important;
 	color: #fff!important;
+	transform: scale(1.2);
 }
 .icon-list h4:hover {
 	color: #db2152!important;
