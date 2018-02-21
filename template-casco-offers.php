@@ -31,15 +31,14 @@ get_header(); ?>
 <?php endwhile; // end of the loop. ?>
 <?php  
 
-echo "<div class='casco_offers_form'>";
                acf_form(array(
 	                'post_content' => false,
 	                'post_title' => true,
 					'post_id'		=> 'new_post',
 					'return' => "/profile",
 					'new_post'		=> array(
-						'post_type'		=> 'casco_offers',
-						'post_status'		=> 'publish'
+
+					'post_status'		=> 'publish'
 					),
 					'submit_value'		=> 'Поднесете',
 					'updated_message' => __("Ви благодараме, вашето барање е регистрирано. За вашето барање ќе бидете изестени преку емаил или преку телефон.", 'acf')

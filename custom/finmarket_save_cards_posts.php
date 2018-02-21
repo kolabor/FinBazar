@@ -9,7 +9,8 @@
 
    $_SESSION['username'] = $email;
    $_SESSION['password'] = $pass;
-    $_SESSION['posttype'] = $get_post_type;
+   $_SESSION['posttype'] = $get_post_type;
+
 
 
     $userdata = array(

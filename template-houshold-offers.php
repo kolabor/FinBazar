@@ -1,7 +1,7 @@
 <?php
 /**
  *
- * Template Name: Auto Liability Offers
+ * Template Name: houshold offers
  *
  */
 acf_form_head();
@@ -31,14 +31,15 @@ get_header(); ?>
 <?php endwhile; // end of the loop. ?>
 <?php  
 
+echo "<div class='householdoffers_form'>";
                acf_form(array(
 	                'post_content' => false,
 	                'post_title' => true,
 					'post_id'		=> 'new_post',
 					'return' => "/profile",
 					'new_post'		=> array(
-
-					'post_status'		=> 'publish'
+						'post_type'		=> 'householdoffers',
+						'post_status'		=> 'publish'
 					),
 					'submit_value'		=> 'Поднесете',
 					'updated_message' => __("Ви благодараме, вашето барање е регистрирано. За вашето барање ќе бидете изестени преку емаил или преку телефон.", 'acf')
