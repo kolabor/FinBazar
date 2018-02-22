@@ -3476,13 +3476,8 @@ input[type="submit"]:hover
 .bttn3 {
 	background:#0f0615;
 	border: 1px solid #000;
-<<<<<<< HEAD
 	font-size: 17px !important;
 	padding: 10px 15px 10px 15px !important;
-=======
-	font-size: 15px !important;
-	padding: 15px 15px 15px 15px !important;
->>>>>>> a5e5caa5d0e32ac901beeb98c47c011b1bffb92a
 	color: white !important;
 	font-weight: 400px !important; 
     border-color: none !important;
@@ -3498,13 +3493,8 @@ input[type="submit"]:hover
 .bttn2 {
 	background:#0f0615;
 	border: 1px solid #000;
-<<<<<<< HEAD
 	font-size: 17px !important;
 	padding: 10px 15px 10px 15px !important;
-=======
-	font-size: 15px !important;
-	padding: 15px 15px 15px 15px !important;
->>>>>>> a5e5caa5d0e32ac901beeb98c47c011b1bffb92a
 	color: white !important;
 	font-weight: 400px !important; 
     border-color: none !important;
@@ -3521,13 +3511,8 @@ input[type="submit"]:hover
 .bttn {
 	background:#0f0615;
 	border: 1px solid #000;
-<<<<<<< HEAD
 	font-size: 17px !important;
 	padding: 10px 15px 10px 15px !important;
-=======
-	font-size: 15px !important;
-	padding: 15px 15px 15px 15px !important;
->>>>>>> a5e5caa5d0e32ac901beeb98c47c011b1bffb92a
 	color: white !important;
 	font-weight: 400px !important; 
     border-color: none !important;
@@ -3743,7 +3728,7 @@ input[type="submit"]:hover
 #acf_sidebar_container {
 	background-color: #000;
 }
-<<<<<<< HEAD
+
 .entry-content.tml.tml-login {
 	margin-left: 35% ;
 }
@@ -3765,7 +3750,6 @@ input[type="submit"]:hover
 .tml-action-links:hover {
 	background: #EDEAEA !important;
 }
-=======
 
 /* finance-content */
 #pg-199-1.panel-grid.panel-no-style{
@@ -3803,8 +3787,6 @@ input[type="submit"]:hover
 	margin-left: 0px;
 }
 
-<<<<<<< HEAD
-
 
 /* insurance content*/
 
@@ -3835,8 +3817,8 @@ input[type="submit"]:hover
 	margin-right: 30px;
 		
 }
-=======
+ .page-id-199 .content-area.content-area-sidebar {
+    box-shadow: 0px 0 0 #eaeaea !important;
 }
 
->>>>>>> db9886adc458159177892b96a09f085e03400da4
->>>>>>> a5e5caa5d0e32ac901beeb98c47c011b1bffb92a
+

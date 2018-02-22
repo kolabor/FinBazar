@@ -38,11 +38,6 @@ echo "<div class='cascooffers_form'>";
 				)); 
 
                 echo "</div>";
-=======
-<?php endwhile; // end of the loop. ?> 
-<?php 
->>>>>>> 98629323eef645bfd476d334eff0227ea8f13e6e
-			
              
 			?>
           
