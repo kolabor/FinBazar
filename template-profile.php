@@ -20,11 +20,10 @@ if(isset($_SESSION['username'])) {
     $user_login     = esc_attr($_SESSION['username']);
     $user_password  = esc_attr($_SESSION['password']);
     $user_email     = esc_attr($_SESSION['username']);
-<<<<<<< HEAD
     $user_post      = esc_attr($_SESSION['posttype']);
-=======
-    $user_post 		= esc_attr($_SESSION['posttype']);
->>>>>>> 98629323eef645bfd476d334eff0227ea8f13e6e
+
+   
+
 
 
     $user_data = array(
@@ -52,7 +51,7 @@ do_action( 'wp_login', $user_login );
 if ( is_user_logged_in() ) : echo 'SUCCESS'."<br>"; 
 
 echo '<p>' . $post_type . '</p>';
-echo $user_login. "<br>"; echo $user_post. "<br>"; ?>
+echo $user_login. "<br>"; echo $user_post. "<br>";?>
 <h1><b>KOLABOR</b></h1>
 <?php else : echo 'FAIL!'; ?>
 
