@@ -2735,8 +2735,8 @@ div.wpcf7 {
 }
 
 .footer-widgets .widgettitle {
-	color: #303030;
-    font-size: 14px;
+	color: #FEFEFE;
+    font-size: 16px;
     margin: 0;
     padding: 0 0 15px;
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
@@ -3476,8 +3476,13 @@ input[type="submit"]:hover
 .bttn3 {
 	background:#0f0615;
 	border: 1px solid #000;
+<<<<<<< HEAD
 	font-size: 17px !important;
 	padding: 10px 15px 10px 15px !important;
+=======
+	font-size: 15px !important;
+	padding: 15px 15px 15px 15px !important;
+>>>>>>> a5e5caa5d0e32ac901beeb98c47c011b1bffb92a
 	color: white !important;
 	font-weight: 400px !important; 
     border-color: none !important;
@@ -3493,8 +3498,13 @@ input[type="submit"]:hover
 .bttn2 {
 	background:#0f0615;
 	border: 1px solid #000;
+<<<<<<< HEAD
 	font-size: 17px !important;
 	padding: 10px 15px 10px 15px !important;
+=======
+	font-size: 15px !important;
+	padding: 15px 15px 15px 15px !important;
+>>>>>>> a5e5caa5d0e32ac901beeb98c47c011b1bffb92a
 	color: white !important;
 	font-weight: 400px !important; 
     border-color: none !important;
@@ -3511,8 +3521,13 @@ input[type="submit"]:hover
 .bttn {
 	background:#0f0615;
 	border: 1px solid #000;
+<<<<<<< HEAD
 	font-size: 17px !important;
 	padding: 10px 15px 10px 15px !important;
+=======
+	font-size: 15px !important;
+	padding: 15px 15px 15px 15px !important;
+>>>>>>> a5e5caa5d0e32ac901beeb98c47c011b1bffb92a
 	color: white !important;
 	font-weight: 400px !important; 
     border-color: none !important;
@@ -3532,11 +3547,18 @@ input[type="submit"]:hover
 
 
 /* ado icons */
-.section-icon{
-	margin-top: 30px;
+#pg-199-0.panel-grid.panel-no-style{
+	
+	margin: 50px;
+	padding: 50px;
+	padding-bottom: 5px;
+}
+
+.section-icon, .section-icon-finance, .section-icon-insurance{
+	margin-top: 50px;
 	text-align: center;
 }
-.icon-list {
+.icon-list, .icon-list-finance, .icon-list-insurance {
 	display:inline-table;
 	width: 92%;
 	margin: auto;	
@@ -3550,6 +3572,21 @@ input[type="submit"]:hover
     width: 25%;
     height: auto;
 }
+.section-icon-finance li {
+	display:inline;
+	float: left;
+	text-align: center; 
+    width: 33%;
+    height: auto;
+}
+.section-icon-insurance li {
+	display:inline;
+	float: left;
+	text-align: center; 
+    width: 20%;
+    height: auto;
+}
+
 
 .icon-small {
 	position: relative;
@@ -3564,6 +3601,36 @@ input[type="submit"]:hover
     height: 130px;
     border-radius: 50% !important;
     background-color: #0f0615 !important;
+}
+.section-icon-finance .icon-small {
+	position: relative;
+    display: table-cell !important;
+    vertical-align: middle !important;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    border-radius: 50% !important;
+    background-color: #0f0615 !important;
+
+}
+.section-icon-insurance .icon-small {
+	position: relative;
+    display: table-cell !important;
+    vertical-align: middle !important;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    border-radius: 50% !important;
+    background-color: #0f0615 !important;
+
 }
 .section-icon h2 {
 	font-weight: bold;
@@ -3601,6 +3668,11 @@ input[type="submit"]:hover
 	color: #db2152!important;
 }
 
+
+
+
+
+
 /* vertical menu ado*/
 .vertical-menu
 {
@@ -3632,6 +3704,25 @@ input[type="submit"]:hover
     background-color: #db2152;
     color: #fff;
 }
+
+.footer-widgets{
+	 background-color: #828282;
+	 width: 100%;
+	 margin-left: 0px;
+	 margin-right: 0px;
+	}
+
+
+
+.footer_logo img {
+	filter: grayscale(100%);
+}
+.footer_logo p{
+	color:white;
+	margin-left: 30px;
+	 
+}
+
 .vertical-menu .selected {
 	background-color: #db2152;
     color: #fff;
@@ -3640,9 +3731,11 @@ input[type="submit"]:hover
 	margin-left: 15px;
 }
 #primary.content-area {
-	width:100% !important;
+	width:74% !important;
 	border: none !important;
+	float: left;
 }
+
 .alba-home-slider-block h3 {
 	text-shadow:3px 3px #000;
 }
@@ -3650,6 +3743,7 @@ input[type="submit"]:hover
 #acf_sidebar_container {
 	background-color: #000;
 }
+<<<<<<< HEAD
 .entry-content.tml.tml-login {
 	margin-left: 35% ;
 }
@@ -3671,3 +3765,78 @@ input[type="submit"]:hover
 .tml-action-links:hover {
 	background: #EDEAEA !important;
 }
+=======
+
+/* finance-content */
+#pg-199-1.panel-grid.panel-no-style{
+	
+	padding: 60px;
+}
+
+#pgc-199-1-0.panel-grid-cell {
+	
+	margin-top: 20px;
+	margin-left: 15px;
+}
+.textwidget h1  {
+	margin-left: 10px;
+
+}
+.textwidget p {
+	margin-left: 10px;
+	margin-bottom: 40px;
+		
+}
+.textwidget.custom-html-widget a.bttn {
+	margin-left: 10px;
+}
+
+#pg-199-2.panel-grid.panel-no-style {
+	padding: 60px;
+	
+}
+#pg-199-2.panel-grid.panel-no-style p {
+	
+	margin-left: 0px;
+}
+#pg-199-2.panel-grid.panel-no-style h1 {
+	margin-left: 0px;
+}
+
+<<<<<<< HEAD
+
+
+/* insurance content*/
+
+#pg-387-0.panel-grid.panel-no-style {
+	
+	padding: 50px;
+	padding-bottom: 10px;
+	margin: 50px;
+}
+#pg-387-1.panel-grid.panel-no-style {
+	
+	padding: 60px;
+	
+}
+#pg-387-1.panel-grid.panel-no-style p {
+	
+	margin-left: 0px;
+}
+#pg-387-1.panel-grid.panel-no-style img {
+	margin-top: 15px;
+}
+#pg-387-2.panel-grid.panel-no-style {
+	
+	padding: 50px;
+}
+#pg-387-2.panel-grid.panel-no-style img {
+	margin-top: 30px;
+	margin-right: 30px;
+		
+}
+=======
+}
+
+>>>>>>> db9886adc458159177892b96a09f085e03400da4
+>>>>>>> a5e5caa5d0e32ac901beeb98c47c011b1bffb92a

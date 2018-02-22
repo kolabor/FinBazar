@@ -11,6 +11,7 @@
 			</div>
 		</div>
 	</div>
+	
 	<?php endif; ?>
 	<div class="footer-bottom-bar site-pad">
 		
@@ -25,7 +26,7 @@
 			     </a>
 			    </div>
 			<div class="footer-right">
-
+				
 
 			<?php get_template_part( '/includes/inc/social-links' ); ?>
 			
