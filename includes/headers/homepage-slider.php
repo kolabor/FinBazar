@@ -73,6 +73,7 @@ if( $slider_cats ) :
                     <h3>
                         <?php _e( 'Тука е по лесно за вас', 'albar' ); ?>
                     </h3>
+
                     
                 </div>        
 
@@ -99,7 +100,7 @@ if( $slider_cats ) :
                     <img src="<?php echo get_template_directory_uri() ?>/images/demo/5.jpg" alt="<?php esc_attr_e('Demo Slide Five', 'albar') ?>" />
                     
                     <h3>
-                        <?php _e( 'Пази каде газиш', 'albar' ); ?>
+                        <?php _e( 'Живот е полн со несреќи', 'albar' ); ?>
                     </h3>
                     
                 </div>

@@ -3454,6 +3454,9 @@ input[type="submit"]:hover
 {
 	display:none !important;
 }
+#pg-184-2 {
+	background-color: #f6f6f6;
+}
 .button {
 	background:#0f0615;
 	border: 1px solid #000;
@@ -3468,6 +3471,58 @@ input[type="submit"]:hover
     text-shadow: none !important;
 }
 .button:hover {
+	background: #db2152 !important;
+}
+.bttn3 {
+	background:#0f0615;
+	border: 1px solid #000;
+	font-size: 17px !important;
+	padding: 10px 15px 10px 15px !important;
+	color: white !important;
+	font-weight: 400px !important; 
+    border-color: none !important;
+    border-radius: 9px;
+    box-shadow: none !important;
+    cursor: pointer;
+    text-shadow: none !important;
+    text-decoration: none !important;
+}
+.bttn3:hover {
+	background: #db2152 !important;
+}
+.bttn2 {
+	background:#0f0615;
+	border: 1px solid #000;
+	font-size: 17px !important;
+	padding: 10px 15px 10px 15px !important;
+	color: white !important;
+	font-weight: 400px !important; 
+    border-color: none !important;
+    border-radius: 9px;
+    box-shadow: none !important;
+    cursor: pointer;
+    text-shadow: none !important;
+    text-decoration: none !important;
+    margin-left: 70px;
+}
+.bttn2:hover {
+	background: #db2152 !important;
+}
+.bttn {
+	background:#0f0615;
+	border: 1px solid #000;
+	font-size: 17px !important;
+	padding: 10px 15px 10px 15px !important;
+	color: white !important;
+	font-weight: 400px !important; 
+    border-color: none !important;
+    border-radius: 9px;
+    box-shadow: none !important;
+    cursor: pointer;
+    text-shadow: none !important;
+    text-decoration: none !important;
+}
+.bttn:hover {
 	background: #db2152 !important;
 }
 .site-body.site-pad
@@ -3590,6 +3645,29 @@ input[type="submit"]:hover
 }
 .alba-home-slider-block h3 {
 	text-shadow:3px 3px #000;
-	border-bottom: 1px solid #0f0615;
+}
 
+#acf_sidebar_container {
+	background-color: #000;
+}
+.entry-content.tml.tml-login {
+	margin-left: 35% ;
+}
+
+.tml-action-links {
+	background:#DFDCDC;
+	border: 1px solid #939191;
+	font-size: 13px !important;
+	padding: 6px 8px 6px 8px !important;
+	color: white !important;
+	font-weight: 600px !important; 
+    border-color: none !important;
+    border-radius: 5px;
+    box-shadow: none !important;
+    cursor: pointer;
+    text-shadow: none !important;
+    text-decoration: none !important;
+}
+.tml-action-links:hover {
+	background: #EDEAEA !important;
 }

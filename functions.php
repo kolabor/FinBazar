@@ -447,5 +447,22 @@ add_action( 'wp_enqueue_scripts', 'wpb_kolabor_register_custom_css' );
 
 }
 
+//Remove dashboard access for non administartors
+add_action('admin_init', 'no_mo_dashboard');
+function no_mo_dashboard() {
+  if (!current_user_can('manage_options') && $_SERVER['DOING_AJAX'] != '/wp-admin/admin-ajax.php') {
+  wp_redirect(home_url('profile')); exit;
+  }
+}
+
+//Remove wordpress toolbar for non administrators
+add_action('after_setup_theme', 'remove_admin_bar');
+ 
+function remove_admin_bar() {
+if (!current_user_can('administrator') && !is_admin()) {
+  show_admin_bar(false);
+}
+}
+
  
   
