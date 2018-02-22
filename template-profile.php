@@ -20,7 +20,10 @@ if(isset($_SESSION['username'])) {
     $user_login     = esc_attr($_SESSION['username']);
     $user_password  = esc_attr($_SESSION['password']);
     $user_email     = esc_attr($_SESSION['username']);
-    $user_post 		= esc_attr($_SESSION['posttype']);
+    $user_post      = esc_attr($_SESSION['posttype']);
+
+   
+
 
 
     $user_data = array(

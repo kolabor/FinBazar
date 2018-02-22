@@ -2735,8 +2735,8 @@ div.wpcf7 {
 }
 
 .footer-widgets .widgettitle {
-	color: #303030;
-    font-size: 14px;
+	color: #FEFEFE;
+    font-size: 16px;
     margin: 0;
     padding: 0 0 15px;
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.6);
@@ -3689,6 +3689,25 @@ input[type="submit"]:hover
     background-color: #db2152;
     color: #fff;
 }
+
+.footer-widgets{
+	 background-color: #828282;
+	 width: 100%;
+	 margin-left: 0px;
+	 margin-right: 0px;
+	}
+
+
+
+.footer_logo img {
+	filter: grayscale(100%);
+}
+.footer_logo p{
+	color:white;
+	margin-left: 30px;
+	 
+}
+
 .vertical-menu .selected {
 	background-color: #db2152;
     color: #fff;
@@ -3697,9 +3716,11 @@ input[type="submit"]:hover
 	margin-left: 15px;
 }
 #primary.content-area {
-	width:100% !important;
+	width:74% !important;
 	border: none !important;
+	float: left;
 }
+
 .alba-home-slider-block h3 {
 	text-shadow:3px 3px #000;
 }
@@ -3744,6 +3765,7 @@ input[type="submit"]:hover
 	margin-left: 0px;
 }
 
+<<<<<<< HEAD
 
 
 /* insurance content*/
@@ -3775,3 +3797,7 @@ input[type="submit"]:hover
 	margin-right: 30px;
 		
 }
+=======
+}
+
+>>>>>>> db9886adc458159177892b96a09f085e03400da4

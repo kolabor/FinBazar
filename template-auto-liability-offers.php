@@ -15,6 +15,37 @@ get_header(); ?>
 	<div class="site-container loans form_box">
 		<div class="acf_form_container">
 
+<<<<<<< HEAD
+     	}
+      else 
+      {
+
+?>      
+<?php while ( have_posts() ) : the_post(); ?>
+<?php the_content(); ?> 
+<?php endwhile; // end of the loop. ?>
+<?php  
+echo "<div class='autoliabilityoffers_form'>";
+               acf_form(array(
+	                'post_content' => false,
+	                'post_title' => true,
+					'post_id'		=> 'new_post',
+					'return' => "/profile",
+					'new_post'		=> array(
+						'post_type'		=> 'autoliabilityoffers',
+						'post_status'		=> 'publish'
+					),
+					'submit_value'		=> 'Поднесете',
+					'updated_message' => __("Ви благодараме, вашето барање е регистрирано. За вашето барање ќе бидете изестени преку емаил или преку телефон.", 'acf')
+				)); 
+
+                echo "</div>";
+			
+             }
+			?>
+          
+=======
+>>>>>>> 98629323eef645bfd476d334eff0227ea8f13e6e
 		</div>
 	</div>
 </div>
