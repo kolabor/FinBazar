@@ -28,6 +28,25 @@ endif; ?>
                 </div>
                 <?php endif; ?>
                 <div class="site-top-bar-right">
+                    
+                    <div class="loggin-menu">
+                        <?php if ( is_user_logged_in() ){ ?>
+
+                    <ul>
+                    <li><a href="logout">Одјави се</a></li>
+                    <li><a href="lostpassword">Ресетирај Лозинка</a></li>
+                    </ul>
+                      <?php } 
+
+                    else { ?>
+
+                    <ul>
+                    <li><a href="login">Најави се</a></li>
+                    <li><a href="register">Регистрирај се</a></li>
+                    <li><a href="lostpassword">Ресетирај Лозинка</a></li>
+                    <ul> 
+
+                    <?php } ?>
                     <?php if ( kaira_theme_option( 'kra-website-txt-email' ) ) : ?>
                     <i class="fa fa-envelope-o"></i> <a href="<?php echo esc_url( 'mailto:' . antispambot( kaira_theme_option( 'kra-website-txt-email' ), 1 ) ) ?>"><?php echo ( kaira_theme_option( 'kra-website-txt-email-txt' ) ) ? esc_attr( kaira_theme_option( 'kra-website-txt-email-txt' ) ) : _e( 'Email', 'albar' ); ?></a>
                     <?php endif; ?>
@@ -44,12 +63,6 @@ endif; ?>
                                     <span><?php echo sprintf( _n( '%d item', '%d items', $woocommerce->cart->cart_contents_count, 'albar' ), $woocommerce->cart->cart_contents_count); ?></span>
                                 </span>
                             </a>
-                        </div>
-                    <?php endif; ?>
-                    
-                    <?php if ( kaira_theme_option( 'kra-header-search' ) == 1 ) : ?>
-                        <div class="search-button">
-                            <i class="fa fa-search"></i>
                         </div>
                     <?php endif; ?>
                     
