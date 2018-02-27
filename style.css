@@ -3383,10 +3383,6 @@ input[type="submit"]:hover
 {
 	background: #a770b2 !important;
 }
-/*.loans_form { margin-top: -80px !important; }
-.loans_form .acf-field--post-title { visibility: hidden;}
-.loans_form .acf-field-5a3ea104e5077 { display: none !important; }
-/*.loans_form { margin-top: -80px !important; }*/
 .acf-field .acf-label label
 {
 	font-size: 16px !important;
@@ -3819,5 +3815,39 @@ input[type="submit"]:hover
  .page-id-199 .content-area.content-area-sidebar {
     box-shadow: 0px 0 0 #eaeaea !important;
 }
-
+#post-890 .entry-content {
+	float:none !important;
+	text-align: center !important;
+	padding: 0;
+	margin:0;
+}
+/* applicant hide title from the forms */
+.loans_form { margin-top: -80px !important; }
+.loans_form .acf-field--post-title { visibility: hidden;}
+.loans_form .acf-field-5a3ea104e5077 { display: none !important; }
+.loans_form { margin-top: -80px !important; }
+.deposits_form { margin-top: -80px !important; }
+.deposits_form .acf-field--post-title { visibility: hidden;}
+.deposits_form { margin-top: -80px !important; }
+.cards_form { margin-top: -80px !important; }
+.cards_form .acf-field--post-title { visibility: hidden;}
+.cards_form { margin-top: -80px !important; }
+.autoliability_form { margin-top: -80px !important; }
+.autoliability_form .acf-field--post-title { visibility: hidden;}
+.autoliability_form { margin-top: -80px !important; }
+.casco_form { margin-top: -80px !important; }
+.casco_form .acf-field--post-title { visibility: hidden;}
+.casco_form { margin-top: -80px !important; }
+.healthtravel_form { margin-top: -80px !important; }
+.healthtravel_form .acf-field--post-title { visibility: hidden;}
+.healthtravel_form { margin-top: -80px !important; }
+.household_form { margin-top: -80px !important; }
+.household_form .acf-field--post-title { visibility: hidden;}
+.household_form { margin-top: -80px !important; }
+.lifeinsurance_form { margin-top: -80px !important; }
+.lifeinsurance_form .acf-field--post-title { visibility: hidden;}
+.lifeinsurance_form { margin-top: -80px !important; }
+#acf-form .acf-form-submit {
+	margin-left: 12px !important;
+}
 
