@@ -1711,10 +1711,11 @@ body.admin-bar .stuck {
     min-width: 240px;
     position: relative;
     width: 100%;
+    
 }
 .alba-home-slider-wrapper img {
 	width: 100%;
-	height: 70%;
+	height: 500px;
 }
 .alba-home-slider-remove { 
 
@@ -1728,36 +1729,56 @@ body.admin-bar .stuck {
     visibility: hidden;
 }
 .alba-home-slider-block {
+	width: 100%;
 	display: block;
     float: left;
     position: relative;
 }
+
 .alba-home-slider-block h3 {
+	position: absolute;
     color: #FFF;
-    font-size: 46px;
-    font-weight: 300;
+    font-size: 46px;	
+    font-weight: 500;
     letter-spacing: 1px;
-    margin: -30px 0 0;
-    padding: 0;
-    position: absolute;
-    text-align: center;
     text-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
     text-transform: uppercase;
-    top: 50%;
-    width: 100%;
+    z-index: 8;
+    top: 40px;
+    left:16px;
+    padding-left: 60px;
+
+}
+.alba-home-slider-block p {
+	position: absolute;
+    color: #FFF;
+    font-size: 18px;	
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 1px;
+    padding: 0 60px;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.9);
+    text-transform: uppercase;
+    top: 140px;
+    left:16px;
+    width: 50%;
     z-index: 8;
 }
-.alba-home-slider-block h3 a {
-    color: #fff;
+
+.alba-home-slider-block a {
+    position: absolute;
+	top: 280px;
+    left: 76px;
+    
 }
 .alba-home-slider {
 	display: block;
 }
-.alba-home-slider img {    /* css per fotot e sliderit */
+/*.alba-home-slider img {     css per fotot e sliderit 
     display: block;
     width: 100%;
-    height: 600px;
-}
+    height: 30%;
+}*/
 .alba-home-slider-pager {
     border-bottom: 3px solid #EDEDED;
     bottom: 0;
@@ -3717,6 +3738,7 @@ input[type="submit"]:hover
 #primary.content-area {
 	border: none !important;
 	float: left;
+	padding: 0!important;
 }
 
 .alba-home-slider-block h3 {

@@ -13,6 +13,7 @@
                     
                 <?php endif; ?>
             </h1>
+            
             <div class="cx-breadcrumbs">
                 <?php if ( function_exists( 'bcn_display' ) ) : ?>
                     <?php bcn_display(); ?>
