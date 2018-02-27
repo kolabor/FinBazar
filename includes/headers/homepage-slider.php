@@ -59,51 +59,57 @@ if( $slider_cats ) :
                 <div class="alba-home-slider-block">
                     
                     <img src="<?php echo get_template_directory_uri() ?>/images/demo/1.jpg" alt="<?php esc_attr_e('Demo Slide One', 'albar') ?>" />
-                    
+                    <div class="slider-h">
                     <h3>
-                        <?php _e( 'Направете повеќе.', 'albar' ); ?>
+                        <?php _e( 'Споредба на пазарот', 'albar' ); ?>
                     </h3>
-                    
+                    </div>
+                    <div class="slider-p">
+                    <p>
+                        <?php _e( 'Ние сме најпогодни за нудење на независна и непристрасна споредба за осигурување на автомобили и за приозводи за домашно осигурубање ', 'albar' ); ?> 
+                    </p>
+                    </div>
+                    <div class="slider-b">
+                    <a class="bttn" href="http://vccw.test/finance/krediti">Повеќе</a>
+                    </div>
                 </div>
                 
                 <div class="alba-home-slider-block">
                     
-                    <img src="<?php echo get_template_directory_uri() ?>/images/demo/2.jpg" alt="<?php esc_attr_e('Demo Slide Two', 'albar') ?>" />
-                    
+                    <img src="<?php echo get_template_directory_uri() ?>/images/demo/55.jpg" alt="<?php esc_attr_e('Demo Slide Two', 'albar') ?>" />
+                    <div class="slider-h">
                     <h3>
                         <?php _e( 'Тука е по лесно за вас', 'albar' ); ?>
                     </h3>
-
-                    
+                    </div>
+                    <div class="slider-p">
+                    <p>
+                        <?php _e( 'Tvoj izbor, Tvoja sloboda!! не станете исцрпени со пресметки, Ние го правиме тоа лесно за вас. Najdi najdobriot kredit tuka za tvoite potrebi.  Споредете ги  сите kreditni понуди на банки во Mакедонија.', 'albar'  ); ?> 
+                    </p>
+                    </div>
+                    <div class="slider-b">
+                    <a class="bttn" href="http://vccw.test/finance/krediti">Повеќе</a>
+                    </div>
                 </div>        
 
                 <div class="alba-home-slider-block">
                     
-                    <img src="<?php echo get_template_directory_uri() ?>/images/demo/3.jpg" alt="<?php esc_attr_e('Demo Slide Three', 'albar') ?>" />
-                    
+                    <img src="<?php echo get_template_directory_uri() ?>/images/demo/travel.jpg" alt="<?php esc_attr_e('Demo Slide Three', 'albar') ?>" />
+                    <div class="slider-h">
                     <h3>
                         <?php _e( 'Живот нема граници', 'albar' ); ?>
                     </h3>
-                    
+                    </div>
+                    <div class="slider-p">
+                    <p>
+                        <?php _e( 'Размислите за иднината.  Еден од најдобрите начини да заштедите пари е да поставите цел. Започнете со размислување за она што можеби сакате да го зачувате. Stedi i odberi gi tuka najsoodvetnite ponudi za vas. Споредете ги  tuka сите depozidni понуди на банки во Mакедонија', 'albar.', 'albar' ); ?> 
+                    </p> 
+                    </div>
+                    <div class="slider-b">
+                    <a class="bttn" href="http://vccw.test/finance/krediti">Повеќе</a>
+                    </div>
                 </div>
                 
-                <div class="alba-home-slider-block">
-                    
-                    <img src="<?php echo get_template_directory_uri() ?>/images/demo/4.jpg" alt="<?php esc_attr_e('Demo Slide Four', 'albar') ?>" />
-                    
-                    <h3>
-                        <?php _e( 'Патувањето е радост', 'albar' ); ?>
-                    </h3>
-                    
-                </div> <div class="alba-home-slider-block">
-                    
-                    <img src="<?php echo get_template_directory_uri() ?>/images/demo/5.jpg" alt="<?php esc_attr_e('Demo Slide Five', 'albar') ?>" />
-                    
-                    <h3>
-                        <?php _e( 'Живот е полн со несреќи', 'albar' ); ?>
-                    </h3>
-                    
-                </div>
             
         </div>
         <div class="alba-home-slider-pager"></div>
