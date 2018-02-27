@@ -3716,7 +3716,10 @@ input[type="submit"]:hover
 	margin-left: 15px;
 }
 #primary.content-area {
+<<<<<<< HEAD
 
+=======
+>>>>>>> e3e38cd696fbad861f322af6c4fa2d836c918699
 	border: none !important;
 	float: left;
 }
