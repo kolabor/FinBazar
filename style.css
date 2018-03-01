@@ -3835,6 +3835,10 @@ input[type="submit"]:hover
 	margin-left: 30px;
 	 
 }
+.footer-bottom-bar {
+	border-top: none!important;
+	box-shadow: none!important;
+}
 .footer-bottom-bar.site-pad {
 	background-color: #0a1018!important;
 }
