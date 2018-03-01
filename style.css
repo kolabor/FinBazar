@@ -1713,6 +1713,7 @@ body.admin-bar .stuck {
     min-width: 240px;
     position: relative;
     width: 100%;
+    display: block;
     
     
 }
@@ -1731,14 +1732,23 @@ body.admin-bar .stuck {
 .alba-home-slider-remove .alba-home-slider { 
     visibility: hidden;
 }
+<<<<<<< HEAD
 
+
+.alba-home-slider-block {
+	position:absolute;
+=======
+.alba-home-slider {
+	position: relative;
+    width: 100%;
+    display: block;
+}
 
 .alba-home-slider-block {
 	position:absolute;
 	display: block;
     width:100%;
     top:0;
-    overflow: hidden;
 }
 .slider-inside {
 	display:block;
@@ -1771,7 +1781,67 @@ body.admin-bar .stuck {
     width: 50%;
     z-index: 8;
 }
+/*.alba-home-slider-block {
+	width: 100%;
+>>>>>>> e8e7e6a80b02d600dfa9d8901ec0638734a5e814
+	display: block;
+    width:100%;
+    top:0;
+    overflow: hidden;
+}
+.slider-inside {
+	display:block;
+    position:absolute;
+    float:left;
+    width:100%;
+    height:100%;
+    float:right;
+    top: 0;
+    padding-top: 90px;
+    padding-left: 75px;
+}
+.slider-inside h3 {
+	color: #FFF;
+    font-size: 46px;	
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    z-index: 8;
+<<<<<<< HEAD
+    text-shadow:3px 3px #000;
+=======
+    top: 40px;
+    left:16px;
+    padding-left: 60px;
+    text-shadow:3px 3px #000;
 
+
+>>>>>>> e8e7e6a80b02d600dfa9d8901ec0638734a5e814
+}
+.slider-inside p{
+	color: #FFF;
+    font-size: 18px;	
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 1px;
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.9);
+    text-transform: uppercase;
+    width: 50%;
+    z-index: 8;
+}
+
+<<<<<<< HEAD
+=======
+.alba-home-slider-block a {
+    position: absolute;
+	top: 280px;
+    left: 76px;
+    
+}
+.alba-home-slider {
+	display: block;
+} */
+>>>>>>> e8e7e6a80b02d600dfa9d8901ec0638734a5e814
 
 .alba-home-slider-pager {
     border-bottom: 3px solid #EDEDED;
@@ -3711,10 +3781,12 @@ input[type="submit"]:hover
 #nav_menu-1, #nav_menu-2, #nav_menu-3 {
 	width: 20%!important;
 }
+
 .footer-bottom-bar {
 	border-top: none!important;
 	box-shadow: none!important;
 }
+
 .footer-bar.site-pad {
 		background-color: #121c2a;
 	}
@@ -3728,13 +3800,16 @@ input[type="submit"]:hover
 
 .menu-item-929 a, .menu-item-930 a, .menu-item-931 a, .menu-item-932 a, .menu-item-933 a, .menu-item-933 a, 
 .menu-item-934 a, .menu-item-935 a, .menu-item-936 a, .menu-item-937 a, .menu-item-1018 a, .menu-item-1019 a, 
-.menu-item-1020 a, .menu-item-1021 a, .menu-item-1024 a {
+.menu-item-1020 a, .menu-item-1021 a, .menu-item-1024 a, .menu-item-1004 a, .menu-item-1013 a, .menu-item-1011 a {
+
 	color: #fff!important;
 }
 .menu-item-929 a:hover, .menu-item-930 a:hover, .menu-item-931 a:hover, .menu-item-932 a:hover, 
 .menu-item-933 a:hover, .menu-item-933 a:hover, .menu-item-934 a:hover, .menu-item-935 a:hover, 
 .menu-item-936 a:hover, .menu-item-937 a:hover, .menu-item-1018 a:hover, .menu-item-1019 a:hover, 
-.menu-item-1020 a:hover, .menu-item-1021 a:hover, .menu-item-1024 a:hover {
+
+.menu-item-1020 a:hover, .menu-item-1021 a:hover, .menu-item-1024 a:hover .menu-item-1004 a:hover, 
+.menu-item-1013 a:hover, .menu-item-1011 a:hover {
 	color: #d6d6d6!important;
 }
 
@@ -3942,6 +4017,16 @@ input[type="submit"]:hover
 
 }
 
+
+
+.sitemap_link1 ul li ol li a h5{
+	color: #000033;
+	
+}
+.sitemap_link1 ul h4{
+	color: #000033;
+	font-weight: bold;
+}
 #primary.content-area {
 	margin-top: 0;
 	padding-top: 0;
@@ -3977,4 +4062,4 @@ input[type="submit"]:hover
 	border-top: 0px !important;
 	border-left: 0px !important;
 
-}
+
