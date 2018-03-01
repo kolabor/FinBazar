@@ -21,8 +21,8 @@
 					<i class="fa fa-angle-up"></i>
 				</div>
 				<div class="footer-left">
-			      <a href="<?php echo get_home_url(); ?>" rel="designer">
-			       Finemarket 2017
+			      <a href="http://www.kolabor.net">
+			       Copyright © 2018 | Kolabor.net 
 			     </a>
 			    </div>
 			<div class="footer-right">
