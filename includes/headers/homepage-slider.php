@@ -69,7 +69,7 @@ if( $slider_cats ) :
                     </p>
 
                     <div class="slider-b">
-                    <a class="bttn" href="http://vccw.test/finance/krediti">Повеќе</a>
+                    <a class="bttn" href="krediti">Повеќе</a>
                     </div>
                 </div>
 
@@ -88,7 +88,7 @@ if( $slider_cats ) :
                     </p>
                     
                     <div class="slider-b">
-                    <a class="bttn" href="http://vccw.test/finance/krediti">Повеќе</a>
+                    <a class="bttn" href="krediti">Повеќе</a>
                     </div>
                 </div>
             </div>        
@@ -106,7 +106,7 @@ if( $slider_cats ) :
                     </p> 
                     
                     <div class="slider-b">
-                    <a class="bttn" href="http://vccw.test/finance/krediti">Повеќе</a>
+                    <a class="bttn" href="krediti">Повеќе</a>
                     </div>
                 </div>
 
