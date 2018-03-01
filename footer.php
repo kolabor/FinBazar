@@ -24,12 +24,12 @@
 			      <a href="http://www.kolabor.net">
 			       Copyright © 2018 | Kolabor.net 
 			     </a>
+			      
 			    </div>
-			<div class="footer-right">
-				
+			   <div class="footer-right">
 
-			<?php get_template_part( '/includes/inc/social-links' ); ?>
-			
+				<?php get_template_part( '/includes/inc/social-links' ); ?>
+					
 			</div>
 			<div class="clearboth"></div>
 		</div><!-- .site-info -->
