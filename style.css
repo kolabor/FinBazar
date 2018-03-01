@@ -3211,14 +3211,16 @@ body.show-main-menu #page {
 /*Custom AX srtyle */
 .form_box .acf_form_container
 {
-	width: 80% !important;
+	padding-left: 15px !important;
+	width: 75% !important;
 	height: auto;
 	float: left;
 	display: inline-block;
+	border-right:1px solid #d9d9d9 !important;
 }
 .form_box .acf_sidebar_container
 {
-	width: 20% !important;
+	width: 23% !important;
 	height: auto;
 	float: right;
 	display: inline-block;
@@ -3804,14 +3806,21 @@ input[type="submit"]:hover
 
 .menu-item-929 a, .menu-item-930 a, .menu-item-931 a, .menu-item-932 a, .menu-item-933 a, .menu-item-933 a, 
 .menu-item-934 a, .menu-item-935 a, .menu-item-936 a, .menu-item-937 a, .menu-item-1018 a, .menu-item-1019 a, 
-.menu-item-1020 a, .menu-item-1021 a, .menu-item-1024 a {
+.menu-item-1020 a, .menu-item-1021 a, .menu-item-1024 a, .menu-item-1056 a{
 	color: #fff!important;
 }
 .menu-item-929 a:hover, .menu-item-930 a:hover, .menu-item-931 a:hover, .menu-item-932 a:hover, 
 .menu-item-933 a:hover, .menu-item-933 a:hover, .menu-item-934 a:hover, .menu-item-935 a:hover, 
 .menu-item-936 a:hover, .menu-item-937 a:hover, .menu-item-1018 a:hover, .menu-item-1019 a:hover, 
-.menu-item-1020 a:hover, .menu-item-1021 a:hover, .menu-item-1024 a:hover {
+.menu-item-1020 a:hover, .menu-item-1021 a:hover, .menu-item-1024 a:hover, .menu-item-1056 a:hover {
 	color: #d6d6d6!important;
+}
+#pgc-1054-1-0 {
+	margin-left: 30% !important;
+	color: #f8f8f8;
+}
+#pgc-1054-1-1 {
+	display: none !important;
 }
 
 .footer-widgets ul li {
