@@ -775,8 +775,7 @@ a {
 	margin: 0 auto;
 	max-width: 1200px;
 	min-width: 220px;
-	padding: 0 20px;
-	padding: 0 20px;
+	padding: 0;
 }
 .page-header .site-container {
 	margin: 0 auto;
@@ -2755,6 +2754,7 @@ div.wpcf7 {
 }
 
 .footer-left {
+	margin-left: 32px!important;
 	float: left;
     font-size: 11px;
     padding: 17px 0 0;
@@ -3547,7 +3547,6 @@ input[type="submit"]:hover
     cursor: pointer;
     text-shadow: none !important;
     text-decoration: none !important;
-    margin-left: 9px !important;
 
 }
 .bttn3:hover {
@@ -3566,7 +3565,7 @@ input[type="submit"]:hover
     cursor: pointer;
     text-shadow: none !important;
     text-decoration: none !important;
-    margin-left: 78px;
+    margin-left: 70px;
 
 }
 .bttn2:hover {
@@ -3826,6 +3825,7 @@ input[type="submit"]:hover
 
 .footer_logo img {
 	filter: grayscale(100%);
+    margin-left: 16px;
 }
 .footer_logo img:hover {
 	filter: none;
@@ -3856,7 +3856,7 @@ input[type="submit"]:hover
     color: #fff;
 }
 .site-container h1{
-	margin-left: 15px;
+	margin-left: 0px;
 }
 #primary.content-area {
 	border: none !important;
@@ -3966,10 +3966,14 @@ input[type="submit"]:hover
 		
 }
 #pgc-387-2-1.panel-grid-cell p {
-	margin-left: 14px!important;
 	padding-right: 30px !important;
+	margin-left: 14px!important;
 
 }
+#pgc-387-2-1.panel-grid-cell h1 {
+	margin-left: 14px!important; 
+}
+
 #pgc-387-2-1.panel-grid-cell a {
 	margin-left: 14px!important;
 }
