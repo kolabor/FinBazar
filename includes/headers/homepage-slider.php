@@ -67,10 +67,12 @@ if( $slider_cats ) :
                     <p>
                         <?php _e( 'Ние сме најпогодни за нудење на независна и непристрасна споредба за осигурување на автомобили и за приозводи за домашно осигурубање ', 'albar' ); ?> 
                     </p>
+
                     <div class="slider-b">
                     <a class="bttn" href="http://vccw.test/finance/krediti">Повеќе</a>
                     </div>
                 </div>
+
             </div>
                 
             <div class="alba-home-slider-block">
@@ -107,8 +109,8 @@ if( $slider_cats ) :
                     <a class="bttn" href="http://vccw.test/finance/krediti">Повеќе</a>
                     </div>
                 </div>
+
             </div>
-                
             
         </div>
         <div class="alba-home-slider-pager"></div>

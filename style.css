@@ -3810,14 +3810,13 @@ input[type="submit"]:hover
 
 .menu-item-929 a, .menu-item-930 a, .menu-item-931 a, .menu-item-932 a, .menu-item-933 a, .menu-item-933 a, 
 .menu-item-934 a, .menu-item-935 a, .menu-item-936 a, .menu-item-937 a, .menu-item-1018 a, .menu-item-1019 a, 
-.menu-item-1020 a, .menu-item-1021 a, .menu-item-1024 a, .menu-item-1004 a, .menu-item-1013 a, .menu-item-1011 a {
+.menu-item-1020 a, .menu-item-1021 a, .menu-item-1024 a {
 	color: #fff!important;
 }
 .menu-item-929 a:hover, .menu-item-930 a:hover, .menu-item-931 a:hover, .menu-item-932 a:hover, 
 .menu-item-933 a:hover, .menu-item-933 a:hover, .menu-item-934 a:hover, .menu-item-935 a:hover, 
 .menu-item-936 a:hover, .menu-item-937 a:hover, .menu-item-1018 a:hover, .menu-item-1019 a:hover, 
-.menu-item-1020 a:hover, .menu-item-1021 a:hover, .menu-item-1024 a:hover, .menu-item-1004 a:hover, 
-.menu-item-1013 a:hover, .menu-item-1011 a:hover {
+.menu-item-1020 a:hover, .menu-item-1021 a:hover, .menu-item-1024 a:hover {
 	color: #d6d6d6!important;
 }
 
@@ -3996,6 +3995,7 @@ input[type="submit"]:hover
 .sitemap_link1 a h5:hover{
 	color: #db2152 !important
 }
+
 .sitemap_link1 ul li ol li a h5{
  color: #000033;
 }
@@ -4003,6 +4003,7 @@ input[type="submit"]:hover
  color: #000033;
  font-weight: bold;
 }
+
 
 #primary.content-area {
 	margin-top: 0;
