@@ -1728,14 +1728,9 @@ body.admin-bar .stuck {
 .alba-home-slider-remove .alba-home-slider { 
     visibility: hidden;
 }
-.alba-home-slider {
-	position: relative;
-    width: 100%;
-    display: block;
-}
 
 .alba-home-slider-block {
-	position:absolute;
+	position:relative;
 	display: block;
     width:100%;
     top:0;
@@ -1816,7 +1811,7 @@ body.admin-bar .stuck {
 }
 .alba-home-slider {
 	display: block;
-} */
+} 
 
 .alba-home-slider-pager {
     border-bottom: 3px solid #EDEDED;
@@ -1834,7 +1829,7 @@ body.admin-bar .stuck {
 .alba-home-slider-pager a {
     display: inline-block;
     padding: 3px 4px;
-}
+}*/
 .alba-home-slider-pager span {
     border: 1px solid #FFFFFF;
     border-radius: 10px;
