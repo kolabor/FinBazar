@@ -3998,16 +3998,8 @@ input[type="submit"]:hover
 
 .sitemap_link1 a h5:hover{
 	color: #db2152 !important
-}
 
-.sitemap_link1 ul li ol li a h5{
- color: #000033;
 }
-.sitemap_link1 ul h4{
- color: #000033;
- font-weight: bold;
-}
-
 
 #primary.content-area {
 	margin-top: 0;
