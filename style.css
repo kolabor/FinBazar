@@ -2766,6 +2766,9 @@ div.wpcf7 {
     width: 50%;
 	z-index: 12;
 }
+.footer-left:hover {
+	color: #00a8a8;
+}
 
 .footer-right {
 	float: left;
