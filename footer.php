@@ -21,15 +21,15 @@
 					<i class="fa fa-angle-up"></i>
 				</div>
 				<div class="footer-left">
-			      <a href="<?php echo get_home_url(); ?>" rel="designer">
-			       Finemarket 2017
+					<a href="<?php echo get_home_url(); ?>" rel="designer">
+			       Kolabor 2018			       
 			     </a>
+			      
 			    </div>
-			<div class="footer-right">
-				
+			   <div class="footer-right">
 
-			<?php get_template_part( '/includes/inc/social-links' ); ?>
-			
+				<?php get_template_part( '/includes/inc/social-links' ); ?>
+					
 			</div>
 			<div class="clearboth"></div>
 		</div><!-- .site-info -->
