@@ -3790,17 +3790,12 @@ input[type="submit"]:hover
     background-color: #db2152;
     color: #fff;
 }
-/* ----------------footer-------------------*/
-
+/* footer*/
 #custom_html-1 {
 	width: 35%!important;
 }
 #nav_menu-1, #nav_menu-2, #nav_menu-3 {
 	width: 20%!important;
-}
-.footer-bottom-bar {
-	border-top: none!important;
-	box-shadow: none!important;
 }
 .footer-bar.site-pad {
 		background-color: #121c2a;
