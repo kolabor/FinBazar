@@ -35,7 +35,7 @@ endif; ?>
                     <ul>
                     <li><a href="profile">Профил</a></li>
                     <li><a href="logout">Одјави се</a></li>
-                    <li><a href="lostpassword">Ресетирај Лозинка</a></li>
+                  <!--  <li><a href="lostpassword">Ресетирај Лозинка</a></li> -->
                     </ul>
                       <?php } 
 
@@ -44,7 +44,6 @@ endif; ?>
                     <ul>
                     <li><a href="login">Најави се</a></li>
                     <li><a href="register">Регистрирај се</a></li>
-                    <li><a href="lostpassword">Ресетирај Лозинка</a></li>
                     <ul> 
 
                     <?php } ?>

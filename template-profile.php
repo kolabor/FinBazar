@@ -14,7 +14,7 @@ get_header(); ?>
   
 <?php 
 /*User Login programaticly starts here*/
-if(isset($_SESSION['username'])) {
+/*if(isset($_SESSION['username'])) {
 
 
     $user_login     = esc_attr($_SESSION['username']);
@@ -46,13 +46,9 @@ $userID = $user->ID;
 
 wp_set_current_user( $userID, $user_login );
 wp_set_auth_cookie( $userID, true, false );
-do_action( 'wp_login', $user_login );
+do_action( 'wp_login', $user_login );*/
 
-if ( is_user_logged_in() ) : echo 'SUCCESS'."<br>"; 
-
-echo '<p>' . $post_type . '</p>';
-echo $user_login. "<br>"; echo $user_post. "<br>";?>
-<h1><b>KOLABOR</b></h1>
+?>
 
 <?php if ( is_user_logged_in() ){ ?>
 <div class="vertical-menu">
@@ -78,24 +74,8 @@ echo $user_login. "<br>"; echo $user_post. "<br>";?>
 </ul>
 
 </div>
-<?php } ?>
-<?php else : echo 'FAIL!'; ?>
-
-<?php endif;
-
-}
-else
-{
-
-/*If session is not set, and uses is not loged in redirect to home page*
-/* Developers find a code from KOLABOR */
-  
-
-}
-/*User Login programaticly ends here*/
-
-
-
+<?php
+} 
 ?>
                
  
