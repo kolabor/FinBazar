@@ -230,7 +230,7 @@
             },
             scroll: {
                 fx: 'uncover-fade',
-                duration: 450
+                duration: 5000,
             },
             auto: home_slider_auto,
             pagination: '.alba-home-slider-pager',
