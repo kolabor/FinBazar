@@ -3803,21 +3803,20 @@ input[type="submit"]:hover
 
 .menu-item-929 a, .menu-item-930 a, .menu-item-931 a, .menu-item-932 a, .menu-item-933 a, .menu-item-933 a, 
 .menu-item-934 a, .menu-item-935 a, .menu-item-936 a, .menu-item-937 a, .menu-item-1018 a, .menu-item-1019 a, 
-<<<<<<< HEAD
-.menu-item-1004 a, .menu-item-1011 a, .menu-item-1013 a, .menu-item-1051 a  {
-=======
+
+.menu-item-1004 a, .menu-item-1011 a, .menu-item-1013 a, .menu-item-1051 a, 
 .menu-item-1020 a, .menu-item-1021 a, .menu-item-1024 a, .menu-item-1056 a{
->>>>>>> 17bfddcb3404abeb4215ec2eca7cd273f4a20a4d
+
 	color: #fff!important;
 }
 .menu-item-929 a:hover, .menu-item-930 a:hover, .menu-item-931 a:hover, .menu-item-932 a:hover, 
 .menu-item-933 a:hover, .menu-item-933 a:hover, .menu-item-934 a:hover, .menu-item-935 a:hover, 
 .menu-item-936 a:hover, .menu-item-937 a:hover, .menu-item-1018 a:hover, .menu-item-1019 a:hover, 
-<<<<<<< HEAD
-.menu-item-1004 a:hover, .menu-item-1011 a:hover, .menu-item-1013 a:hover, .menu-item-1051 a:hover {
-=======
+
+.menu-item-1004 a:hover, .menu-item-1011 a:hover, .menu-item-1013 a:hover, .menu-item-1051 a:hover, 
+
 .menu-item-1020 a:hover, .menu-item-1021 a:hover, .menu-item-1024 a:hover, .menu-item-1056 a:hover {
->>>>>>> 17bfddcb3404abeb4215ec2eca7cd273f4a20a4d
+
 	color: #d6d6d6!important;
 }
 #pgc-1054-1-0 {
