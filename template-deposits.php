@@ -38,7 +38,7 @@ echo "<div class='deposits_form'>";
 					'post_id'		=> 'new_post',
 					'return' => "/profile",
 					'new_post'		=> array(
-						'post_type'		=> 'deposit',
+						'post_type'		=> 'deposits',
 						'post_status'		=> 'publish'
 					),
 					'submit_value'		=> 'Поднесете',
