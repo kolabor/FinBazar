@@ -3320,7 +3320,7 @@ input[type="radio"]:checked::after {
   -webkit-animation: click-wave 0.65s;
   -moz-animation: click-wave 0.65s;
   animation: click-wave 0.65s;
-  background: #40e0d0;
+ /*background: #40e0d0; ngjyra e radio buttonit */ 
   content: '';
   display: block;
   position: relative;
@@ -4061,4 +4061,24 @@ input[type="submit"]:hover
 	border-top: 0px !important;
 	border-left: 0px !important;
 
+}
+#post-1014 .entry-content {
+	padding: 0 20px !important;
+	padding: 0 20px !important;
+}
+#post-1054 .entry-content {
+	padding: 0 20px !important;
+	padding: 0 20px !important;
+}
+#post-924 .entry-content {
+	padding: 0 20px !important;
+	padding: 0 20px !important;
+}
+#post-1007 .entry-content {
+	padding: 0 20px !important;
+	padding: 0 20px !important;
+}
+#post-1009 .entry-content {
+	padding: 0 20px !important;
+	padding: 0 20px !important;
 }
