@@ -2757,9 +2757,6 @@ div.wpcf7 {
     width: 50%;
 	z-index: 12;
 }
-.footer-left:hover {
-	color: #00a8a8;
-}
 
 .footer-right {
 	float: left;
@@ -3806,13 +3803,20 @@ input[type="submit"]:hover
 
 .menu-item-929 a, .menu-item-930 a, .menu-item-931 a, .menu-item-932 a, .menu-item-933 a, .menu-item-933 a, 
 .menu-item-934 a, .menu-item-935 a, .menu-item-936 a, .menu-item-937 a, .menu-item-1018 a, .menu-item-1019 a, 
+
+.menu-item-1004 a, .menu-item-1011 a, .menu-item-1013 a, .menu-item-1051 a, 
 .menu-item-1020 a, .menu-item-1021 a, .menu-item-1024 a, .menu-item-1056 a{
+
 	color: #fff!important;
 }
 .menu-item-929 a:hover, .menu-item-930 a:hover, .menu-item-931 a:hover, .menu-item-932 a:hover, 
 .menu-item-933 a:hover, .menu-item-933 a:hover, .menu-item-934 a:hover, .menu-item-935 a:hover, 
 .menu-item-936 a:hover, .menu-item-937 a:hover, .menu-item-1018 a:hover, .menu-item-1019 a:hover, 
+
+.menu-item-1004 a:hover, .menu-item-1011 a:hover, .menu-item-1013 a:hover, .menu-item-1051 a:hover, 
+
 .menu-item-1020 a:hover, .menu-item-1021 a:hover, .menu-item-1024 a:hover, .menu-item-1056 a:hover {
+
 	color: #d6d6d6!important;
 }
 #pgc-1054-1-0 {
@@ -3838,10 +3842,6 @@ input[type="submit"]:hover
 	color:white;
 	margin-left: 30px;
 	 
-}
-.footer-bottom-bar {
-	border-top: none!important;
-	box-shadow: none!important;
 }
 .footer-bottom-bar.site-pad {
 	background-color: #0a1018!important;
@@ -4025,6 +4025,13 @@ input[type="submit"]:hover
 	color: #db2152 !important
 
 }
+.sitemap_link1 ul li ol li a h5{
+ color: #000033;
+}
+.sitemap_link1 ul h4{
+ color: #000033;
+ font-weight: bold;
+}
 
 #primary.content-area {
 	margin-top: 0;
@@ -4062,6 +4069,7 @@ input[type="submit"]:hover
 	border-left: 0px !important;
 
 }
+
 #post-1014 .entry-content {
 	padding: 0 20px !important;
 	padding: 0 20px !important;
