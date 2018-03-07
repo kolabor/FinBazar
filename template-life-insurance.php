@@ -4,6 +4,7 @@
  * Template Name: Life Insurance
  *
  */
+if (is_user_logged_in()){ wp_redirect( '/life-insurance-offers' ); exit; }
 acf_form_head();
 get_header(); ?>
 	

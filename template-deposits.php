@@ -4,6 +4,9 @@
  * Template Name: Deposits
  *
  */
+
+if (is_user_logged_in()){ wp_redirect( '/deposits-offers' ); exit; }
+
 acf_form_head();
 get_header(); ?>
 	
@@ -38,7 +41,7 @@ echo "<div class='deposits_form'>";
 					'post_id'		=> 'new_post',
 					'return' => "/profile",
 					'new_post'		=> array(
-						'post_type'		=> 'deposits',
+						'post_type'		=> 'deposit',
 						'post_status'		=> 'publish'
 					),
 					'submit_value'		=> 'Поднесете',

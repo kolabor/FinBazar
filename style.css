@@ -3209,7 +3209,7 @@ body.show-main-menu #page {
 .form_box .acf_form_container
 {
 	padding-left: 15px !important;
-	width: 75% !important;
+	width: 75% ;
 	height: auto;
 	float: left;
 	display: inline-block;
@@ -3217,7 +3217,7 @@ body.show-main-menu #page {
 }
 .form_box .acf_sidebar_container
 {
-	width: 23% !important;
+	width: 23% ;
 	height: auto;
 	float: right;
 	display: inline-block;
@@ -3765,11 +3765,6 @@ input[type="submit"]:hover
 	color: #db2152!important;
 }
 
-
-
-
-
-
 /* vertical menu ado*/
 .vertical-menu
 {
@@ -3785,8 +3780,8 @@ input[type="submit"]:hover
     width: 200px;
     background-color: #0a1018;
     overflow: hidden;
- 
 }
+.vertical-menu ul li{ border-bottom: 1px solid #3a3f46 !important;  }
 
 .vertical-menu li a {
 	width: auto;
@@ -3803,10 +3798,10 @@ input[type="submit"]:hover
 }
 /* footer*/
 #custom_html-1 {
-	width: 35%!important;
+	width: 35%;
 }
 #nav_menu-1, #nav_menu-2, #nav_menu-3 {
-	width: 20%!important;
+	width: 20%;
 }
 .footer-bar.site-pad {
 		background-color: #121c2a;
@@ -4012,7 +4007,7 @@ input[type="submit"]:hover
 .loans_form { margin-top: -80px !important; }
 .loans_form .acf-field--post-title { visibility: hidden;}
 .loans_form .acf-field-5a3ea104e5077 { display: none !important; }
-.loans_form { margin-top: -80px !important; }
+.loans_form { margin-top: -80px; }
 .deposits_form { margin-top: -80px !important; }
 .deposits_form .acf-field--post-title { visibility: hidden;}
 .deposits_form { margin-top: -80px !important; }
@@ -4060,7 +4055,7 @@ input[type="submit"]:hover
 	padding-right: 5px;
 	display:inline-table !important;
 	position: relative;
-	float: right !important;
+	float: right ;
 }
 .loggin-menu li{
 	display:inline !important;
@@ -4107,4 +4102,383 @@ input[type="submit"]:hover
 #post-1009 .entry-content {
 	padding: 0 20px !important;
 	padding: 0 20px !important;
+}
+#loans_login_btn .acf-input label, #deposits_login_btn .acf-input label, #cards_login_btn .acf-input label, #autoliability_login_btn .acf-input label, #healthtravel_login_btn .acf-input label, #casco_login_btn .acf-input label, #home_insurance_login_btn .acf-input label, #health_login_btn .acf-input label
+{
+	cursor: pointer !important;
+}
+.page-template-template-loan-offers #primary, .page-template-template-deposits-offers #primary, .page-template-template-cards-offers #primary, .page-template-template-auto-liability-offers #primary, .page-template-template-health-travel-offers #primary, .page-template-template-casco-offers #primary, .page-template-template-houshold-offers #primary, .page-template-template-life-insurance-offers #primary
+{
+	width: 79% !important;
+	float: left;
+	position: relative;
+	overflow: auto;
+	height: auto;
+}
+#primary .primary_menu
+{
+	width: 25% !important;
+	float: left !important;
+	display: inline-block;
+}
+#primary .primary_content
+{
+	width: 74% !important;
+	float: right !important;
+	display: inline-block;
+}
+.page-template-template-loan-offers #loans_login_btn, .page-template-template-loan-offers .acf-field-5a3e9915d2465
+{
+	display: none;
+}
+.page-template-template-loan-offers #loans_loged_in_name {
+    visibility: hidden;
+}
+ /*mobile css */
+@media only screen and (max-width: 980px) {
+	.site-branding img {
+		padding-left: 0px !important;
+		width: 70% !important;
+	}
+	.navigation-main {
+		padding-top: 0px !important;
+		text-align: center !important;
+	}
+	.search-form {
+		display: none !important;
+	}
+	.loggin-menu {
+		margin-top: 5px !important;
+		margin-bottom: 5px !important;
+		float: none !important;
+		padding-top: 0px !important;
+		text-align: center !important;
+	}
+	.alba-home-slider-wrapper {
+		font-size: 7px !important;
+		font-weight: 200 !important;
+	}
+
+    .section-icon, .section-icon-finance, .section-icon-insurance{
+		margin-top: 50px;
+		text-align: center;
+	}
+	.icon-list, .icon-list-finance, .icon-list-insurance {
+		display:inline-table;
+		width: 92%;
+		margin: auto;	
+		position: relative;
+
+	}
+	.section-icon li {
+		display:inline;
+		float: left;
+		text-align: center; 
+    	width: 25%;
+    	height: auto;
+	}
+	.section-icon-finance li {
+		display:inline;
+		float: left;
+		text-align: center; 
+    	width: 33%;
+    	height: auto;
+	}
+	.section-icon-insurance li {
+		display:inline;
+		float: left;
+		text-align: center; 
+    	width: 20%;
+    	height: auto;
+	}
+
+
+	.icon-small {
+		position: relative;
+	    display: table-cell !important;
+	    vertical-align: middle !important;
+	    margin-left: auto;
+	    margin-right: auto;
+	    font-size: 20px;
+	    text-align: center;
+	    color: #fff;
+	    width: 50px;
+	    height: 50px;
+	    border-radius: 50% !important;
+	    background-color: #0a1018 !important;
+	}
+	.section-icon-finance .icon-small {
+		position: relative;
+	    display: table-cell !important;
+	    vertical-align: middle !important;
+	    margin-left: auto;
+	    margin-right: auto;
+	    font-size: 20px;
+	    text-align: center;
+	    color: #fff;
+	    width: 50px;
+	    height: 50px;
+	    border-radius: 50% !important;
+	    background-color: #0a1018 !important;
+
+	}
+	.section-icon-insurance .icon-small {
+		position: relative;
+	    display: table-cell !important;
+	    vertical-align: middle !important;
+	    margin-left: auto;
+	    margin-right: auto;
+	    font-size: 20px;
+	    text-align: center;
+	    color: #fff;
+	    width: 50px;
+	    height: 50px;
+	    border-radius: 50% !important;
+	    background-color: #0a1018 !important;
+
+	}
+	.section-icon h2 {
+		font-weight: bold;
+		font-size: 45px;
+		word-spacing: 2px;
+		text-align: center;
+		margin-bottom: 70px;
+		letter-spacing: 1px;
+		color: #0a1018;
+	}
+
+	.section-icon h2:after {
+		display: block;
+		height: 2px;
+		background-color: #db2152;
+		content: " ";
+		width: 100px;
+		margin: 0 auto;
+		margin-top: 30px;
+	}
+	.icon-list h4 {
+		width: 80%;
+		text-align: center;
+		margin-bottom: 40px;
+		font-size: 14px !important;
+		font-weight: 200;
+	}
+	.icon-list-insurance h4 {
+		width: 80%;
+		text-align: center;
+		margin-bottom: 40px;
+		font-size: 14px !important;
+		font-weight: 200;
+	}
+	.icon-list-finance h4 {
+		width: 80%;
+		text-align: center;
+		margin-bottom: 40px;
+		font-size: 14px !important;
+		font-weight: 200;
+	}
+
+	.icon-small:hover {
+		background-color: #db2152!important;
+		color: #fff!important;
+		transform: scale(1.2);
+	}
+	.icon-list h4:hover {
+		color: #db2152!important;
+	}
+	.custom-html-widget p {
+		padding-right: 10px !important;
+		padding-left: 0px !important;
+
+	}
+	.custom-html-widget h1 {
+		padding-right: 0px !important;
+		padding-left: 0px !important;
+
+	}
+	.bttn2 {
+		margin-left: 0px !important;
+
+	}
+	.content-area.content-area-full {
+		text-align: center !important;
+		padding-right: 0px !important;
+		padding-left: 0px !important;
+	}
+
+	.footer-widgets .widget {
+		width:100% !important;
+		text-align: center !important;
+	}
+	#pg-184-3.panel-grid.panel-no-style {
+		padding-bottom: 20px !important;
+	}
+	#pg-199-0 {
+		padding: 0 !important;
+	}
+	#pg-199-1 {
+		padding: 0 !important;
+	}
+	#pg-199-2 {
+		padding: 0 !important;
+		margin-bottom: 25px !important;
+	}
+	#pg-387-0 {
+		padding: 0 !important;
+		margin: 0 !important;
+	}
+	#pg-387-1 {
+		padding: 0 !important;
+	}
+	#pg-387-2 {
+		padding: 0 !important;
+		margin-bottom: 25px !important;
+	}
+	.acf_form_container {
+		width: 100% !important;
+	}
+	.acf_sidebar_container {
+		width: 100% !important;
+	}
+	.acf-field.acf-field-text.acf-field-5a782c7239b5f.-c0{
+		width: 50% !important;
+	}
+	.post, .search.article.page {
+		padding : 0 0 1px;
+	}
+	.acf-field.acf-field-date-picker.acf-field-5a781ec0861a8.-c0 {
+		width: 100% !important;
+	}
+	.acf-field.acf-field-number.acf-field-5a7835b45b958.-c0 {
+		width: 100% !important;
+	}
+	.acf-field.acf-field-text.acf-field-5a7835b45ba13.-c0 {
+		width: 100% !important;
+	}
+	.acf-field.acf-field-date-picker.acf-field-5a783d5729e4f.-c0 {
+		width: 100% !important;
+	}
+	.acf-field.acf-field-number.acf-field-5a783d5729ee3.-c0 {
+		width: 100% !important;
+	}
+	.acf-field.acf-field-text.acf-field-5a781ec085e4b.-c0 {
+		width: 100% !important;
+	}
+	.acf-field.acf-field-image.acf-field-5a781ec085f9c {
+		width: 100% !important;
+	}
+	.acf-field.acf-field-radio.acf-field-5a781ec08604e.-c0 {
+		width: 100% !important;
+	}
+	.acf-field.acf-field-radio.acf-field-5a781ec0860fc {
+		width: 100% !important;
+	}
+	.acf-field.acf-field-radio.acf-field-5a782c7239c0a.forma-e-dyte {
+		width: 100% !important;
+	}
+	.acf-field.acf-field-text.acf-field-5a782c7239b5f.-c0 {
+		width: 100% !important;
+	}
+	.acf-field.acf-field-date-picker.acf-field-5a781e27758a9.-c0 {
+		width: 100% !important;
+	}
+	.acf-field.acf-field-date-picker.acf-field-5a7852d79372a {
+		width: 100% !important;
+	}
+	.acf-field.acf-field-number.acf-field-5a781e277595d.-c0 {
+		width: 100% !important;
+	}
+	.acf-field.acf-field-date-picker.acf-field-5a781e2775b5d {
+		width: 100% !important;
+	}
+	.acf-field.acf-field-radio.acf-field-5a8becd7440c9.-c0 {
+		width: 100% !important;
+	}
+	.acf-field.acf-field-radio.acf-field-5a8becd744198.-c0 {
+		width: 100% !important;
+	}
+	.alba-home-slider-wrapper img {
+		width: 100%;
+		height: 350px;
+	}
+	.slider-inside {
+		display:block;
+	    position:absolute;
+	    float: left ;
+	    width:100%;
+	    height:100%;
+	    top: 0;
+	    padding-top: 10px;
+	    padding-left: 55px;
+	}
+	.slider-inside h3 {
+		color: #FFF;
+	    font-size: 20px;	
+	    font-weight: 200;
+	    letter-spacing: 1px;
+	    text-transform: uppercase;
+	    z-index: 8;
+	    text-shadow:3px 3px #000;
+	}
+	.slider-inside p{
+		color: #FFF;
+	    font-size: 11px;	
+	    font-weight: 300;
+	    line-height: 15px;
+	    letter-spacing: 1px;
+	    text-shadow: 1px 1px #000;
+	    text-transform: uppercase;
+	    width: 50%;
+	    z-index: 8;
+	}
+	.footer-left {
+		margin-left: 0px !important;
+		padding-left: 0px !important;
+	}
+	.tml {
+		padding-left: 10% !important;
+		padding-right: 10% !important;
+	}
+	.fa.fa-angle-left {
+		color: #898989 !important;
+	}
+	.fa.fa-angle-right {
+		color: #898989 !important;
+	}
+	.fa.fa-angle-down {
+		color: #898989 !important;
+	}
+	.fa.fa-angle-up {
+		color: #898989 !important;
+	}
+	.vertical-menu
+	{
+		margin-left: 15px;
+		float: left;
+		margin-bottom: 5%;
+		margin-top: 7%;
+	}
+	.vertical-menu ul {
+	    list-style-type: none;
+	    margin: 0;
+	    padding: 0;
+	    width: 100%;
+	    background-color: #0a1018;
+	    overflow: hidden;
+	}
+	.vertical-menu ul li{ border-bottom: 1px solid #3a3f46 !important;  }
+
+	.vertical-menu li a {
+		width: auto;
+	    display: block;
+	    color: #fff!important;
+	    padding: 8px 16px;
+	    text-decoration: none;
+	    text-align: left;
+	    font-weight: bold;
+	}
+	.vertical-menu li a:hover {
+	    background-color: #db2152;
+	    color: #fff;
+	}
 }

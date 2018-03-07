@@ -4,6 +4,7 @@
  * Template Name: Casco
  *
  */
+if (is_user_logged_in()){ wp_redirect( '/casco-offers' ); exit; }
 acf_form_head();
 get_header(); ?>
 	

@@ -4,6 +4,8 @@
  * Template Name: Loans
  *
  */
+if (is_user_logged_in()){ wp_redirect( '/loans-offers' ); exit; }
+
 acf_form_head();
 get_header(); ?>
 	

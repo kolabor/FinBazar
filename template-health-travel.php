@@ -4,6 +4,7 @@
  * Template Name: Health Travel
  *
  */
+if (is_user_logged_in()){ wp_redirect( '/travel-insurance-offers' ); exit; }
 acf_form_head();
 get_header(); ?>
 	

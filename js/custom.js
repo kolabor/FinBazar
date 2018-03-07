@@ -50,6 +50,53 @@
                $(".cards_form #acf-_post_title").val('Applicant: '+ $(this).val());
           })
 
+/* If client is registered and clicks yes radio button reddirect to login page */
+$("#loans_login_btn input[name='acf[field_5a3e977efe1d0]']").click(function(){
+    event.preventDefault();
+    window.location.replace("/login");
+});
+$("#deposits_login_btn input[name='acf[field_5a781a66ce8f5]']").click(function(){
+    event.preventDefault();
+    window.location.replace("/login");
+});
+$("#cards_login_btn input[name='acf[field_5a8becd744518]']").click(function(){
+    event.preventDefault();
+    window.location.replace("/login");
+});
+/**** Finance section ends here *****/
+
+/**** Insurance section sarts here *****/
+$("#autoliability_login_btn input[name='acf[field_5a781e277603d]']").click(function(){
+    event.preventDefault();
+    window.location.replace("/login");
+});
+$("#healthtravel_login_btn input[name='acf[field_5a782c723a152]']").click(function(){
+    event.preventDefault();
+    window.location.replace("/login");
+});
+$("#casco_login_btn input[name='acf[field_5a781ec08650d]']").click(function(){
+    event.preventDefault();
+    window.location.replace("/login");
+});
+$("#home_insurance_login_btn input[name='acf[field_5a7835b45be60]']").click(function(){
+    event.preventDefault();
+    window.location.replace("/login");
+});
+$("#health_login_btn input[name='acf[field_5a783d572a2eb]']").click(function(){
+    event.preventDefault();
+    window.location.replace("/login");
+});
+/**** Insurance section ends here *****/
+/* Forms when user is loged in */
+/* Loans */
+$(".page-template-template-loan-offers .loans_form #acf-_post_title").val('Applicant: '+ $("#loans_loged_in_name").val());
+
+/* Forms when user is loged in ends here */
+
+
+/* If client is registered and clicks yes radio button reddirect to login page */
+     
+    
         // Add button to sub-menu item to show nested pages / Only used on mobile
         $( '.navigation-main li.page_item_has_children, .navigation-main li.menu-item-has-children' ).prepend( '<span class="menu-dropdown-btn"><i class="fa fa-angle-down"></i></span>' );
         // Mobile nav button functionality

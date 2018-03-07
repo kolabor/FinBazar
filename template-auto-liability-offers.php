@@ -1,52 +1,58 @@
 <?php
 /**
- *
- * Template Name: Auto Liability Offers
+ * Template Name: Autoliability Offers
  *
  */
-acf_form_head();
-get_header(); ?>
-	
 
+if ( !is_user_logged_in()){ wp_redirect( '/login' ); exit; }
+
+get_header(); ?>
 
 <?php get_template_part('pageheader'); ?>
-<img src="/wp-content/themes/albar/images/loans_header.jpg" style="width: 100%; height: auto;" />
+
 <div class="site-body site-pad">
-	<div class="site-container loans form_box">
-		<div class="acf_form_container">
+	<div class="site-container">
+        
+		<div id="primary" class="content-area">
+	
+			<div class="primary_menu">
 
-<<<<<<< HEAD
-     	}
-      else 
-      {
+				<div class="vertical-menu">
+					<ul>
+						<li><a href="loans-offers">Кредити</a></li>
+						<li><a href="deposits-offers">Депозити</a></li>
+						<li><a href="cards-offers">Карти</a></li>
+						<li><a href="auto-liability-offers" class="selected">Автоодговорност</a></li>
+						<li><a href="travel-insurance-offers">Патничко Осигуруванје</a></li>
+						<li><a href="casco-offers">Каско Осигуруванје</a></li>
+						<li><a href="home-insurance-offers">Домаќинско Осигуруванје</a></li>
+						<li><a href="life-insurance-offers">Животно Осигуруванје</a></li>							
+					</ul>		
+               </div>
 
-?>      
-<?php while ( have_posts() ) : the_post(); ?>
-<?php the_content(); ?> 
-<?php endwhile; // end of the loop. ?>
-<?php  
-echo "<div class='autoliabilityoffers_form'>";
-               acf_form(array(
-	                'post_content' => false,
-	                'post_title' => true,
-					'post_id'		=> 'new_post',
-					'return' => "/profile",
-					'new_post'		=> array(
-						'post_type'		=> 'autoliabilityoffers',
-						'post_status'		=> 'publish'
-					),
-					'submit_value'		=> 'Поднесете',
-					'updated_message' => __("Ви благодараме, вашето барање е регистрирано. За вашето барање ќе бидете изестени преку емаил или преку телефон.", 'acf')
-				)); 
+			 </div>
+			 <div class="primary_content">
+             
+             <!--Content from dashboard starts here --> 
+			 	<?php while ( have_posts() ) : the_post(); ?>
+				
+				<?php get_template_part( 'content', 'page' ); ?>
+				
+				<?php
+					// If comments are open or we have at least one comment, load up the comment template
+					if ( comments_open() || '0' != get_comments_number() )
+						comments_template();
+				?>
+				
+			   <?php endwhile; // end of the loop. ?>
+            <!--Content from dashboard ends here -->  
 
-                echo "</div>";
-			
-             }
-			?>
-          
-=======
->>>>>>> 98629323eef645bfd476d334eff0227ea8f13e6e
-		</div>
+
+			 </div>
+		</div><!-- #primary -->
+		
+		<?php get_sidebar(); ?>
+		
 	</div>
 </div>
 <?php get_footer(); ?>

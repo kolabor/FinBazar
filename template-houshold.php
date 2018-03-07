@@ -4,6 +4,7 @@
  * Template Name: houshold
  *
  */
+if (is_user_logged_in()){ wp_redirect( '/home-insurance-offers' ); exit; }
 acf_form_head();
 get_header(); ?>
 	
