@@ -50,7 +50,9 @@ do_action( 'wp_login', $user_login );*/
 
 ?>
 
-<?php if ( is_user_logged_in() ){ ?>
+
+<?php if ( is_user_logged_in()  ){ ?>
+
 <div class="vertical-menu">
 		
 <ul>
@@ -74,6 +76,7 @@ do_action( 'wp_login', $user_login );*/
 </ul>
 
 </div>
+
 <?php
 } 
 ?>

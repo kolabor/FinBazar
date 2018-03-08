@@ -3208,7 +3208,7 @@ body.show-main-menu #page {
 /*Custom AX srtyle */
 .form_box .acf_form_container
 {
-	padding-left: 15px !important;
+	padding-left: 15px ;
 	width: 75% ;
 	height: auto;
 	float: left;
@@ -4134,6 +4134,9 @@ input[type="submit"]:hover
 .page-template-template-loan-offers #loans_loged_in_name {
     visibility: hidden;
 }
+
+
+
  /*mobile css */
 @media only screen and (max-width: 980px) {
 	.site-branding img {
@@ -4307,6 +4310,8 @@ input[type="submit"]:hover
 	}
 
 	.footer-widgets .widget {
+		margin: 10px 0 !important;
+		padding: 0px 0 !important;
 		width:100% !important;
 		text-align: center !important;
 	}
@@ -4451,34 +4456,5 @@ input[type="submit"]:hover
 	.fa.fa-angle-up {
 		color: #898989 !important;
 	}
-	.vertical-menu
-	{
-		margin-left: 15px;
-		float: left;
-		margin-bottom: 5%;
-		margin-top: 7%;
-	}
-	.vertical-menu ul {
-	    list-style-type: none;
-	    margin: 0;
-	    padding: 0;
-	    width: 100%;
-	    background-color: #0a1018;
-	    overflow: hidden;
-	}
-	.vertical-menu ul li{ border-bottom: 1px solid #3a3f46 !important;  }
-
-	.vertical-menu li a {
-		width: auto;
-	    display: block;
-	    color: #fff!important;
-	    padding: 8px 16px;
-	    text-decoration: none;
-	    text-align: left;
-	    font-weight: bold;
-	}
-	.vertical-menu li a:hover {
-	    background-color: #db2152;
-	    color: #fff;
-	}
+    
 }

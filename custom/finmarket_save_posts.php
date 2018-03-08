@@ -9,8 +9,6 @@
 function acf_save_loan_post( $post_id ) 
 {
 
-
-
  /*Get Post type*/
  $get_post_type = get_post_type($post_id);
 
@@ -53,8 +51,7 @@ function acf_save_loan_post( $post_id )
  	{require 'finmarket_save_cards_posts.php';}
 
 }
-
-if ( !is_user_logged_in() ) { add_action('acf/save_post', 'acf_save_loan_post', 1); }
+add_action('acf/save_post', 'acf_save_loan_post', 1);
 
 
 ?>

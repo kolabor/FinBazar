@@ -47,6 +47,47 @@ get_header(); ?>
 			   <?php endwhile; // end of the loop. ?>
             <!--Content from dashboard ends here -->  
 
+            	 <?php 
+                    
+				    $args = array(
+				        'post_type' => 'deposits',
+				        'author'    => $user_id,	       
+				        'post_staus'=> 'publish',
+				        'posts_per_page' => -1
+				    );
+
+                   $posts = new WP_Query( $args );
+                   
+                   $total = $posts->found_posts; 
+
+                  if($total > 0)
+                   { 
+
+					  echo "Show deposits offers here!";
+	               }
+	               else
+	               {
+
+                      echo "<div class='deposits_form'>";
+                      echo "<p>".__("За да ги видете нашите понуди за депозити ве молиме дополнете го формуларот подоле!", 'acf')."</p>";
+                      acf_form(array(
+			                'post_content' => false,
+			                'post_title' => true,
+							'post_id'		=> 'new_post',
+							'return' => "/deposits-offers/",
+							'new_post'		=> array(
+								'post_type'		=> 'deposits',
+								'post_status'		=> 'publish'
+							),
+							'submit_value'		=> 'Поднесете',
+							'updated_message' => __("Ви благодараме, вашето барање е регистрирано. За вашето барање ќе бидете изестени преку емаил или преку телефон.", 'acf')
+			            	)); 
+                        echo "<input name='deposits_loged_in_name' id='deposits_loged_in_name' value='$user_info->user_login '>";
+                        echo "</div>";
+
+	               }
+                   
+                 ?>
 
 			 </div>
 		</div><!-- #primary -->
