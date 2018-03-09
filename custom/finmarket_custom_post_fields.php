@@ -463,23 +463,23 @@ function loan_custom_post_type()
 
 }
 
-add_action('init', 'deposit_custom_post_type');
+add_action('init', 'deposits_custom_post_type');
 
-function deposit_custom_post_type()
+function deposits_custom_post_type()
 {
   $labels = array(
 
-        'name'  => __( 'Deposit', 'finmarket' ),
-        'singular_name' => __( 'Deposit', 'finmarket' ),
-        'add_new'  => __( 'Add New Deposit', 'finmarket' ),
-        'add_new_item' => __( 'Add New Deposit', 'finmarket' ), 
-        'edit_item' => __( 'Edit Deposit', 'finmarket' ),
-        'new_item' => __( 'New Deposit', 'finmarket' ),
+        'name'  => __( 'Deposits', 'finmarket' ),
+        'singular_name' => __( 'Deposits', 'finmarket' ),
+        'add_new'  => __( 'Add New Deposits', 'finmarket' ),
+        'add_new_item' => __( 'Add New Deposits', 'finmarket' ), 
+        'edit_item' => __( 'Edit Deposits', 'finmarket' ),
+        'new_item' => __( 'New Deposits', 'finmarket' ),
         'all_items' => __( 'All Deposits', 'finmarket' ),
         'view_items' => __( 'Search Deposits', 'finmarket' ),
         'not_found' => __( 'No Deposits found', 'finmarket' ),
         'not_found_in_trash' => __( 'No Deposits found in trash', 'finmarket' ),
-        'menu_name' => __( 'Deposit', 'finmarket' ),
+        'menu_name' => __( 'Deposits', 'finmarket' ),
 
       );
 
@@ -496,7 +496,7 @@ function deposit_custom_post_type()
 
       );
  
-    register_post_type('Deposit', $args);
+    register_post_type('Deposits', $args);
 
 }
 

@@ -19,7 +19,7 @@ function acf_save_loan_post( $post_id )
  {require 'finmarket_save_loans_posts.php';} 
  else 
  	
- 	if ($get_post_type == 'deposit') 
+ 	if ($get_post_type == 'deposits') 
  	{require 'finmarket_save_deposits_posts.php';} 
  
  else 

@@ -5,7 +5,10 @@
  */
 
 if ( !is_user_logged_in()){ wp_redirect( '/login' ); exit; }
+$user_id = get_current_user_id();
+$user_info = get_userdata($user_id);
 
+acf_form_head();
 get_header(); ?>
 
 <?php get_template_part('pageheader'); ?>
@@ -79,20 +82,21 @@ get_header(); ?>
 	               else
 	               {
 
-                      echo "<div class='life-insurance_form'>";
-                      echo "<p>".__("За да ги видете нашите понуди за депозити ве молиме дополнете го формуларот подоле!", 'acf')."</p>";
-                      acf_form(array(
-			                'post_content' => false,
-			                'post_title' => true,
+                      
+					echo "<div class='lifeinsurance_form'>";
+					echo "<p>".__("За да ги видете нашите понуди за животно ве молиме дополнете го формуларот подоле!", 'acf')."</p>";
+					    acf_form(array(
+						    'post_content' => false,
+						    'post_title' => true,
 							'post_id'		=> 'new_post',
-							'return' => "/life-insurance-offers/",
+							'return' => "/profile",
 							'new_post'		=> array(
-								'post_type'		=> 'life-insurance',
+								'post_type'		=> 'lifeinsurance',
 								'post_status'		=> 'publish'
 							),
 							'submit_value'		=> 'Поднесете',
-							'updated_message' => __("Ви благодараме, вашето барање е регистрирано. За вашето барање ќе бидете изестени преку емаил или преку телефон.", 'acf')
-			            	)); 
+							'updated_message' => __("Ви благодараме, вашето барање е регистрирано. За вашето барање бидете изестени преку емаил или преку телефон.", 'acf')
+						));            
                         echo "<input name='life-insurance_loged_in_name' id='life-insurance_loged_in_name' value='$user_info->user_login '>";
                         echo "</div>";
 
