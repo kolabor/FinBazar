@@ -86,6 +86,8 @@ function finmarket_auto_liability_custom_post_type()
 
 
 
+
+
 add_action('init', 'finmarket_casco_custom_post_type');
 
 function finmarket_casco_custom_post_type()
@@ -95,7 +97,7 @@ function finmarket_casco_custom_post_type()
         'name'  => __( 'Casco', 'finmarket' ),
         'singular_name' => __( 'Casco', 'finmarket' ),
         'add_new'  => __( 'Add New Casco', 'finmarket' ),
-        'add_new_item' => __( 'Add New Cascoy', 'finmarket' ), 
+        'add_new_item' => __( 'Add New Casco', 'finmarket' ), 
         'edit_item' => __( 'Edit Casco', 'finmarket' ),
         'new_item' => __( 'New Casco', 'finmarket' ),
         'all_items' => __( 'All Cascos', 'finmarket' ),
@@ -122,6 +124,7 @@ function finmarket_casco_custom_post_type()
     register_post_type('Casco', $args);
 
 }
+
 
 
 add_action('init', 'finmarket_health_travel_custom_post_type');
@@ -385,3 +388,263 @@ function cards_custom_post_type()
 
 }
 
+
+
+add_action('init', 'finmarket_auto_liability_offers_custom_post_type');
+
+function finmarket_auto_liability_offers_custom_post_type()
+{
+  $labels = array(
+
+        'name'  => __( 'Auto liability Offers', 'finmarket' ),
+        'singular_name' => __( 'Auto liability Offers', 'finmarket' ),
+        'add_new'  => __( 'Add New Auto liability Offers', 'finmarket' ),
+        'add_new_item' => __( 'Add New Auto liability Offers', 'finmarket' ), 
+        'edit_item' => __( 'Edit Auto liability Offers', 'finmarket' ),
+        'new_item' => __( 'New Auto liability Offers', 'finmarket' ),
+        'all_items' => __( 'All Auto liabilities Offers', 'finmarket' ),
+        'view_items' => __( 'Search Auto liabilities Offers', 'finmarket' ),
+        'not_found' => __( 'No Auto liabilities Offers found', 'finmarket' ),
+        'not_found_in_trash' => __( 'No Auto liabilities Offers found in trash', 'finmarket' ),
+        'menu_name' => __( 'Auto liability Offers', 'finmarket' ),
+
+      );
+
+      $args = array(
+        'can_export' => true,
+        'labels' => $labels,
+        'supports'  => array('thumbnail', 'title'),
+        'menu_icon' => 'dashicons-welcome-write-blog',
+        'hierarchical' => false,
+        'show_ui' => true,
+        'show_in_nav_menus' => false,
+        'show_in_menu' => 'edit.php?post_type=offers',
+        'public' => true
+
+      );
+ 
+    register_post_type('Auto liability Offers', $args);
+
+}
+add_action('init', 'loan_custom_post_type');
+
+function loan_custom_post_type()
+{
+  $labels = array(
+
+        'name'  => __( 'Loans', 'finmarket' ),
+        'singular_name' => __( 'Loans', 'finmarket' ),
+        'add_new'  => __( 'Add New Loans', 'finmarket' ),
+        'add_new_item' => __( 'Add New Loans', 'finmarket' ), 
+        'edit_item' => __( 'Edit Loans', 'finmarket' ),
+        'new_item' => __( 'New Loans', 'finmarket' ),
+        'all_items' => __( 'All Loans', 'finmarket' ),
+        'view_items' => __( 'Search Loans', 'finmarket' ),
+        'not_found' => __( 'No Loans found', 'finmarket' ),
+        'not_found_in_trash' => __( 'No Loans found in trash', 'finmarket' ),
+        'menu_name' => __( 'Loans', 'finmarket' ),
+
+      );
+
+      $args = array(
+        'can_export' => true,
+        'labels' => $labels,
+        'supports'  => array('thumbnail', 'title'),
+        'menu_icon' => 'dashicons-welcome-write-blog',
+        'hierarchical' => false,
+        'show_ui' => true,
+        'show_in_nav_menus' => false,
+        'show_in_menu' => 'edit.php?post_type=forms',
+        'public' => true
+
+      );
+ 
+    register_post_type('Loans', $args);
+
+}
+
+add_action('init', 'deposit_custom_post_type');
+
+function deposit_custom_post_type()
+{
+  $labels = array(
+
+        'name'  => __( 'Deposit', 'finmarket' ),
+        'singular_name' => __( 'Deposit', 'finmarket' ),
+        'add_new'  => __( 'Add New Deposit', 'finmarket' ),
+        'add_new_item' => __( 'Add New Deposit', 'finmarket' ), 
+        'edit_item' => __( 'Edit Deposit', 'finmarket' ),
+        'new_item' => __( 'New Deposit', 'finmarket' ),
+        'all_items' => __( 'All Deposits', 'finmarket' ),
+        'view_items' => __( 'Search Deposits', 'finmarket' ),
+        'not_found' => __( 'No Deposits found', 'finmarket' ),
+        'not_found_in_trash' => __( 'No Deposits found in trash', 'finmarket' ),
+        'menu_name' => __( 'Deposit', 'finmarket' ),
+
+      );
+
+      $args = array(
+        'can_export' => true,
+        'labels' => $labels,
+        'supports'  => array('thumbnail', 'title'),
+        'menu_icon' => 'dashicons-welcome-write-blog',
+        'hierarchical' => false,
+        'show_ui' => true,
+        'show_in_nav_menus' => false,
+        'show_in_menu' => 'edit.php?post_type=forms',
+        'public' => true
+
+      );
+ 
+    register_post_type('Deposit', $args);
+
+}
+
+
+add_action('init', 'finmarket_casco_offers_custom_post_type');
+
+function finmarket_casco_offers_custom_post_type()
+{
+  $labels = array(
+
+        'name'  => __( 'Casco Offers', 'finmarket' ),
+        'singular_name' => __( 'Casco Offers', 'finmarket' ),
+        'add_new'  => __( 'Add New Casco Offers', 'finmarket' ),
+        'add_new_item' => __( 'Add New Casco Offers', 'finmarket' ), 
+        'edit_item' => __( 'Edit Casco Offers', 'finmarket' ),
+        'new_item' => __( 'New Casco Offers', 'finmarket' ),
+        'all_items' => __( 'All Casco Offers', 'finmarket' ),
+        'view_items' => __( 'Search Cascos Offers', 'finmarket' ),
+        'not_found' => __( 'No Casco Offers found', 'finmarket' ),
+        'not_found_in_trash' => __( 'No Casco Offers found in trash', 'finmarket' ),
+        'menu_name' => __( 'Casco Offers', 'finmarket' ),
+
+      );
+
+      $args = array(
+        'can_export' => true,
+        'labels' => $labels,
+        'supports'  => array('thumbnail', 'title'),
+        'menu_icon' => 'dashicons-welcome-write-blog',
+        'hierarchical' => false,
+        'show_ui' => true,
+        'show_in_nav_menus' => false,
+        'show_in_menu' => 'edit.php?post_type=offers',
+        'public' => true
+
+      );
+ 
+    register_post_type('Casco Offers', $args);
+
+}
+
+add_action('init', 'finmarket_health_travel_offers_custom_post_type');
+
+function finmarket_health_travel_offers_custom_post_type()
+{
+  $labels = array(
+
+        'name'  => __( 'Health Travel Offers', 'finmarket' ),
+        'singular_name' => __( 'Health Travel Offers', 'finmarket' ),
+        'add_new'  => __( 'Add New Health Travel Offers', 'finmarket' ),
+        'add_new_item' => __( 'Add New Health Travel Offers', 'finmarket' ), 
+        'edit_item' => __( 'Edit Health Travel Offers', 'finmarket' ),
+        'new_item' => __( 'New Health Travel Offers', 'finmarket' ),
+        'all_items' => __( 'All Health Travel Offers', 'finmarket' ),
+        'view_items' => __( 'Search Health Travels Offers', 'finmarket' ),
+        'not_found' => __( 'No Health Travels Offers found', 'finmarket' ),
+        'not_found_in_trash' => __( 'No Health OffersTravels found in trash', 'finmarket' ),
+        'menu_name' => __( 'Health Travel Offers', 'finmarket' ),
+
+      );
+
+      $args = array(
+        'can_export' => true,
+        'labels' => $labels,
+        'supports'  => array('thumbnail', 'title'),
+        'menu_icon' => 'dashicons-welcome-write-blog',
+        'hierarchical' => false,
+        'show_ui' => true,
+        'show_in_nav_menus' => false,
+        'show_in_menu' => 'edit.php?post_type=offers',
+        'public' => true
+
+      );
+ 
+    register_post_type('Health Travel Offers', $args);
+
+}
+
+add_action('init', 'finmarket_houshold_offers_custom_post_type');
+
+function finmarket_houshold_offers_custom_post_type()
+{
+  $labels = array(
+
+        'name'  => __( 'Household Offers', 'finmarket' ),
+        'singular_name' => __( 'Household Offers', 'finmarket' ),
+        'add_new'  => __( 'Add New Household Offers', 'finmarket' ),
+        'add_new_item' => __( 'Add New Household Offers', 'finmarket' ), 
+        'edit_item' => __( 'Edit Household Offers', 'finmarket' ),
+        'new_item' => __( 'New Household Offers', 'finmarket' ),
+        'all_items' => __( 'All Households Offers', 'finmarket' ),
+        'view_items' => __( 'Search Households Offers', 'finmarket' ),
+        'not_found' => __( 'No Households Offers found', 'finmarket' ),
+        'not_found_in_trash' => __( 'No Households Offers found in trash', 'finmarket' ),
+        'menu_name' => __( 'Household Offers', 'finmarket' ),
+
+      );
+
+      $args = array(
+        'can_export' => true,
+        'labels' => $labels,
+        'supports'  => array('thumbnail', 'title'),
+        'menu_icon' => 'dashicons-welcome-write-blog',
+        'hierarchical' => false,
+        'show_ui' => true,
+        'show_in_nav_menus' => false,
+        'show_in_menu' => 'edit.php?post_type=offers',
+        'public' => true
+
+      );
+ 
+    register_post_type('Household Offers', $args);
+
+}
+
+add_action('init', 'finmarket_life_insurance_offers_custom_post_type');
+
+function finmarket_life_insurance_offers_custom_post_type()
+{
+  $labels = array(
+
+        'name'  => __( 'Life Insurance Offers', 'finmarket' ),
+        'singular_name' => __( 'Life Insurance Offers', 'finmarket' ),
+        'add_new'  => __( 'Add New Life Insurance Offers', 'finmarket' ),
+        'add_new_item' => __( 'Add New Life Insurance Offers', 'finmarket' ), 
+        'edit_item' => __( 'Edit Life Insurance Offers', 'finmarket' ),
+        'new_item' => __( 'New Life Insurance Offers', 'finmarket' ),
+        'all_items' => __( 'All Life Insurances Offers', 'finmarket' ),
+        'view_items' => __( 'Search Life Insurances Offers', 'finmarket' ),
+        'not_found' => __( 'No Life Insurances Offers found', 'finmarket' ),
+        'not_found_in_trash' => __( 'No Life Insurances Offers found in trash', 'finmarket' ),
+        'menu_name' => __( 'Life Insurances Offers', 'finmarket' ),
+
+      );
+
+      $args = array(
+        'can_export' => true,
+        'labels' => $labels,
+        'supports'  => array('thumbnail', 'title'),
+        'menu_icon' => 'dashicons-welcome-write-blog',
+        'hierarchical' => false,
+        'show_ui' => true,
+        'show_in_nav_menus' => false,
+        'show_in_menu' => 'edit.php?post_type=offers',
+        'public' => true
+
+      );
+ 
+    register_post_type('Life Insurance Offers', $args);
+
+}

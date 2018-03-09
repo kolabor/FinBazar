@@ -57,23 +57,28 @@ do_action( 'wp_login', $user_login );*/
 		
 <ul>
 			
-<li><a href="loans-offers">Кредити</a></li>
-			
-<li><a href="deposits-offers">Депозити</a></li>
-			
-<li><a href="auto-liability-offers">Автоодговорност</a></li>
-			
-<li><a href="travel-insurance-offers">Патничко Осигуруванје</a></li>
-			
-<li><a href="casco-offers">Каско Осигуруванје</a></li>
-			
-<li><a href="home-insurance-offers">Домаќинско Осигуруванје</a></li>
-			
-<li><a href="life-insurance-offers">Животно Осигуруванје</a></li>
-			
-<li><a href="cards-offers">Карти</a></li>
+	<li><a href="loans-offers">Кредити</a></li>			
+	<li><a href="deposits-offers">Депозити</a></li>				
+	<li><a href="auto-liability-offers">Автоодговорност</a></li>				
+	<li><a href="travel-insurance-offers">Патничко Осигуруванје</a></li>				
+	<li><a href="casco-offers">Каско Осигуруванје</a></li>				
+	<li><a href="home-insurance-offers">Домаќинско Осигуруванје</a></li>				
+	<li><a href="life-insurance-offers">Животно Осигуруванје</a></li>				
+	<li><a href="cards-offers">Карти</a></li>
 	
 </ul>
+
+<select> 
+        
+    <option value="loans-offers">Кредити</option> 
+    <option value="deposits-offers">Депозити</option> 
+    <option value="auto-liability-offers">Автоодговорност</option> 
+    <option value="travel-insurance-offers">Патничко Осигуруванје</option> 
+    <option value="casco-offers">Каско Осигуруванје</option> 
+    <option value="home-insurance-offers">Домаќинско Осигуруванје</option> 
+    <option value="life-insurance-offers">Животно Осигуруванје</option> 
+    <option value="cards-offers">Карти</option> 
+</select> 
 
 </div>
 

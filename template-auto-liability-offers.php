@@ -27,9 +27,18 @@ get_header(); ?>
 						<li><a href="casco-offers">Каско Осигуруванје</a></li>
 						<li><a href="home-insurance-offers">Домаќинско Осигуруванје</a></li>
 						<li><a href="life-insurance-offers">Животно Осигуруванје</a></li>							
-					</ul>		
+					</ul>	
+					 <select>  
+					    <option value="loans-offers">Кредити</option> 
+					    <option value="deposits-offers">Депозити</option> 
+					    <option value="auto-liability-offers">Автоодговорност</option> 
+					    <option value="travel-insurance-offers">Патничко Осигуруванје</option> 
+					    <option value="casco-offers">Каско Осигуруванје</option> 
+					    <option value="home-insurance-offers">Домаќинско Осигуруванје</option> 
+					    <option value="life-insurance-offers">Животно Осигуруванје</option> 
+					    <option value="cards-offers">Карти</option> 
+					</select> 	
                </div>
-
 			 </div>
 			 <div class="primary_content">
              

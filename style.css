@@ -4135,10 +4135,17 @@ input[type="submit"]:hover
     visibility: hidden;
 }
 
+.vertical-menu select {
+  display: none;
+}
 
+/*mobile css */
+@media only screen and (max-height: 700px){
 
- /*mobile css */
-@media only screen and (max-width: 980px) {
+	.header-menu-button {
+	    float: right !important;
+	    margin-left: 530px;
+	}
 	.site-branding img {
 		padding-left: 0px !important;
 		width: 70% !important;
@@ -4456,5 +4463,358 @@ input[type="submit"]:hover
 	.fa.fa-angle-up {
 		color: #898989 !important;
 	}
-    
+
+	.vertical-menu ul     { display: none; }
+  	.vertical-menu select { display: inline-block; }
+
+  	.site-header-right {
+  		padding: 0 !important;
+  		margin: 0 !important;
+  	}
+  	.vertical-menu {
+  		margin-left: 20% !important;
+  		margin-right: 20% !important;
+  		float: none !important;
+  	}
+  	.vertical-menu select {
+  		text-align: center !important;
+  	}
+
+ 
+}
+@media only screen and (max-width: 580px) {
+	.site-branding img {
+		padding-left: 0px !important;
+		width: 70% !important;
+	}
+	.navigation-main {
+		padding-top: 0px !important;
+		text-align: center !important;
+	}
+	.search-form {
+		display: none !important;
+	}
+	.loggin-menu {
+		margin-top: 5px !important;
+		margin-bottom: 5px !important;
+		float: none !important;
+		padding-top: 0px !important;
+		text-align: center !important;
+	}
+	.alba-home-slider-wrapper {
+		font-size: 7px !important;
+		font-weight: 200 !important;
+	}
+
+    .section-icon, .section-icon-finance, .section-icon-insurance{
+		margin-top: 50px;
+		text-align: center;
+	}
+	.icon-list, .icon-list-finance, .icon-list-insurance {
+		display:inline-table;
+		width: 92%;
+		margin: auto;	
+		position: relative;
+
+	}
+	.section-icon li {
+		display:inline;
+		float: left;
+		text-align: center; 
+    	width: 25%;
+    	height: auto;
+	}
+	.section-icon-finance li {
+		display:inline;
+		float: left;
+		text-align: center; 
+    	width: 33%;
+    	height: auto;
+	}
+	.section-icon-insurance li {
+		display:inline;
+		float: left;
+		text-align: center; 
+    	width: 20%;
+    	height: auto;
+	}
+
+
+	.icon-small {
+		position: relative;
+	    display: table-cell !important;
+	    vertical-align: middle !important;
+	    margin-left: auto;
+	    margin-right: auto;
+	    font-size: 20px;
+	    text-align: center;
+	    color: #fff;
+	    width: 50px;
+	    height: 50px;
+	    border-radius: 50% !important;
+	    background-color: #0a1018 !important;
+	}
+	.section-icon-finance .icon-small {
+		position: relative;
+	    display: table-cell !important;
+	    vertical-align: middle !important;
+	    margin-left: auto;
+	    margin-right: auto;
+	    font-size: 20px;
+	    text-align: center;
+	    color: #fff;
+	    width: 50px;
+	    height: 50px;
+	    border-radius: 50% !important;
+	    background-color: #0a1018 !important;
+
+	}
+	.section-icon-insurance .icon-small {
+		position: relative;
+	    display: table-cell !important;
+	    vertical-align: middle !important;
+	    margin-left: auto;
+	    margin-right: auto;
+	    font-size: 20px;
+	    text-align: center;
+	    color: #fff;
+	    width: 50px;
+	    height: 50px;
+	    border-radius: 50% !important;
+	    background-color: #0a1018 !important;
+
+	}
+	.section-icon h2 {
+		font-weight: bold;
+		font-size: 45px;
+		word-spacing: 2px;
+		text-align: center;
+		margin-bottom: 70px;
+		letter-spacing: 1px;
+		color: #0a1018;
+	}
+
+	.section-icon h2:after {
+		display: block;
+		height: 2px;
+		background-color: #db2152;
+		content: " ";
+		width: 100px;
+		margin: 0 auto;
+		margin-top: 30px;
+	}
+	.icon-list h4 {
+		width: 80%;
+		text-align: center;
+		margin-bottom: 40px;
+		font-size: 14px !important;
+		font-weight: 200;
+	}
+	.icon-list-insurance h4 {
+		width: 80%;
+		text-align: center;
+		margin-bottom: 40px;
+		font-size: 14px !important;
+		font-weight: 200;
+	}
+	.icon-list-finance h4 {
+		width: 80%;
+		text-align: center;
+		margin-bottom: 40px;
+		font-size: 14px !important;
+		font-weight: 200;
+	}
+
+	.icon-small:hover {
+		background-color: #db2152!important;
+		color: #fff!important;
+		transform: scale(1.2);
+	}
+	.icon-list h4:hover {
+		color: #db2152!important;
+	}
+	.custom-html-widget p {
+		padding-right: 10px !important;
+		padding-left: 0px !important;
+
+	}
+	.custom-html-widget h1 {
+		padding-right: 0px !important;
+		padding-left: 0px !important;
+
+	}
+	.bttn2 {
+		margin-left: 0px !important;
+
+	}
+	.content-area.content-area-full {
+		text-align: center !important;
+		padding-right: 0px !important;
+		padding-left: 0px !important;
+	}
+
+	.footer-widgets .widget {
+		margin: 10px 0 !important;
+		padding: 0px 0 !important;
+		width:100% !important;
+		text-align: center !important;
+	}
+	#pg-184-3.panel-grid.panel-no-style {
+		padding-bottom: 20px !important;
+	}
+	#pg-199-0 {
+		padding: 0 !important;
+	}
+	#pg-199-1 {
+		padding: 0 !important;
+	}
+	#pg-199-2 {
+		padding: 0 !important;
+		margin-bottom: 25px !important;
+	}
+	#pg-387-0 {
+		padding: 0 !important;
+		margin: 0 !important;
+	}
+	#pg-387-1 {
+		padding: 0 !important;
+	}
+	#pg-387-2 {
+		padding: 0 !important;
+		margin-bottom: 25px !important;
+	}
+	.acf_form_container {
+		width: 100% !important;
+	}
+	.acf_sidebar_container {
+		width: 100% !important;
+	}
+	.acf-field.acf-field-text.acf-field-5a782c7239b5f.-c0{
+		width: 50% !important;
+	}
+	.post, .search.article.page {
+		padding : 0 0 1px;
+	}
+	.acf-field.acf-field-date-picker.acf-field-5a781ec0861a8.-c0 {
+		width: 100% !important;
+	}
+	.acf-field.acf-field-number.acf-field-5a7835b45b958.-c0 {
+		width: 100% !important;
+	}
+	.acf-field.acf-field-text.acf-field-5a7835b45ba13.-c0 {
+		width: 100% !important;
+	}
+	.acf-field.acf-field-date-picker.acf-field-5a783d5729e4f.-c0 {
+		width: 100% !important;
+	}
+	.acf-field.acf-field-number.acf-field-5a783d5729ee3.-c0 {
+		width: 100% !important;
+	}
+	.acf-field.acf-field-text.acf-field-5a781ec085e4b.-c0 {
+		width: 100% !important;
+	}
+	.acf-field.acf-field-image.acf-field-5a781ec085f9c {
+		width: 100% !important;
+	}
+	.acf-field.acf-field-radio.acf-field-5a781ec08604e.-c0 {
+		width: 100% !important;
+	}
+	.acf-field.acf-field-radio.acf-field-5a781ec0860fc {
+		width: 100% !important;
+	}
+	.acf-field.acf-field-radio.acf-field-5a782c7239c0a.forma-e-dyte {
+		width: 100% !important;
+	}
+	.acf-field.acf-field-text.acf-field-5a782c7239b5f.-c0 {
+		width: 100% !important;
+	}
+	.acf-field.acf-field-date-picker.acf-field-5a781e27758a9.-c0 {
+		width: 100% !important;
+	}
+	.acf-field.acf-field-date-picker.acf-field-5a7852d79372a {
+		width: 100% !important;
+	}
+	.acf-field.acf-field-number.acf-field-5a781e277595d.-c0 {
+		width: 100% !important;
+	}
+	.acf-field.acf-field-date-picker.acf-field-5a781e2775b5d {
+		width: 100% !important;
+	}
+	.acf-field.acf-field-radio.acf-field-5a8becd7440c9.-c0 {
+		width: 100% !important;
+	}
+	.acf-field.acf-field-radio.acf-field-5a8becd744198.-c0 {
+		width: 100% !important;
+	}
+	.alba-home-slider-wrapper img {
+		width: 100%;
+		height: 350px;
+	}
+	.slider-inside {
+		display:block;
+	    position:absolute;
+	    float: left ;
+	    width:100%;
+	    height:100%;
+	    top: 0;
+	    padding-top: 10px;
+	    padding-left: 55px;
+	}
+	.slider-inside h3 {
+		color: #FFF;
+	    font-size: 20px;	
+	    font-weight: 200;
+	    letter-spacing: 1px;
+	    text-transform: uppercase;
+	    z-index: 8;
+	    text-shadow:3px 3px #000;
+	}
+	.slider-inside p{
+		color: #FFF;
+	    font-size: 11px;	
+	    font-weight: 300;
+	    line-height: 15px;
+	    letter-spacing: 1px;
+	    text-shadow: 1px 1px #000;
+	    text-transform: uppercase;
+	    width: 50%;
+	    z-index: 8;
+	}
+	.footer-left {
+		margin-left: 0px !important;
+		padding-left: 0px !important;
+	}
+	.tml {
+		padding-left: 10% !important;
+		padding-right: 10% !important;
+	}
+	.fa.fa-angle-left {
+		color: #898989 !important;
+	}
+	.fa.fa-angle-right {
+		color: #898989 !important;
+	}
+	.fa.fa-angle-down {
+		color: #898989 !important;
+	}
+	.fa.fa-angle-up {
+		color: #898989 !important;
+	}
+
+	.vertical-menu ul     { display: none; }
+  	.vertical-menu select { display: inline-block; } 
+
+  	.site-header-right {
+  		padding: 0 !important;
+  		margin: 0 !important;
+  	}
+  	.vertical-menu {
+  		margin-left: 20% !important;
+  		margin-right: 20% !important;
+  		float: none !important;
+  	}
+  	.vertical-menu select {
+  		text-align: center !important;
+  	}
+
 }
