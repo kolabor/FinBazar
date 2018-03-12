@@ -22,14 +22,14 @@ get_header(); ?>
 
 				<div class="vertical-menu">
 					<ul>
-						<li><a href="loans-offers">Кредити</a></li>
-						<li><a href="deposits-offers" class="selected">Депозити</a></li>
-						<li><a href="cards-offers">Карти</a></li>
-						<li><a href="auto-liability-offers">Автоодговорност</a></li>
-						<li><a href="travel-insurance-offers">Патничко Осигуруванје</a></li>
-						<li><a href="casco-offers">Каско Осигуруванје</a></li>
-						<li><a href="home-insurance-offers">Домаќинско Осигуруванје</a></li>
-						<li><a href="life-insurance-offers">Животно Осигуруванје</a></li>							
+						<li><a href="/loan-offers" >Кредити</a></li>
+						<li><a href="/deposits-offers" class="selected">Депозити</a></li>
+						<li><a href="/cards-offers">Карти</a></li>
+						<li><a href="/auto-liability-offers">Автоодговорност</a></li>
+						<li><a href="/travel-insurance-offers">Патничко Осигуруванје</a></li>
+						<li><a href="/casco-offers">Каско Осигуруванје</a></li>
+						<li><a href="/home-insurance-offers">Домаќинско Осигуруванје</a></li>
+						<li><a href="/life-insurance-offers">Животно Осигуруванје</a></li>		
 					</ul>		
 					<select> 
 					    <option value="" selected="selected">Понуди</option> 
@@ -74,7 +74,7 @@ get_header(); ?>
                    $posts = new WP_Query( $args );
                    
                    $total = $posts->found_posts; 
-
+                    
                   if($total > 0)
                    { 
 

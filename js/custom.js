@@ -111,9 +111,9 @@ $("#health_login_btn input[name='acf[field_5a783d572a2eb]']").click(function(){
 /* Forms when user is loged in */
 /* Loans */
 $(".page-template-template-loan-offers .loans_form #acf-_post_title").val('Applicant: '+ $("#loans_loged_in_name").val());
-
+/*Deposits*/
 /* Forms when user is loged in ends here */
-
+$(".page-template-template-deposits-offers .deposits_form #acf-_post_title").val('Applicant: '+ $("#deposits_loged_in_name").val());
 
 /* If client is registered and clicks yes radio button reddirect to login page */
      

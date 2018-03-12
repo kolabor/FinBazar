@@ -4559,3 +4559,10 @@ input[type="submit"]:hover
 	.lifeinsurance_form { margin-top: 5px !important; }
 
 }
+
+/* Disable Login btn & Register form */
+.page-template-template-deposits-offers #deposits_login_btn { display: none !important; }
+.page-template-template-deposits-offers #deposit_reg_form{ display: none !important; }
+/*Hide user input element*/
+.page-template-template-deposits-offers #deposits_loged_in_name { display: none !important; }
+.page-template-template-deposits-offers .deposits_form {padding-bottom: 25px !important;}

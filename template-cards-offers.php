@@ -22,14 +22,14 @@ get_header(); ?>
 
 				<div class="vertical-menu">
 					<ul>
-						<li><a href="loans-offers">Кредити</a></li>
-						<li><a href="deposits-offers">Депозити</a></li>
-						<li><a href="cards-offers" class="selected">Карти</a></li>
-						<li><a href="auto-liability-offers">Автоодговорност</a></li>
-						<li><a href="travel-insurance-offers">Патничко Осигуруванје</a></li>
-						<li><a href="casco-offers">Каско Осигуруванје</a></li>
-						<li><a href="home-insurance-offers">Домаќинско Осигуруванје</a></li>
-						<li><a href="life-insurance-offers">Животно Осигуруванје</a></li>
+						<li><a href="/loan-offers" >Кредити</a></li>
+						<li><a href="/deposits-offers">Депозити</a></li>
+						<li><a href="/cards-offers" class="selected">Карти</a></li>
+						<li><a href="/auto-liability-offers">Автоодговорност</a></li>
+						<li><a href="/travel-insurance-offers">Патничко Осигуруванје</a></li>
+						<li><a href="/casco-offers">Каско Осигуруванје</a></li>
+						<li><a href="/home-insurance-offers">Домаќинско Осигуруванје</a></li>
+						<li><a href="/life-insurance-offers">Животно Осигуруванје</a></li>	
 					</ul>		
 					<select> 
 					    <option value="" selected="selected">Понуди</option> 

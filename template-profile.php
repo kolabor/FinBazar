@@ -57,14 +57,14 @@ do_action( 'wp_login', $user_login );*/
 		
 <ul>
 			
-	<li><a href="loans-offers">Кредити</a></li>			
-	<li><a href="deposits-offers">Депозити</a></li>				
-	<li><a href="auto-liability-offers">Автоодговорност</a></li>				
-	<li><a href="travel-insurance-offers">Патничко Осигуруванје</a></li>				
-	<li><a href="casco-offers">Каско Осигуруванје</a></li>				
-	<li><a href="home-insurance-offers">Домаќинско Осигуруванје</a></li>				
-	<li><a href="life-insurance-offers">Животно Осигуруванје</a></li>				
-	<li><a href="cards-offers">Карти</a></li>
+	<li><a href="/loan-offers">Кредити</a></li>			
+	<li><a href="/deposits-offers">Депозити</a></li>				
+	<li><a href="/auto-liability-offers">Автоодговорност</a></li>				
+	<li><a href="/travel-insurance-offers">Патничко Осигуруванје</a></li>				
+	<li><a href="/casco-offers">Каско Осигуруванје</a></li>				
+	<li><a href="/home-insurance-offers">Домаќинско Осигуруванје</a></li>				
+	<li><a href="/life-insurance-offers">Животно Осигуруванје</a></li>				
+	<li><a href="/cards-offers">Карти</a></li>
 	
 </ul>
 

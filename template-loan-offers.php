@@ -22,14 +22,14 @@ get_header(); ?>
 
 				<div class="vertical-menu">
 					<ul>
-						<li><a href="loans-offers" class="selected">Кредити</a></li>
-						<li><a href="deposits-offers">Депозити</a></li>
-						<li><a href="cards-offers">Карти</a></li>
-						<li><a href="auto-liability-offers">Автоодговорност</a></li>
-						<li><a href="travel-insurance-offers">Патничко Осигуруванје</a></li>
-						<li><a href="casco-offers">Каско Осигуруванје</a></li>
-						<li><a href="home-insurance-offers">Домаќинско Осигуруванје</a></li>
-						<li><a href="life-insurance-offers">Животно Осигуруванје</a></li>							
+						<li><a href="/loan-offers" class="selected">Кредити</a></li>
+						<li><a href="/deposits-offers">Депозити</a></li>
+						<li><a href="/cards-offers">Карти</a></li>
+						<li><a href="/auto-liability-offers">Автоодговорност</a></li>
+						<li><a href="/travel-insurance-offers">Патничко Осигуруванје</a></li>
+						<li><a href="/casco-offers">Каско Осигуруванје</a></li>
+						<li><a href="/home-insurance-offers">Домаќинско Осигуруванје</a></li>
+						<li><a href="/life-insurance-offers">Животно Осигуруванје</a></li>							
 					</ul>
 					<select> 
 					    <option value="" selected="selected">Понуди</option> 
@@ -65,7 +65,7 @@ get_header(); ?>
                 <?php 
                     
 				    $args = array(
-				        'post_type' => 'loans',
+				        '0post_type' => 'loans',
 				        'author'    => $user_id,	       
 				        'post_staus'=> 'publish',
 				        'posts_per_page' => -1

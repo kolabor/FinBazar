@@ -1,4 +1,4 @@
-<?php
+0<?php
 global $woocommerce;
 $site_social = '';
 
@@ -33,8 +33,8 @@ endif; ?>
                         <?php if ( is_user_logged_in() ){ ?>
 
                     <ul>
-                    <li><a href="profile">Профил</a></li>
-                    <li><a href="logout">Одјави се</a></li>
+                    <li><a href="/profile">Профил</a></li>
+                    <li><a href="/logout">Одјави се</a></li>
                   <!--  <li><a href="lostpassword">Ресетирај Лозинка</a></li> -->
                     </ul>
                       <?php } 
@@ -42,8 +42,8 @@ endif; ?>
                     else { ?>
 
                     <ul>
-                    <li><a href="login">Најави се</a></li>
-                    <li><a href="register">Регистрирај се</a></li>
+                    <li><a href="/login">Најави се</a></li>
+                    <li><a href="/register">Регистрирај се</a></li>
                     <ul> 
 
                     <?php } ?>
