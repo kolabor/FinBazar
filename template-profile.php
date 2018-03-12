@@ -55,7 +55,7 @@ do_action( 'wp_login', $user_login );*/
 
 <div class="site-body site-pad">
 	<div class="site-container">
-        
+
 		<div id="primary" class="content-area">
 	
 			<div class="primary_menu">
@@ -110,8 +110,7 @@ do_action( 'wp_login', $user_login );*/
 <?php
 } 
 ?>
-               
- 
+
  </div>
 </div> 
 <?php get_footer(); ?>
