@@ -4558,7 +4558,9 @@ input[type="submit"]:hover
 
 	.lifeinsurance_form { margin-top: 5px !important; }
 
-}
+	}
+
+
 
 /* Disable Login btn & Register form */
 .page-template-template-deposits-offers #deposits_login_btn { display: none !important; }
@@ -4566,3 +4568,46 @@ input[type="submit"]:hover
 /*Hide user input element*/
 .page-template-template-deposits-offers #deposits_loged_in_name { display: none !important; }
 .page-template-template-deposits-offers .deposits_form {padding-bottom: 25px !important;}
+
+
+
+/* horizontal menu*/
+.horizontal-menu
+{
+	margin-left: 15px;
+	float: left;
+	margin-bottom: 5%;
+	margin-top: 7%;
+	
+  
+
+}
+
+.horizontal-menu ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #0a1018;
+    overflow: hidden;
+
+}
+
+.horizontal-menu ul li { border-bottom: 1px solid #3a3f46 !important;}
+
+.horizontal-menu li a {
+	width: auto;
+    display: block;
+    color: #fff!important;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-align: left;
+    font-weight: bold;
+
+
+   
+}
+.horizontal-menu li a:hover{
+    background-color: #db2152;
+    color: #fff;
+}

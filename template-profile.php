@@ -78,15 +78,23 @@ do_action( 'wp_login', $user_login );*/
     <option value="home-insurance-offers">Домаќинско Осигуруванје</option> 
     <option value="life-insurance-offers">Животно Осигуруванје</option> 
     <option value="cards-offers">Карти</option> 
+   
+   
 </select> 
 
 </div>
 
-<?php
-} 
-?>
-               
+
+  <div class="horizontal-menu">
+      <ul> 
+            
+              <li><a href="/profile-requests">Вашите барања</a></li>
+      </ul>
+  </div>
  
+ <?php
+} 
+?> 
  </div>
 </div> 
 <?php get_footer(); ?>
