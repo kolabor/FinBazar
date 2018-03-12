@@ -114,6 +114,24 @@ $(".page-template-template-loan-offers .loans_form #acf-_post_title").val('Appli
 /*Deposits*/
 /* Forms when user is loged in ends here */
 $(".page-template-template-deposits-offers .deposits_form #acf-_post_title").val('Applicant: '+ $("#deposits_loged_in_name").val());
+/*Cards*/
+/* Forms when user is loged in ends here */
+$(".page-template-template-cards-offers .cards_form #acf-_post_title").val('Applicant: '+ $("#cards_loged_in_name").val());
+/*Auto-Liability*/
+/* Forms when user is loged in ends here */
+$(".page-template-template-auto-liability-offers .autoliability_form #acf-_post_title").val('Applicant: '+ $("#auto-liability_loged_in_name").val());
+/*Health-Travel*/
+/* Forms when user is loged in ends here */
+$(".page-template-template-health-travel-offers .healthtravel_form #acf-_post_title").val('Applicant: '+ $("#health-travel_loged_in_name").val());
+/*Casco*/
+/* Forms when user is loged in ends here */
+$(".page-template-template-casco-offers .casco_form #acf-_post_title").val('Applicant: '+ $("#casco_loged_in_name").val());
+/*Home-Insurance*/
+/* Forms when user is loged in ends here */
+$(".page-template-template-houshold-offers .home_insurance_form #acf-_post_title").val('Applicant: '+ $("#houshold_loged_in_name").val());
+/*Life-Insurance*/
+/* Forms when user is loged in ends here */
+$(".page-template-template-life-insurance-offers .health_form #acf-_post_title").val('Applicant: '+ $("#life-insurance_loged_in_name").val());
 
 /* If client is registered and clicks yes radio button reddirect to login page */
      

@@ -4566,3 +4566,52 @@ input[type="submit"]:hover
 /*Hide user input element*/
 .page-template-template-deposits-offers #deposits_loged_in_name { display: none !important; }
 .page-template-template-deposits-offers .deposits_form {padding-bottom: 25px !important;}
+
+/* Disable Login btn & Register form cards */
+.page-template-template-cards-offers #cards_login_btn { display: none !important; }
+.page-template-template-cards-offers #cards_reg_form{ display: none !important; }
+/*Hide user input element*/
+.page-template-template-cards-offers #cards_loged_in_name { display: none !important; }
+.page-template-template-cards-offers .cards_form {padding-bottom: 25px !important;}
+
+/* Disable Login btn & Register form autoliability */
+.page-template-template-auto-liability-offers #autoliability_login_btn { display: none !important; }
+.page-template-template-auto-liability-offers #autoliability_reg_form{ display: none !important; }
+/*Hide user input element*/
+.page-template-template-auto-liability-offers #auto-liability_loged_in_name { display: none !important; }
+.page-template-template-auto-liability-offers .autoliability_form {padding-bottom: 25px !important;}
+
+/* Disable Login btn & Register form travel-insurance */
+.page-template-template-health-travel-offers #healthtravel_login_btn { display: none !important; }
+.page-template-template-health-travel-offers #healthtravel_reg_form{ display: none !important; }
+/*Hide user input element*/
+.page-template-template-health-travel-offers #health-travel_loged_in_name { display: none !important; }
+.page-template-template-health-travel-offers .healthtravel_form {padding-bottom: 25px !important;}
+
+/* Disable Login btn & Register form casco */
+.page-template-template-casco-offers #casco_login_btn { display: none !important; }
+.page-template-template-casco-offers #casco_reg_form{ display: none !important; }
+/*Hide user input element*/
+.page-template-template-casco-offers #casco_loged_in_name { display: none !important; }
+.page-template-template-casco-offers .casco_form {padding-bottom: 25px !important;}
+
+/* Disable Login btn & Register form house */
+.page-template-template-houshold-offers #home_insurance_login_btn { display: none !important; }
+.page-template-template-houshold-offers #home_insurance_reg_form{ display: none !important; }
+/*Hide user input element*/
+.page-template-template-houshold-offers #houshold_loged_in_name { display: none !important; }
+.page-template-template-houshold-offers .home_insurance_form {padding-bottom: 25px !important;}
+
+/* Disable Login btn & Register form life-insurance */
+.page-template-template-life-insurance-offers #health_login_btn { display: none !important; }
+.page-template-template-life-insurance-offers #health_reg_form{ display: none !important; }
+/*Hide user input element*/
+.page-template-template-life-insurance-offers #life-insurance_loged_in_name { display: none !important; }
+.page-template-template-life-insurance-offers .health_form {padding-bottom: 25px !important;}
+
+.page-template-template-profile .content-area {
+	width: 100%;
+}
+.horizontal-menu {
+	width: 120px;
+}

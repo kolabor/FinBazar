@@ -14,3 +14,4 @@ Theme My Login will always look in your theme's directory first, before using th
 
 	<?php do_action( 'tml_user_panel' ); ?>
 </div>
+

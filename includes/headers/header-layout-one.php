@@ -1,4 +1,4 @@
-0<?php
+<?php
 global $woocommerce;
 $site_social = '';
 
