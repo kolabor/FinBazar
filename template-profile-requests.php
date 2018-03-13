@@ -57,7 +57,6 @@ get_header(); ?>
   </div>
 
 
-
        <div class="primary_content">
 
       <?php 
@@ -73,9 +72,9 @@ get_header(); ?>
                    $total = $posts->found_posts; 
 
                   if($total > 0)
-                   { echo "<p>You have made a loan request. <b><a href='/loan-offers'>Check Loan offers.</a></b></p>";}
+                   { echo "<p>Вие сте испратиле барање за Кредит. <b><a href='/loan-offers'>Види Кредитните понуди.</a></b></p>";}
                    else 
-                   {  echo "<p>You have not made a loan request. <b><a href='/loan-offers'>Make a request.</a></b></p>"; }
+                   {  echo "<p>Вие не сте испратиле барање за Кредит. <b><a href='/loan-offers'>Испрати барање.</a></b></p>"; }
           /* Check Loan request ends here */  
                 ?>
           <?php 
@@ -91,9 +90,9 @@ get_header(); ?>
                    $total = $posts->found_posts; 
 
                   if($total > 0)
-                   { echo "<p>You have made a Deposits request. <b><a href='/deposits-offers'>Check Deposits offers.</a></b></p>";}
+                   { echo "<p>Вие сте испратиле барање за Депозити. <b><a href='/deposits-offers'>Види понудите за Депозити.</a></b></p>";}
                    else 
-                   {  echo "<p>You have not made a Deposits request. <b><a href='/deposits-offers'>Make a request.</a></b></p>"; }
+                   {  echo "<p>Вие не сте испратиле барање за Депозити. <b><a href='/deposits-offers'>Испрати барање.</a></b></p>"; }
           /* Check Deposits request ends here */  
                 ?>
                  <?php 
@@ -109,9 +108,9 @@ get_header(); ?>
                    $total = $posts->found_posts; 
 
                   if($total > 0)
-                   { echo "<p>You have made a Cards request. <b><a href='/cards-offers'>Check Cards offers.</a></b></p>";}
+                   { echo "<p>Вие сте испратиле барање за Картички. <b><a href='/cards-offers'>Види Картичките понуди.</a></b></p>";}
                    else 
-                   {  echo "<p>You have not made a Cards request. <b><a href='/cards-offers'>Make a request.</a></b></p>"; }
+                   {  echo "<p>Вие не сте испратиле барање за Картички. <b><a href='/cards-offers'>Испрати барање.</a></b></p>"; }
           /* Check cards request ends here */  
                 ?>
 
@@ -128,9 +127,9 @@ get_header(); ?>
                    $total = $posts->found_posts; 
 
                   if($total > 0)
-                   { echo "<p>You have made a autoliability request. <b><a href='/auto-liability-offers'>Check Autoliability Ooffers.</a></b></p>";}
+                   { echo "<p>Вие сте испратиле барање за Автоодговорност. <b><a href='/auto-liability-offers'>Види понудите за Автоодговорност.</a></b></p>";}
                    else 
-                   {  echo "<p>You have not made a autoliability request. <b><a href='/auto-liability-offers'>Make a request.</a></b></p>"; }
+                   {  echo "<p>Вие не сте испратиле барање за Автоодговорност. <b><a href='/auto-liability-offers'>Испрати барање.</a></b></p>"; }
           /* Check autoliability request ends here */  
                 ?>
              <?php 
@@ -146,9 +145,9 @@ get_header(); ?>
                    $total = $posts->found_posts; 
 
                   if($total > 0)
-                   { echo "<p>You have made a healthtravel request. <b><a href='/travel-insurance-offers'>Check Travel health Offers.</a></b></p>";}
+                  { echo "<p>Вие сте испратиле барање за Здаствено Патничко Осг. <b><a href='/travel-insurance-offers'>Види понудите за Здаствено Патничко Осг.</a></b></p>";}
                    else 
-                   {  echo "<p>You have not made a healthtravel request. <b><a href='/travel-insurance-offers'>Make a request.</a></b></p>"; }
+                   {  echo "<p>Вие не сте испратиле барање за Здаствено Патничко Осг. <b><a href='/travel-insurance-offers'>Испрати барање.</a></b></p>"; }
           /* Check healthtravel request ends here */  
                 ?>
 
@@ -165,9 +164,9 @@ get_header(); ?>
                    $total = $posts->found_posts; 
 
                   if($total > 0)
-                   { echo "<p>You have made a household request. <b><a href='/home-insurance-offers'>Check Household Offers.</a></b></p>";}
+                   { echo "<p>Вие сте испратиле барање за Домаќинско Осг. <b><a href='/home-insurance-offers'>Види понудите за Домаќинско Осг.</a></b></p>";}
                    else 
-                   {  echo "<p>You have not made a household request. <b><a href='/home-insurance-offers'>Make a request.</a></b></p>"; }
+                   {  echo "<p>Вие не сте испратиле барање за Домаќинско Осг. <b><a href='/home-insurance-offers'>Испрати барање.</a></b></p>"; }
           /* Check household request ends here */  
                 ?>
 
@@ -184,9 +183,9 @@ get_header(); ?>
                    $total = $posts->found_posts; 
 
                   if($total > 0)
-                   { echo "<p>You have made a lifeinsurance request. <b><a href='/life-insurance-offers'>Check Life insurance Offers.</a></b></p>";}
+                   { echo "<p>Вие сте испратиле барање за Животно Осг. <b><a href='/life-insurance-offers'>Види понудите за Животно Осг.</a></b></p>";}
                    else 
-                   {  echo "<p>You have not made a lifeinsurance request. <b><a href='/life-insurance-offers'>Make a request.</a></b></p>"; }
+                   {  echo "<p>Вие не сте испратиле барање за Животно Осг. <b><a href='/life-insurance-offers'>Испрати барање.</a></b></p>"; }
           /* Check lifeinsurance request ends here */  
                 ?>
 
@@ -203,17 +202,11 @@ get_header(); ?>
                    $total = $posts->found_posts; 
 
                   if($total > 0)
-                   { echo "<p>You have made a casco request. <b><a href='/casco-offers'>Check Casco Offers.</a></b></p>";}
+                   { echo "<p>Вие сте испратиле барање за Каско. <b><a href='/casco-offers'>Види понудите за Каско.</a></b></p>";}
                    else 
-                   {  echo "<p>You have not made a casco request. <b><a href='/casco-offers'>Make a request.</a></b></p>"; }
+                   {  echo "<p>Вие не сте испратиле барање за Каско. <b><a href='/casco-offers'>Испрати барање.</a></b></p>"; }
           /* Check casco request ends here */  
                 ?>
-
-
-
-
-
-
 
 
 
@@ -235,8 +228,6 @@ get_header(); ?>
 
        </div>
     </div><!-- #primary -->
-    
-    <?php get_sidebar(); ?>
     
   </div>
 </div>

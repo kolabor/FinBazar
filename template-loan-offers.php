@@ -61,8 +61,9 @@ get_header(); ?>
 				
 			   <?php endwhile; // end of the loop. ?>
             <!--Content from dashboard ends here -->  
-                
-                <?php 
+               
+
+                  <?php 
                     
 				    $args = array(
 				        'post_type' => 'loans',
@@ -75,13 +76,14 @@ get_header(); ?>
                    
                    $total = $posts->found_posts; 
 
-                  if($total > 0)
+              	 if($total > 0)
                    { 
+                   	echo "<p>Вие сте испратиле барање за Кредит. <b><a href='/loan-offers'>Види Кредитните понуди.</a></b></p>";
+                   }
 
-					  echo "Show loans offers here!";
-	               }
-	               else
-	               {
+                   else 
+                   {   
+                   	 
 
                       echo "<div class='loans_form'>";
                       echo "<p>".__("За да ги видете нашите понуди за кредити ве молиме дополнете го формуларот подоле!", 'acf')."</p>";
