@@ -50,6 +50,7 @@ get_header(); ?>
                </div>
 
        </div>
+
        <div class="primary_content">
         <div class="horizontal-menu">
             <ul> 
@@ -69,10 +70,12 @@ get_header(); ?>
         echo '<h4>Твоето корисничко име е <b>'.$current_user->user_login.'</b>. Ова не може да се обнови.</h4>';
 
         acf_form( $options ); 
+
         ?>
 <?php
 } 
 ?>
+
 
  </div>
 </div> 

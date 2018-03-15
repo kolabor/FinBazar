@@ -4602,7 +4602,6 @@ input[type="submit"]:hover
 /*Hide user input element*/
 .page-template-template-deposits-offers #deposits_loged_in_name { display: none !important; }
 .page-template-template-deposits-offers .deposits_form {padding-bottom: 25px !important; margin-top: -120px !important;}
-
 /* Disable Login btn & Register form cards */
 .page-template-template-cards-offers #cards_login_btn { display: none !important; }
 .page-template-template-cards-offers #cards_reg_form{ display: none !important; }
@@ -4681,11 +4680,12 @@ input[type="submit"]:hover
     padding: 8px 16px;
     text-decoration: none;
     text-align: left;
-    font-weight: bold;   
+    font-weight: bold;
 }
 .horizontal-menu li a:hover{
     background-color: #db2152;
     color: #fff;
+
 }
 #registerform  h2 {
 	display: none !important;

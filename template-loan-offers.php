@@ -61,8 +61,9 @@ get_header(); ?>
 				
 			   <?php endwhile; // end of the loop. ?>
             <!--Content from dashboard ends here -->  
-                
-                <?php 
+               
+
+                  <?php 
                     
 				    $args = array(
 				        'post_type' => 'loans',
@@ -74,6 +75,7 @@ get_header(); ?>
                    $posts = new WP_Query( $args );
                    
                    $total = $posts->found_posts; 
+
 
                   if ($total > 0 ) 
                    {
@@ -168,7 +170,6 @@ get_header(); ?>
       }
 	               else
 	               {
-
 
                       echo "<div class='loans_form'>";
                       echo "<p>".__("За да ги видете нашите понуди за кредити ве молиме дополнете го формуларот подоле!", 'acf')."</p>";
