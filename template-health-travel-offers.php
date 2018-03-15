@@ -154,7 +154,9 @@ get_header(); ?>
 			                'post_content' => false,
 			                'post_title' => true,
 							'post_id'		=> 'new_post',
+
 							'return' => "/travel-insurance-offers/",
+
 							'new_post'		=> array(
 								'post_type'		=> 'healthtravel',
 								'post_status'		=> 'publish'

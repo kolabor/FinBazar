@@ -2804,7 +2804,6 @@ div.wpcf7 {
 
 .footer-bottom-bar {
 	background-color: #2A2A2A;
-    border-top: 1px solid #535353;
     box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset;
 	color: #979797;
     min-height: 43px;
@@ -3445,7 +3444,7 @@ input[type="submit"]:hover
 }
 .acf-field .acf-label label
 {
-	font-size: 16px !important;
+	font-size: 16px ;
 }
 .acf-field .acf-label .description
 {
@@ -3684,7 +3683,6 @@ input[type="submit"]:hover
     width: 20%;
     height: auto;
 }
-
 
 .icon-small {
 	position: relative;
@@ -4203,7 +4201,42 @@ input[type="submit"]:hover
     	height: auto;
 	}
 
+	/* Profile icons starts here*/
+	.horizontal-menu h4 {
+		font-size: 15px !important;
+	}
+	.ikonat {
+		text-align: center !important;
+	}
+	.ikonat2 {
+		line-height: 2px ;
+		text-align: center;
+		display:inline-block; 
+		width: 40% !important;
+	}
 
+	.ikonat3 {
+		line-height: 2px ;
+		text-align: center;
+		display:inline-block; 
+		width: 40% !important;
+	}
+	.icon-profile {
+		position: relative;
+	    display: table-cell !important;
+	    vertical-align: middle !important;
+	    margin-left: auto;
+	    margin-right: auto;
+	    font-size: 50px;
+	    text-align: center;
+	    color: #fff;
+	    width: 100px;
+	    height: 100px;
+	    border-radius: 50% !important;
+	    background-color: #0a1018 !important;
+	}
+
+	/*Profile icons ends here */
 	.icon-small {
 		position: relative;
 	    display: table-cell !important;
@@ -4568,49 +4601,48 @@ input[type="submit"]:hover
 .page-template-template-deposits-offers #deposit_reg_form{ display: none !important; }
 /*Hide user input element*/
 .page-template-template-deposits-offers #deposits_loged_in_name { display: none !important; }
-.page-template-template-deposits-offers .deposits_form {padding-bottom: 25px !important;}
-
+.page-template-template-deposits-offers .deposits_form {padding-bottom: 25px !important; margin-top: -120px !important;}
 /* Disable Login btn & Register form cards */
 .page-template-template-cards-offers #cards_login_btn { display: none !important; }
 .page-template-template-cards-offers #cards_reg_form{ display: none !important; }
 /*Hide user input element*/
 .page-template-template-cards-offers #cards_loged_in_name { display: none !important; }
-.page-template-template-cards-offers .cards_form {padding-bottom: 25px !important;}
+.page-template-template-cards-offers .cards_form {padding-bottom: 25px !important;margin-top: -120px !important;}
 
 /* Disable Login btn & Register form autoliability */
 .page-template-template-auto-liability-offers #autoliability_login_btn { display: none !important; }
 .page-template-template-auto-liability-offers #autoliability_reg_form{ display: none !important; }
 /*Hide user input element*/
 .page-template-template-auto-liability-offers #auto-liability_loged_in_name { display: none !important; }
-.page-template-template-auto-liability-offers .autoliability_form {padding-bottom: 25px !important;}
+.page-template-template-auto-liability-offers .autoliability_form {padding-bottom: 25px !important;margin-top: -120px !important;}
 
 /* Disable Login btn & Register form travel-insurance */
 .page-template-template-health-travel-offers #healthtravel_login_btn { display: none !important; }
 .page-template-template-health-travel-offers #healthtravel_reg_form{ display: none !important; }
 /*Hide user input element*/
 .page-template-template-health-travel-offers #health-travel_loged_in_name { display: none !important; }
-.page-template-template-health-travel-offers .healthtravel_form {padding-bottom: 25px !important;}
+.page-template-template-health-travel-offers .healthtravel_form {padding-bottom: 25px !important;margin-top: -120px !important;}
 
 /* Disable Login btn & Register form casco */
 .page-template-template-casco-offers #casco_login_btn { display: none !important; }
 .page-template-template-casco-offers #casco_reg_form{ display: none !important; }
 /*Hide user input element*/
 .page-template-template-casco-offers #casco_loged_in_name { display: none !important; }
-.page-template-template-casco-offers .casco_form {padding-bottom: 25px !important;}
+.page-template-template-casco-offers .casco_form {padding-bottom: 25px !important;margin-top: -120px !important;}
 
 /* Disable Login btn & Register form house */
 .page-template-template-houshold-offers #home_insurance_login_btn { display: none !important; }
 .page-template-template-houshold-offers #home_insurance_reg_form{ display: none !important; }
 /*Hide user input element*/
 .page-template-template-houshold-offers #houshold_loged_in_name { display: none !important; }
-.page-template-template-houshold-offers .home_insurance_form {padding-bottom: 25px !important;}
+.page-template-template-houshold-offers .home_insurance_form {padding-bottom: 25px !important;margin-top: -120px !important;}
 
 /* Disable Login btn & Register form life-insurance */
 .page-template-template-life-insurance-offers #health_login_btn { display: none !important; }
 .page-template-template-life-insurance-offers #health_reg_form{ display: none !important; }
 /*Hide user input element*/
 .page-template-template-life-insurance-offers #life-insurance_loged_in_name { display: none !important; }
-.page-template-template-life-insurance-offers .health_form {padding-bottom: 25px !important;}
+.page-template-template-life-insurance-offers .health_form {padding-bottom: 25px !important;margin-top: -120px !important;}
 
 .page-template-template-profile .content-area {
 	width: 100%;
@@ -4630,10 +4662,11 @@ input[type="submit"]:hover
 }
 
 .horizontal-menu ul{
+	float: right;
+	margin-right: 5%;
     list-style-type: none;
-    margin: 0;
     padding: 0;
-    width: 200px;
+    width: 150px;
     background-color: #0a1018;
     overflow: hidden;
 }
@@ -4652,4 +4685,105 @@ input[type="submit"]:hover
 .horizontal-menu li a:hover{
     background-color: #db2152;
     color: #fff;
+
 }
+#registerform  h2 {
+	display: none !important;
+}
+#registerform .acf-field .acf-label label {
+	font-weight: none !important;
+	font-size: 12px !important;
+}
+.acf-field.acf-field-text.acf-field-5aa6a5bc6ad1a.-c0 {
+	width: 100% !important;
+}
+
+.ikonat {
+	padding-top: 20px !important ;
+	width: 100%;
+	position: relative;
+}
+
+.ikonat2 h4 {
+	margin-bottom: 0;
+}
+.ikonat2 h6 {
+	margin-top: 8px;
+	margin-bottom: 40px; 
+}
+
+.ikonat3 h4 {
+	margin-bottom: 0;
+}
+.ikonat3 h6 {
+	margin-top: 8px;
+	margin-bottom: 40px;
+}
+
+.ikonat2 {
+	line-height: 2px ;
+	text-align: center;
+	display:inline-block; 
+	width: 20%;
+}
+
+.ikonat3 {
+	line-height: 2px ;
+	text-align: center;
+	display:inline-block; 
+	width: 20%;
+}
+.icon-profile {
+	position: relative;
+    display: table-cell !important;
+    vertical-align: middle !important;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    border-radius: 50% !important;
+    background-color: #0a1018 !important;
+}
+
+.icon-profile:hover {
+	background-color: #121c2a!important;
+	color: #fff!important;
+	transform: scale(1.2);
+}
+
+
+.ikonat2 .icon-profile[data-count]:after{
+  position:absolute;
+  right:0%;
+  top:1%;
+  content: attr(data-count);
+  font-size:30%;
+  padding:.6em;
+  border-radius:999px;
+  line-height:.75em;
+  color: white;
+  background:#00FF00;
+  text-align:center;
+  min-width:2em;
+  font-weight:bold;
+}
+
+.ikonat3 .icon-profile[data-count]:after{
+  position:absolute;
+  right:0%;
+  top:1%;
+  content: attr(data-count);
+  font-size:30%;
+  padding:.6em;
+  border-radius:999px;
+  line-height:.75em;
+  color: white;
+  background:#ff0000;
+  text-align:center;
+  min-width:2em;
+  font-weight:bold;
+}
+

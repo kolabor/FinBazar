@@ -63,8 +63,9 @@ get_header(); ?>
 				
 			   <?php endwhile; // end of the loop. ?>
             <!--Content from dashboard ends here -->  
-                
-                <?php 
+               
+
+                  <?php 
                     
 				    $args = array(
 				        'post_type' => 'loans',
@@ -76,6 +77,7 @@ get_header(); ?>
                    $posts = new WP_Query( $args );
                    
                    $total = $posts->found_posts; 
+
 
                   if ($total > 0 ) 
                    {
@@ -114,18 +116,22 @@ get_header(); ?>
 
 						 		</li>
 
+
                                  <?php  
                                  while ( have_rows('fieldd_kamatna_stapka_vo_prv_period', $post_id) ) : the_row();
                                   
-									       echo "<li>".the_sub_field('fieldd_kamatna_stapka')."</li>";
-									       echo "<li>".the_sub_field('fieldd_fiksna_promenliva')."</li>";
-									       echo "<li>".the_sub_field('fieldd_period_na_fiksnost')."</li>";
-									        
-									endwhile;?>
+
+                echo "<li>".the_sub_field('fieldd_kamatna_stapka')."</li>";
+                echo "<li>".the_sub_field('fieldd_fiksna_promenliva')."</li>";
+                echo "<li>".the_sub_field('fieldd_period_na_fiksnost')."</li>";
+                 
+         endwhile;?>
+
 
                                   <?php  
                                      while ( have_rows('fieldd_kamatna_stapka_vo_vtor_period', $post_id) ) : the_row();
                                   
+
 									       echo "<li>".the_sub_field('fieldd_kamatna_stapka_2')."</li>";
 									       echo "<li>".the_sub_field('fieldd_fiksna_promenliva_2')."</li>";
 									       echo "<li>".the_sub_field('fieldd_period_na_fiksnost_2')."</li>";
@@ -177,10 +183,9 @@ get_header(); ?>
                       acf_form($options = array(
 			                'post_content' => false,
 			                'post_title' => true,
-							'post_id'		=> 'user_'.$user_id.'new_post',
-							'field_groups' => array(258,1470,1475),
+							'post_id'		=> 'new_post',
 							'return' => "/loan-offers/",
-							'new_post'		=> array(
+							'new_post'		=> array( 
 								'post_type'		=> 'loans',
 								'post_status'		=> 'publish'
 							),
@@ -188,7 +193,8 @@ get_header(); ?>
 							'updated_message' => __("Ви благодараме, вашето барање е регистрирано. За вашето барање ќе бидете изестени преку емаил или преку телефон.", 'acf')
 			            	)); 
                         echo "<input name='loans_loged_in_name' id='loans_loged_in_name' value='$user_info->user_login '>";
-                        echo "</div>";
+                        echo "</div>"; 
+
 
 
 	               }

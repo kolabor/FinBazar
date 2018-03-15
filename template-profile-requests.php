@@ -1,7 +1,11 @@
 <?php
 /**
  *
+<<<<<<< HEAD
  * Template Name: Profile-Requests
+=======
+ * Template Name: Profile- requests
+>>>>>>> 63496c026cbf3279e191c6117ae102ee98cd0f44
  *
  */
 acf_form_head();
@@ -66,14 +70,19 @@ get_header(); ?>
         'submit_value' => 'Обнови Профил'
         );
 
-        echo '<h5>Твоето корисничко име е <b>'.$current_user->user_login.'</b>. Ова не може да се обнови.</h5>';
+
+        echo '<h4>Твоето корисничко име е <b>'.$current_user->user_login.'</b>. Ова не може да се обнови.</h4>';
 
         acf_form( $options ); 
+
+
         ?>
 <?php
 } 
 ?>
 
+
  </div>
 </div> 
 <?php get_footer(); ?>
+

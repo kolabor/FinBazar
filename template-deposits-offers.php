@@ -89,7 +89,7 @@ get_header(); ?>
 			                'post_content' => false,
 			                'post_title' => true,
 							'post_id'		=> 'new_post',
-							'return' => "/profile",
+							'return' => "/deposits-offers",
 							'new_post'		=> array(
 								'post_type'		=> 'deposits',
 								'post_status'		=> 'publish'

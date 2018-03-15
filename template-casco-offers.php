@@ -88,7 +88,7 @@ get_header(); ?>
 			                'post_content' => false,
 			                'post_title' => true,
 							'post_id'		=> 'new_post',
-							'return' => "/profile",
+							'return' => "/casco-offers",
 							'new_post'		=> array(
 								'post_type'		=> 'casco',
 								'post_status'		=> 'publish'

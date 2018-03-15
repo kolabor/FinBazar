@@ -86,7 +86,11 @@ get_header(); ?>
 			                'post_content' => false,
 			                'post_title' => true,
 							'post_id'		=> 'new_post',
+<<<<<<< HEAD
 							'return' => "/profile",
+=======
+							'return' => "/auto-liability-offers",
+>>>>>>> 63496c026cbf3279e191c6117ae102ee98cd0f44
 							'new_post'		=> array(
 								'post_type'		=> 'autoliability',
 								'post_status'		=> 'publish'

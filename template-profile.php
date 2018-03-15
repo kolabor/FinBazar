@@ -92,8 +92,11 @@ do_action( 'wp_login', $user_login );*/
 			      <ul> 
 			              <li><a href="/podatoci">Обнови Профил</a></li>
 			      </ul>
-			  </div>
-
+            <h2>Вашите барање</h2>
+            <h5>Овде ги имате вашите барања ако не сте пратиле барања овде можете</h5>
+            <h5>да пратите со клик на иконите со цервеното "+" </h5>
+            <h5>понудите можете да ги видите со клик на иконите со зеленото "✔"</h5>
+            <div class="ikonat">
 <?php 
           /* Check Loan request starts here */       
            $args = array(
@@ -105,11 +108,11 @@ do_action( 'wp_login', $user_login );*/
 
                    $posts = new WP_Query( $args );                
                    $total = $posts->found_posts; 
-
                   if($total > 0)
-                   { echo "<p>Вие сте испратиле барање за Кредит. <b><a href='/loan-offers'>Види Кредитните понуди.</a></b></p>";}
+                   { echo "<div class ='ikonat2'><a href='/loan-offers'><i class='ion-cash icon-profile' data-count='✔'></i><h4>Кредити</h4><h6>Види Понудите</h6>
+                          </a></div>";}
                    else 
-                   {  echo "<p>Вие не сте испратиле барање за Кредит. <b><a href='/loan-offers'>Испрати барање.</a></b></p>"; }
+                   {  echo "<div class ='ikonat3'><a href='/loan-offers'><i class='ion-cash icon-profile' data-count='+'></i><h4>Кредити</h4><h6>Испрати барање</h6></a></div>"; }
           /* Check Loan request ends here */  
                 ?>
           <?php 
@@ -125,9 +128,10 @@ do_action( 'wp_login', $user_login );*/
                    $total = $posts->found_posts; 
 
                   if($total > 0)
-                   { echo "<p>Вие сте испратиле барање за Депозити. <b><a href='/deposits-offers'>Види понудите за Депозити.</a></b></p>";}
+                   { echo "<div class ='ikonat2'><a href='/deposits-offers'><i class='ion-briefcase icon-profile' data-count='✔'></i><h4>Депозити</h4><h6>Види Понудите</h6>
+                          </a></div>";}
                    else 
-                   {  echo "<p>Вие не сте испратиле барање за Депозити. <b><a href='/deposits-offers'>Испрати барање.</a></b></p>"; }
+                   {  echo "<div class ='ikonat3'><a href='/deposits-offers'><i class='ion-briefcase icon-profile' data-count='+'></i><h4>Депозити</h4><h6>Испрати барање</h6></a></div>"; }
           /* Check Deposits request ends here */  
                 ?>
                  <?php 
@@ -143,9 +147,10 @@ do_action( 'wp_login', $user_login );*/
                    $total = $posts->found_posts; 
 
                   if($total > 0)
-                   { echo "<p>Вие сте испратиле барање за Картички. <b><a href='/cards-offers'>Види Картичките понуди.</a></b></p>";}
+                   { echo "<div class ='ikonat2'><a href='/cards-offers'><i class='ion-card icon-profile' data-count='✔'></i><h4>Карти</h4><h6>Види Понудите</h6>
+                          </a></div>";}
                    else 
-                   {  echo "<p>Вие не сте испратиле барање за Картички. <b><a href='/cards-offers'>Испрати барање.</a></b></p>"; }
+                   {  echo "<div class ='ikonat3'><a href='/cards-offers'><i class='ion-card icon-profile' data-count='+'></i><h4>Карти</h4><h6>Испрати барање</h6></a></div>"; }
           /* Check cards request ends here */  
                 ?>
 
@@ -162,9 +167,10 @@ do_action( 'wp_login', $user_login );*/
                    $total = $posts->found_posts; 
 
                   if($total > 0)
-                   { echo "<p>Вие сте испратиле барање за Автоодговорност. <b><a href='/auto-liability-offers'>Види понудите за Автоодговорност.</a></b></p>";}
+                   { echo "<div class ='ikonat2'><a href='/auto-liability-offers'><i class='ion-model-s icon-profile' data-count='✔'></i><h4>Автоодговорност</h4><h6>Види Понудите</h6>
+                          </a></div>";}
                    else 
-                   {  echo "<p>Вие не сте испратиле барање за Автоодговорност. <b><a href='/auto-liability-offers'>Испрати барање.</a></b></p>"; }
+                   {  echo "<div class ='ikonat3'><a href='/auto-liability-offers'><i class='ion-model-s icon-profile' data-count='+'></i><h4>Автоодговорност</h4><h6>Испрати барање</h6></a></div>"; }
           /* Check autoliability request ends here */  
                 ?>
              <?php 
@@ -180,9 +186,10 @@ do_action( 'wp_login', $user_login );*/
                    $total = $posts->found_posts; 
 
                   if($total > 0)
-                   { echo "<p>Вие сте испратиле барање за Каско. <b><a href='/casco-offers'>Види понудите за Каско.</a></b></p>";}
+                   { echo "<div class ='ikonat2'><a href='/casco-offers'><i class='ion-android-car icon-profile' data-count='✔'></i><h4>Каско</h4><h6>Види Понудите</h6>
+                          </a></div>";}
                    else 
-                   {  echo "<p>Вие не сте испратиле барање за Каско. <b><a href='/casco-offers'>Испрати барање.</a></b></p>"; }
+                   {  echo "<div class ='ikonat3'><a href='/casco-offers'><i class='ion-android-car icon-profile' data-count='+'></i><h4>Каско</h4><h6>Испрати барање</h6></a></div>"; }
           /* Check casco request ends here */  
                 ?>
 
@@ -199,9 +206,10 @@ do_action( 'wp_login', $user_login );*/
                    $total = $posts->found_posts; 
 
                   if($total > 0)
-                  { echo "<p>Вие сте испратиле барање за Здаствено Патничко Осг. <b><a href='/travel-insurance-offers'>Види понудите за Здаствено Патничко Осг.</a></b></p>";}
+                  { echo "<div class ='ikonat2'><a href='/travel-insurance-offers'><i class='ion-plane icon-profile' data-count='✔'></i><h4>Патничко Осг</h4><h6>Види Понудите</h6> 
+                          </a></div>";}
                    else 
-                   {  echo "<p>Вие не сте испратиле барање за Здаствено Патничко Осг. <b><a href='/travel-insurance-offers'>Испрати барање.</a></b></p>"; }
+                   {  echo "<div class ='ikonat3'><a href='/travel-insurance-offers'><i class='ion-plane icon-profile' data-count='+'></i><h4>Патничко Осг</h4><h6>Испрати барање</h6></a></div>"; }
           /* Check healthtravel request ends here */  
                 ?>
 
@@ -218,9 +226,10 @@ do_action( 'wp_login', $user_login );*/
                    $total = $posts->found_posts; 
 
                   if($total > 0)
-                   { echo "<p>Вие сте испратиле барање за Домаќинско Осг. <b><a href='/home-insurance-offers'>Види понудите за Домаќинско Осг.</a></b></p>";}
+                   { echo "<div class ='ikonat2'><a href='/home-insurance-offers'><i class='ion-home icon-profile' data-count='✔'></i><h4>Домаќинско Осг</h4><h6>Види Понудите</h6>
+                          </a></div>";}
                    else 
-                   {  echo "<p>Вие не сте испратиле барање за Домаќинско Осг. <b><a href='/home-insurance-offers'>Испрати барање.</a></b></p>"; }
+                   {  echo "<div class ='ikonat3'><a href='/home-insurance-offers'><i class='ion-home icon-profile' data-count='+'></i><h4>Домаќинско Осг</h4><h6>Испрати барање</h6></a></div>"; }
           /* Check household request ends here */  
                 ?>
 
@@ -237,17 +246,18 @@ do_action( 'wp_login', $user_login );*/
                    $total = $posts->found_posts; 
 
                   if($total > 0)
-                   { echo "<p>Вие сте испратиле барање за Животно Осг. <b><a href='/life-insurance-offers'>Види понудите за Животно Осг.</a></b></p>";}
+                   { echo "<div class ='ikonat2'><a href='/life-insurance-offers'><i class='ion-ios-heart icon-profile' data-count='✔'></i><h4>Животно Осг</h4><h6>Види Понудите</h6>
+                          </a></div>";}
                    else 
-                   {  echo "<p>Вие не сте испратиле барање за Животно Осг. <b><a href='/life-insurance-offers'>Испрати барање.</a></b></p>"; }
+                   {  echo "<div class ='ikonat3'><a href='/life-insurance-offers'><i class='ion-ios-heart icon-profile' data-count='+'></i><h4>Животно Осг</h4><h6>Испрати барање</h6></a></div>"; }
           /* Check lifeinsurance request ends here */  
                 ?>
+              </div>
  </div>
 </div>
 </div>
 
 
-<?php
 } 
 ?>            
 <?php get_footer(); ?>
