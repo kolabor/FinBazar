@@ -77,8 +77,6 @@ get_header(); ?>
                   if($total > 0)
                    { 
 
-					   if ($total > 0 ) 
-                   {
                     $args_offers = array(
                        	
           			 	 'post_type' => 'healthtraveloffers',   
@@ -146,8 +144,7 @@ get_header(); ?>
 				                  	</ul><br/>	 
 				               
 						 <?php endif; 
- 					}
-	               }
+ 					}	            
 	               else
 	               {
 

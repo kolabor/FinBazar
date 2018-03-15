@@ -178,7 +178,7 @@ get_header(); ?>
 			                'post_content' => false,
 			                'post_title' => true,
 							'post_id'		=> 'new_post',
-							'return' => "/home-insurance-offers",
+							'return' => "/home-insurance-offers/",
 							'new_post'		=> array(
 								'post_type'		=> 'household',
 								'post_status'		=> 'publish'
