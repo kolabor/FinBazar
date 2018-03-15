@@ -34,7 +34,7 @@ get_header(); ?>
 					<select> 
 					    <option value="" selected="selected">Понуди</option> 
 					    
-					    <option value="/loans-offers">Кредити</option> 
+					    <option value="/loan-offers">Кредити</option> 
 					    <option value="/deposits-offers">Депозити</option> 
 					    <option value="/auto-liability-offers">Автоодговорност</option> 
 					    <option value="/travel-insurance-offers">Патничко Осигуруванје</option> 
@@ -88,7 +88,7 @@ get_header(); ?>
 			                'post_content' => false,
 			                'post_title' => true,
 							'post_id'		=> 'new_post',
-							'return' => "/profile",
+							'return' => "/cards-offers",
 							'new_post'		=> array(
 								'post_type'		=> 'cards',
 								'post_status'		=> 'publish'

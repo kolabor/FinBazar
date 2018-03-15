@@ -22,7 +22,7 @@ get_header(); ?>
 
 				<div class="vertical-menu">
 					<ul>
-						<li><a href="/loans-offers">Кредити</a></li>
+						<li><a href="/loan-offers">Кредити</a></li>
 						<li><a href="/deposits-offers">Депозити</a></li>
 						<li><a href="/cards-offers">Карти</a></li>
 						<li><a href="/auto-liability-offers">Автоодговорност</a></li>
@@ -34,7 +34,7 @@ get_header(); ?>
 					<select> 
 					    <option value="" selected="selected">Понуди</option> 
 					    
-					    <option value="/loans-offers">Кредити</option> 
+					    <option value="/loan-offers">Кредити</option> 
 					    <option value="/deposits-offers">Депозити</option> 
 					    <option value="/auto-liability-offers">Автоодговорност</option> 
 					    <option value="/travel-insurance-offers">Патничко Осигуруванје</option> 
@@ -64,7 +64,7 @@ get_header(); ?>
             	            	 <?php 
                     
 				    $args = array(
-				        'post_type' => 'houshold',
+				        'post_type' => 'household',
 				        'author'    => $user_id,	       
 				        'post_staus'=> 'publish',
 				        'posts_per_page' => -1
@@ -88,7 +88,7 @@ get_header(); ?>
 			                'post_content' => false,
 			                'post_title' => true,
 							'post_id'		=> 'new_post',
-							'return' => "/profile",
+							'return' => "/home-insurance-offers",
 							'new_post'		=> array(
 								'post_type'		=> 'household',
 								'post_status'		=> 'publish'

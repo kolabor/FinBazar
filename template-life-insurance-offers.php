@@ -22,7 +22,7 @@ get_header(); ?>
 
 				<div class="vertical-menu">
 					<ul>
-						<li><a href="/loans-offers">Кредити</a></li>
+						<li><a href="/loan-offers">Кредити</a></li>
 						<li><a href="/deposits-offers">Депозити</a></li>
 						<li><a href="/cards-offers">Карти</a></li>
 						<li><a href="/auto-liability-offers">Автоодговорност</a></li>
@@ -61,10 +61,11 @@ get_header(); ?>
 				
 			   <?php endwhile; // end of the loop. ?>
             <!--Content from dashboard ends here -->  
-            	            	 <?php 
+            	            	
+            	    <?php 
                     
 				    $args = array(
-				        'post_type' => 'life-insurance',
+				        'post_type' => 'lifeinsurance',
 				        'author'    => $user_id,	       
 				        'post_staus'=> 'publish',
 				        'posts_per_page' => -1
@@ -89,7 +90,7 @@ get_header(); ?>
 						    'post_content' => false,
 						    'post_title' => true,
 							'post_id'		=> 'new_post',
-							'return' => "/profile",
+							'return' => "/life-insurance-offers",
 							'new_post'		=> array(
 								'post_type'		=> 'lifeinsurance',
 								'post_status'		=> 'publish'

@@ -4,6 +4,7 @@
  * Template Name: Profile
  *
  */
+if ( !is_user_logged_in()){ wp_redirect( '/login' ); exit; }
 acf_form_head();
 get_header(); ?>
 
@@ -62,7 +63,7 @@ do_action( 'wp_login', $user_login );*/
 
 				<div class="vertical-menu">
 					<ul>
-						<li><a href="/loan-offers" class="selected">Кредити</a></li>
+						<li><a href="/loan-offers">Кредити</a></li>
 						<li><a href="/deposits-offers">Депозити</a></li>
 						<li><a href="/cards-offers">Карти</a></li>
 						<li><a href="/auto-liability-offers">Автоодговорност</a></li>
@@ -74,7 +75,7 @@ do_action( 'wp_login', $user_login );*/
 					<select> 
 					    <option value="" selected="selected">Понуди</option> 
 					    
-					    <option value="/loans-offers">Кредити</option> 
+					    <option value="/loan-offers">Кредити</option> 
 					    <option value="/deposits-offers">Депозити</option> 
 					    <option value="/auto-liability-offers">Автоодговорност</option> 
 					    <option value="/travel-insurance-offers">Патничко Осигуруванје</option> 
@@ -89,28 +90,175 @@ do_action( 'wp_login', $user_login );*/
 			 <div class="primary_content">
 			 	<div class="horizontal-menu">
 			      <ul> 
-			              <li><a href="/profile-requests">Вашите барања</a></li>
+			              <li><a href="/podatoci">Обнови Профил</a></li>
 			      </ul>
-			  </div>
+            <h2>Вашите барање</h2>
+            <h5>Овде ги имате вашите барања ако не сте пратиле барања овде можете</h5>
+            <h5>да пратите со клик на иконите со цервеното "+" </h5>
+            <h5>понудите можете да ги видите со клик на иконите со зеленото "✔"</h5>
+            <div class="ikonat">
+<?php 
+          /* Check Loan request starts here */       
+           $args = array(
+                'post_type' => 'loans',
+                'author'    => $user_id,         
+                'post_staus'=> 'publish',
+                'posts_per_page' => -1
+            );
 
-		<?php
-			$user_id = get_current_user_id();
-			$options = array(
-			'post_id' => 'user_', // $user_profile,
-			'field_groups' => array(1078),
-			'submit_value' => 'Update Profile'
-			);
+                   $posts = new WP_Query( $args );                
+                   $total = $posts->found_posts; 
+                  if($total > 0)
+                   { echo "<div class ='ikonat2'><a href='/loan-offers'><i class='ion-cash icon-profile' data-count='✔'></i><h4>Кредити</h4><h6>Види Понудите</h6>
+                          </a></div>";}
+                   else 
+                   {  echo "<div class ='ikonat3'><a href='/loan-offers'><i class='ion-cash icon-profile' data-count='+'></i><h4>Кредити</h4><h6>Испрати барање</h6></a></div>"; }
+          /* Check Loan request ends here */  
+                ?>
+          <?php 
+          /* Check Deposits request starts here */       
+           $args = array(
+                'post_type' => 'deposits',
+                'author'    => $user_id,         
+                'post_staus'=> 'publish',
+                'posts_per_page' => -1
+            );
 
-			echo '<h5>Your username is <b>'.$current_user->user_login.'</b>. This cannot be changed.</h5>';
+                   $posts = new WP_Query( $args );                
+                   $total = $posts->found_posts; 
 
-			acf_form( $options ); 
+                  if($total > 0)
+                   { echo "<div class ='ikonat2'><a href='/deposits-offers'><i class='ion-briefcase icon-profile' data-count='✔'></i><h4>Депозити</h4><h6>Види Понудите</h6>
+                          </a></div>";}
+                   else 
+                   {  echo "<div class ='ikonat3'><a href='/deposits-offers'><i class='ion-briefcase icon-profile' data-count='+'></i><h4>Депозити</h4><h6>Испрати барање</h6></a></div>"; }
+          /* Check Deposits request ends here */  
+                ?>
+                 <?php 
+          /* Check cards request starts here */       
+           $args = array(
+                'post_type' => 'cards',
+                'author'    => $user_id,         
+                'post_staus'=> 'publish',
+                'posts_per_page' => -1
+            );
 
-		?>
-	</div>
+                   $posts = new WP_Query( $args );                
+                   $total = $posts->found_posts; 
+
+                  if($total > 0)
+                   { echo "<div class ='ikonat2'><a href='/cards-offers'><i class='ion-card icon-profile' data-count='✔'></i><h4>Карти</h4><h6>Види Понудите</h6>
+                          </a></div>";}
+                   else 
+                   {  echo "<div class ='ikonat3'><a href='/cards-offers'><i class='ion-card icon-profile' data-count='+'></i><h4>Карти</h4><h6>Испрати барање</h6></a></div>"; }
+          /* Check cards request ends here */  
+                ?>
+
+                <?php 
+          /* Check autoliability request starts here */       
+           $args = array(
+                'post_type' => 'autoliability',
+                'author'    => $user_id,         
+                'post_staus'=> 'publish',
+                'posts_per_page' => -1
+            );
+
+                   $posts = new WP_Query( $args );                
+                   $total = $posts->found_posts; 
+
+                  if($total > 0)
+                   { echo "<div class ='ikonat2'><a href='/auto-liability-offers'><i class='ion-model-s icon-profile' data-count='✔'></i><h4>Автоодговорност</h4><h6>Види Понудите</h6>
+                          </a></div>";}
+                   else 
+                   {  echo "<div class ='ikonat3'><a href='/auto-liability-offers'><i class='ion-model-s icon-profile' data-count='+'></i><h4>Автоодговорност</h4><h6>Испрати барање</h6></a></div>"; }
+          /* Check autoliability request ends here */  
+                ?>
+             <?php 
+          /* Check casco request starts here */       
+           $args = array(
+                'post_type' => 'casco',
+                'author'    => $user_id,         
+                'post_staus'=> 'publish',
+                'posts_per_page' => -1
+            );
+
+                   $posts = new WP_Query( $args );                
+                   $total = $posts->found_posts; 
+
+                  if($total > 0)
+                   { echo "<div class ='ikonat2'><a href='/casco-offers'><i class='ion-android-car icon-profile' data-count='✔'></i><h4>Каско</h4><h6>Види Понудите</h6>
+                          </a></div>";}
+                   else 
+                   {  echo "<div class ='ikonat3'><a href='/casco-offers'><i class='ion-android-car icon-profile' data-count='+'></i><h4>Каско</h4><h6>Испрати барање</h6></a></div>"; }
+          /* Check casco request ends here */  
+                ?>
+
+             <?php 
+          /* Check healthtravel request starts here */       
+           $args = array(
+                'post_type' => 'healthtravel',
+                'author'    => $user_id,         
+                'post_staus'=> 'publish',
+                'posts_per_page' => -1
+            );
+
+                   $posts = new WP_Query( $args );                
+                   $total = $posts->found_posts; 
+
+                  if($total > 0)
+                  { echo "<div class ='ikonat2'><a href='/travel-insurance-offers'><i class='ion-plane icon-profile' data-count='✔'></i><h4>Патничко Осг</h4><h6>Види Понудите</h6> 
+                          </a></div>";}
+                   else 
+                   {  echo "<div class ='ikonat3'><a href='/travel-insurance-offers'><i class='ion-plane icon-profile' data-count='+'></i><h4>Патничко Осг</h4><h6>Испрати барање</h6></a></div>"; }
+          /* Check healthtravel request ends here */  
+                ?>
+
+                   <?php 
+          /* Check household request starts here */       
+           $args = array(
+                'post_type' => 'household',
+                'author'    => $user_id,         
+                'post_staus'=> 'publish',
+                'posts_per_page' => -1
+            );
+
+                   $posts = new WP_Query( $args );                
+                   $total = $posts->found_posts; 
+
+                  if($total > 0)
+                   { echo "<div class ='ikonat2'><a href='/home-insurance-offers'><i class='ion-home icon-profile' data-count='✔'></i><h4>Домаќинско Осг</h4><h6>Види Понудите</h6>
+                          </a></div>";}
+                   else 
+                   {  echo "<div class ='ikonat3'><a href='/home-insurance-offers'><i class='ion-home icon-profile' data-count='+'></i><h4>Домаќинско Осг</h4><h6>Испрати барање</h6></a></div>"; }
+          /* Check household request ends here */  
+                ?>
+
+                         <?php 
+          /* Check lifeinsurance request starts here */       
+           $args = array(
+                'post_type' => 'lifeinsurance',
+                'author'    => $user_id,         
+                'post_staus'=> 'publish',
+                'posts_per_page' => -1
+            );
+
+                   $posts = new WP_Query( $args );                
+                   $total = $posts->found_posts; 
+
+                  if($total > 0)
+                   { echo "<div class ='ikonat2'><a href='/life-insurance-offers'><i class='ion-ios-heart icon-profile' data-count='✔'></i><h4>Животно Осг</h4><h6>Види Понудите</h6>
+                          </a></div>";}
+                   else 
+                   {  echo "<div class ='ikonat3'><a href='/life-insurance-offers'><i class='ion-ios-heart icon-profile' data-count='+'></i><h4>Животно Осг</h4><h6>Испрати барање</h6></a></div>"; }
+          /* Check lifeinsurance request ends here */  
+                ?>
+              </div>
+ </div>
+</div>
+</div>
+
+
 <?php
 } 
-?>
-
- </div>
-</div> 
+?>            
 <?php get_footer(); ?>
