@@ -22,7 +22,7 @@ get_header(); ?>
 
 				<div class="vertical-menu">
 					<ul>
-						<li><a href="/loans-offers">Кредити</a></li>
+						<li><a href="/loan-offers">Кредити</a></li>
 						<li><a href="/deposits-offers">Депозити</a></li>
 						<li><a href="/cards-offers">Карти</a></li>
 						<li><a href="/auto-liability-offers" class="selected">Автоодговорност</a></li>
@@ -32,7 +32,7 @@ get_header(); ?>
 						<li><a href="/life-insurance-offers">Животно Осигуруванје</a></li>							
 					</ul>	
 					 <select>  
-					    <option value="/loans-offers">Кредити</option> 
+					    <option value="/loan-offers">Кредити</option> 
 					    <option value="/deposits-offers">Депозити</option> 
 					    <option value="/auto-liability-offers">Автоодговорност</option> 
 					    <option value="/travel-insurance-offers">Патничко Осигуруванје</option> 
@@ -59,10 +59,10 @@ get_header(); ?>
 			   <?php endwhile; // end of the loop. ?>
             <!--Content from dashboard ends here -->  
             	            	
-            	 <?php 
+            	    <?php 
                     
 				    $args = array(
-				        'post_type' => 'auto-liability',
+				        'post_type' => 'autoliability',
 				        'author'    => $user_id,	       
 				        'post_staus'=> 'publish',
 				        'posts_per_page' => -1
@@ -86,7 +86,7 @@ get_header(); ?>
 			                'post_content' => false,
 			                'post_title' => true,
 							'post_id'		=> 'new_post',
-							'return' => "/auto-liability-offers/",
+							'return' => "/profile",
 							'new_post'		=> array(
 								'post_type'		=> 'autoliability',
 								'post_status'		=> 'publish'

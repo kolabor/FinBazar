@@ -166,9 +166,9 @@ function finmarket_health_travel_custom_post_type()
 
 
 
-add_action('init', 'finmarket_houshold_custom_post_type');
+add_action('init', 'finmarket_household_custom_post_type');
 
-function finmarket_houshold_custom_post_type()
+function finmarket_household_custom_post_type()
 {
   $labels = array(
 
@@ -263,7 +263,7 @@ function loan_offers_custom_post_type()
       $args = array(
         'can_export' => true,
         'labels' => $labels,
-        'supports'  => array('thumbnail', 'title', 'editor', 'excerpt'),
+        'supports'  => array('thumbnail', 'title','editor', 'excerpt', 'custom-fields'),
         'menu_icon' => 'dashicons-welcome-write-blog',
         'hierarchical' => false,
         'show_ui' => true,
@@ -300,7 +300,7 @@ function deposit_offers_custom_post_type()
       $args = array(
         'can_export' => true,
         'labels' => $labels,
-        'supports'  => array('thumbnail', 'title', 'editor', 'excerpt'),
+        'supports'  => array('thumbnail', 'title','editor', 'excerpt', 'custom-fields'),
         'menu_icon' => 'dashicons-welcome-write-blog',
         'hierarchical' => false,
         'show_ui' => true,
@@ -337,7 +337,7 @@ function card_offers_custom_post_type()
       $args = array(
         'can_export' => true,
         'labels' => $labels,
-        'supports'  => array('thumbnail', 'title', 'editor', 'excerpt'),
+        'supports'  => array('thumbnail', 'title','editor', 'excerpt', 'custom-fields'),
         'menu_icon' => 'dashicons-welcome-write-blog',
         'hierarchical' => false,
         'show_ui' => true,
@@ -413,7 +413,7 @@ function finmarket_auto_liability_offers_custom_post_type()
       $args = array(
         'can_export' => true,
         'labels' => $labels,
-        'supports'  => array('thumbnail', 'title', 'editor', 'excerpt'),
+        'supports'  => array('thumbnail', 'title','editor', 'excerpt', 'custom-fields'),
         'menu_icon' => 'dashicons-welcome-write-blog',
         'hierarchical' => false,
         'show_ui' => true,
@@ -524,7 +524,7 @@ function finmarket_casco_offers_custom_post_type()
       $args = array(
         'can_export' => true,
         'labels' => $labels,
-        'supports'  => array('thumbnail', 'title', 'editor', 'excerpt'),
+        'supports'  => array('thumbnail', 'title','editor', 'excerpt', 'custom-fields'),
         'menu_icon' => 'dashicons-welcome-write-blog',
         'hierarchical' => false,
         'show_ui' => true,
@@ -561,7 +561,7 @@ function finmarket_health_travel_offers_custom_post_type()
       $args = array(
         'can_export' => true,
         'labels' => $labels,
-        'supports'  => array('thumbnail', 'title', 'editor', 'excerpt'),
+        'supports'  => array('thumbnail', 'title','editor', 'excerpt', 'custom-fields'),
         'menu_icon' => 'dashicons-welcome-write-blog',
         'hierarchical' => false,
         'show_ui' => true,
@@ -575,9 +575,9 @@ function finmarket_health_travel_offers_custom_post_type()
 
 }
 
-add_action('init', 'finmarket_houshold_offers_custom_post_type');
+add_action('init', 'finmarket_household_offers_custom_post_type');
 
-function finmarket_houshold_offers_custom_post_type()
+function finmarket_household_offers_custom_post_type()
 {
   $labels = array(
 
@@ -598,7 +598,7 @@ function finmarket_houshold_offers_custom_post_type()
       $args = array(
         'can_export' => true,
         'labels' => $labels,
-        'supports'  => array('thumbnail', 'title', 'editor', 'excerpt'),
+        'supports'  => array('thumbnail', 'title','editor', 'excerpt', 'custom-fields'),
         'menu_icon' => 'dashicons-welcome-write-blog',
         'hierarchical' => false,
         'show_ui' => true,
@@ -635,7 +635,7 @@ function finmarket_life_insurance_offers_custom_post_type()
       $args = array(
         'can_export' => true,
         'labels' => $labels,
-        'supports'  => array('thumbnail', 'title', 'editor', 'excerpt'),
+        'supports'  => array('thumbnail', 'title','editor', 'excerpt', 'custom-fields'),
         'menu_icon' => 'dashicons-welcome-write-blog',
         'hierarchical' => false,
         'show_ui' => true,

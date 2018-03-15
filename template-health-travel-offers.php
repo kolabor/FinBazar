@@ -22,7 +22,7 @@ get_header(); ?>
 
 				<div class="vertical-menu">
 					<ul>
-						<li><a href="/loans-offers">Кредити</a></li>
+						<li><a href="/loan-offers">Кредити</a></li>
 						<li><a href="/deposits-offers">Депозити</a></li>
 						<li><a href="/cards-offers">Карти</a></li>
 						<li><a href="/auto-liability-offers">Автоодговорност</a></li>
@@ -34,7 +34,7 @@ get_header(); ?>
 					<select> 
 					    <option value="" selected="selected">Понуди</option> 
 					    
-					    <option value="/loans-offers">Кредити</option> 
+					    <option value="/loan-offers">Кредити</option> 
 					    <option value="/deposits-offers">Депозити</option> 
 					    <option value="/auto-liability-offers">Автоодговорност</option> 
 					    <option value="/travel-insurance-offers">Патничко Осигуруванје</option> 
@@ -64,7 +64,7 @@ get_header(); ?>
             	            	 <?php 
                     
 				    $args = array(
-				        'post_type' => 'health-travel',
+				        'post_type' => 'healthtravel',
 				        'author'    => $user_id,	       
 				        'post_staus'=> 'publish',
 				        'posts_per_page' => -1
@@ -77,7 +77,76 @@ get_header(); ?>
                   if($total > 0)
                    { 
 
-					  echo "Show health-travel offers here!";
+					   if ($total > 0 ) 
+                   {
+                    $args_offers = array(
+                       	
+          			 	 'post_type' => 'healthtraveloffers',   
+           				 'post_staus'=> 'publish',
+           				 'posts_per_page' => -1
+           				);
+           
+                 	 $offers_posts = new WP_Query( $args_offers );
+                    $totalo = $offers_posts->found_posts; 
+				
+
+              //loop           
+           			 if( $offers_posts->have_posts()): ?>
+							<ul>
+							<?php while( $offers_posts->have_posts() ) : $offers_posts->the_post(); 
+
+
+								$post_id = get_the_ID() ?>
+								<li>
+									<a href="<?php the_permalink(); ?>"><?php the_title(); ?>
+								<?php the_post_thumbnail(array(200,200));?> <?php the_excerpt();?></a><br/> </li>
+
+							
+							
+								<li>	<?php the_field( "fieldd_provajder", $post_id );
+						 				//echo $fieldd_bank;?>
+						 				
+						 		</li>
+						 	
+						 		<li>	<?php the_field( "fieldd_mesecna_premija", $post_id );
+						 			//	echo $fieldd_kategory;?>
+						 				 
+
+						 		</li>
+						 		<li>	<?php the_field( "fieldd_online_aplikacija", $post_id );
+						 			//	echo $fieldd_kategory;?>
+						 				 
+
+						 		</li>
+						 		<li>	<?php the_field( "fieldd_pokrijte_za_vreme_na_procesot_na_aplikacija", $post_id );
+						 			//	echo $fieldd_kategory;?>
+						 				 
+
+						 		</li>
+
+
+                                 <?php  
+                                 while ( have_rows('fieldd_pokrijte_za_vreme_na_procesot_na_aplikacija', $post_id) ) : the_row();
+                                 	 while ( have_rows('fieldd_zivotno_pokritie', $post_id) ) : the_row();
+                                  
+									       echo "<li>".the_sub_field('fieldd_namaluvanje_na_pokritieto')."</li>";
+									       echo "<li>".the_sub_field('fieldd_period_na_pokrivanje')."</li>";
+									       echo "<li>".the_sub_field('fieldd_kriticna_bolest_ili_zivotno_osiguruvanje')."</li>";
+									   endwhile;
+									        
+									endwhile;?>
+
+                                 								
+                                 <li>	<?php the_field( "fieldd_brzina_na_postavuvanje_politika", $post_id );
+						 				//echo $fieldd_rok_na_kreditot;?>
+						 				
+						 		</li>
+						 								 		
+                      			<?php  endwhile; ?>
+				                  	</ul><br/>	 
+				               
+						 <?php endif; 
+ 					}
 	               }
 	               else
 	               {
@@ -88,7 +157,7 @@ get_header(); ?>
 			                'post_content' => false,
 			                'post_title' => true,
 							'post_id'		=> 'new_post',
-							'return' => "/profile",
+							'return' => "/travel-insurance-offers/",
 							'new_post'		=> array(
 								'post_type'		=> 'healthtravel',
 								'post_status'		=> 'publish'

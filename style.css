@@ -4033,6 +4033,7 @@ input[type="submit"]:hover
 /* Butoni podnesete*/
 #acf-form .acf-form-submit {
 	margin-left: 12px !important;
+	margin-bottom: 30px !important;
 }
 
 .sitemap_link1 a h5:hover{
@@ -4558,7 +4559,7 @@ input[type="submit"]:hover
 
 	.lifeinsurance_form { margin-top: 5px !important; }
 
-	}
+}
 
 
 
@@ -4569,7 +4570,6 @@ input[type="submit"]:hover
 .page-template-template-deposits-offers #deposits_loged_in_name { display: none !important; }
 .page-template-template-deposits-offers .deposits_form {padding-bottom: 25px !important;}
 
-<<<<<<< HEAD
 /* Disable Login btn & Register form cards */
 .page-template-template-cards-offers #cards_login_btn { display: none !important; }
 .page-template-template-cards-offers #cards_reg_form{ display: none !important; }
@@ -4615,19 +4615,18 @@ input[type="submit"]:hover
 .page-template-template-profile .content-area {
 	width: 100%;
 }
+.page-template-template-profile-requests .content-area {
+	width: 100%;
+}
 
 
 
 /* horizontal menu*/
 .horizontal-menu
 {
-	margin-left: 15px;
-	float: left;
-	margin-bottom: 5%;
-	margin-top: 7%;
 	
-  
-
+	margin-bottom: 5%;
+	margin-top: 20px;
 }
 
 .horizontal-menu ul{
@@ -4637,7 +4636,6 @@ input[type="submit"]:hover
     width: 200px;
     background-color: #0a1018;
     overflow: hidden;
-
 }
 
 .horizontal-menu ul li { border-bottom: 1px solid #3a3f46 !important;}
@@ -4649,11 +4647,9 @@ input[type="submit"]:hover
     padding: 8px 16px;
     text-decoration: none;
     text-align: left;
-    font-weight: bold;
-
-
-   
+    font-weight: bold;   
 }
 .horizontal-menu li a:hover{
     background-color: #db2152;
     color: #fff;
+}

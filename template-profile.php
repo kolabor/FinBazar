@@ -4,6 +4,7 @@
  * Template Name: Profile
  *
  */
+if ( !is_user_logged_in()){ wp_redirect( '/login' ); exit; }
 acf_form_head();
 get_header(); ?>
 
@@ -62,7 +63,7 @@ do_action( 'wp_login', $user_login );*/
 
 				<div class="vertical-menu">
 					<ul>
-						<li><a href="/loan-offers" class="selected">Кредити</a></li>
+						<li><a href="/loan-offers">Кредити</a></li>
 						<li><a href="/deposits-offers">Депозити</a></li>
 						<li><a href="/cards-offers">Карти</a></li>
 						<li><a href="/auto-liability-offers">Автоодговорност</a></li>
@@ -74,7 +75,7 @@ do_action( 'wp_login', $user_login );*/
 					<select> 
 					    <option value="" selected="selected">Понуди</option> 
 					    
-					    <option value="/loans-offers">Кредити</option> 
+					    <option value="/loan-offers">Кредити</option> 
 					    <option value="/deposits-offers">Депозити</option> 
 					    <option value="/auto-liability-offers">Автоодговорност</option> 
 					    <option value="/travel-insurance-offers">Патничко Осигуруванје</option> 
@@ -89,28 +90,164 @@ do_action( 'wp_login', $user_login );*/
 			 <div class="primary_content">
 			 	<div class="horizontal-menu">
 			      <ul> 
-			              <li><a href="/profile-requests">Вашите барања</a></li>
+			              <li><a href="/podatoci">Обнови Профил</a></li>
 			      </ul>
 			  </div>
 
-		<?php
-			$user_id = get_current_user_id();
-			$options = array(
-			'post_id' => 'user_', // $user_profile,
-			'field_groups' => array(1078),
-			'submit_value' => 'Update Profile'
-			);
+<?php 
+          /* Check Loan request starts here */       
+           $args = array(
+                'post_type' => 'loans',
+                'author'    => $user_id,         
+                'post_staus'=> 'publish',
+                'posts_per_page' => -1
+            );
 
-			echo '<h5>Your username is <b>'.$current_user->user_login.'</b>. This cannot be changed.</h5>';
+                   $posts = new WP_Query( $args );                
+                   $total = $posts->found_posts; 
 
-			acf_form( $options ); 
+                  if($total > 0)
+                   { echo "<p>Вие сте испратиле барање за Кредит. <b><a href='/loan-offers'>Види Кредитните понуди.</a></b></p>";}
+                   else 
+                   {  echo "<p>Вие не сте испратиле барање за Кредит. <b><a href='/loan-offers'>Испрати барање.</a></b></p>"; }
+          /* Check Loan request ends here */  
+                ?>
+          <?php 
+          /* Check Deposits request starts here */       
+           $args = array(
+                'post_type' => 'deposits',
+                'author'    => $user_id,         
+                'post_staus'=> 'publish',
+                'posts_per_page' => -1
+            );
 
-		?>
-	</div>
+                   $posts = new WP_Query( $args );                
+                   $total = $posts->found_posts; 
+
+                  if($total > 0)
+                   { echo "<p>Вие сте испратиле барање за Депозити. <b><a href='/deposits-offers'>Види понудите за Депозити.</a></b></p>";}
+                   else 
+                   {  echo "<p>Вие не сте испратиле барање за Депозити. <b><a href='/deposits-offers'>Испрати барање.</a></b></p>"; }
+          /* Check Deposits request ends here */  
+                ?>
+                 <?php 
+          /* Check cards request starts here */       
+           $args = array(
+                'post_type' => 'cards',
+                'author'    => $user_id,         
+                'post_staus'=> 'publish',
+                'posts_per_page' => -1
+            );
+
+                   $posts = new WP_Query( $args );                
+                   $total = $posts->found_posts; 
+
+                  if($total > 0)
+                   { echo "<p>Вие сте испратиле барање за Картички. <b><a href='/cards-offers'>Види Картичките понуди.</a></b></p>";}
+                   else 
+                   {  echo "<p>Вие не сте испратиле барање за Картички. <b><a href='/cards-offers'>Испрати барање.</a></b></p>"; }
+          /* Check cards request ends here */  
+                ?>
+
+                <?php 
+          /* Check autoliability request starts here */       
+           $args = array(
+                'post_type' => 'autoliability',
+                'author'    => $user_id,         
+                'post_staus'=> 'publish',
+                'posts_per_page' => -1
+            );
+
+                   $posts = new WP_Query( $args );                
+                   $total = $posts->found_posts; 
+
+                  if($total > 0)
+                   { echo "<p>Вие сте испратиле барање за Автоодговорност. <b><a href='/auto-liability-offers'>Види понудите за Автоодговорност.</a></b></p>";}
+                   else 
+                   {  echo "<p>Вие не сте испратиле барање за Автоодговорност. <b><a href='/auto-liability-offers'>Испрати барање.</a></b></p>"; }
+          /* Check autoliability request ends here */  
+                ?>
+             <?php 
+          /* Check casco request starts here */       
+           $args = array(
+                'post_type' => 'casco',
+                'author'    => $user_id,         
+                'post_staus'=> 'publish',
+                'posts_per_page' => -1
+            );
+
+                   $posts = new WP_Query( $args );                
+                   $total = $posts->found_posts; 
+
+                  if($total > 0)
+                   { echo "<p>Вие сте испратиле барање за Каско. <b><a href='/casco-offers'>Види понудите за Каско.</a></b></p>";}
+                   else 
+                   {  echo "<p>Вие не сте испратиле барање за Каско. <b><a href='/casco-offers'>Испрати барање.</a></b></p>"; }
+          /* Check casco request ends here */  
+                ?>
+
+             <?php 
+          /* Check healthtravel request starts here */       
+           $args = array(
+                'post_type' => 'healthtravel',
+                'author'    => $user_id,         
+                'post_staus'=> 'publish',
+                'posts_per_page' => -1
+            );
+
+                   $posts = new WP_Query( $args );                
+                   $total = $posts->found_posts; 
+
+                  if($total > 0)
+                  { echo "<p>Вие сте испратиле барање за Здаствено Патничко Осг. <b><a href='/travel-insurance-offers'>Види понудите за Здаствено Патничко Осг.</a></b></p>";}
+                   else 
+                   {  echo "<p>Вие не сте испратиле барање за Здаствено Патничко Осг. <b><a href='/travel-insurance-offers'>Испрати барање.</a></b></p>"; }
+          /* Check healthtravel request ends here */  
+                ?>
+
+                   <?php 
+          /* Check household request starts here */       
+           $args = array(
+                'post_type' => 'household',
+                'author'    => $user_id,         
+                'post_staus'=> 'publish',
+                'posts_per_page' => -1
+            );
+
+                   $posts = new WP_Query( $args );                
+                   $total = $posts->found_posts; 
+
+                  if($total > 0)
+                   { echo "<p>Вие сте испратиле барање за Домаќинско Осг. <b><a href='/home-insurance-offers'>Види понудите за Домаќинско Осг.</a></b></p>";}
+                   else 
+                   {  echo "<p>Вие не сте испратиле барање за Домаќинско Осг. <b><a href='/home-insurance-offers'>Испрати барање.</a></b></p>"; }
+          /* Check household request ends here */  
+                ?>
+
+                         <?php 
+          /* Check lifeinsurance request starts here */       
+           $args = array(
+                'post_type' => 'lifeinsurance',
+                'author'    => $user_id,         
+                'post_staus'=> 'publish',
+                'posts_per_page' => -1
+            );
+
+                   $posts = new WP_Query( $args );                
+                   $total = $posts->found_posts; 
+
+                  if($total > 0)
+                   { echo "<p>Вие сте испратиле барање за Животно Осг. <b><a href='/life-insurance-offers'>Види понудите за Животно Осг.</a></b></p>";}
+                   else 
+                   {  echo "<p>Вие не сте испратиле барање за Животно Осг. <b><a href='/life-insurance-offers'>Испрати барање.</a></b></p>"; }
+          /* Check lifeinsurance request ends here */  
+                ?>
+ </div>
+</div>
+</div>
+
+
 <?php
 } 
-?>
-
- </div>
-</div> 
+?>            
 <?php get_footer(); ?>

@@ -13,6 +13,8 @@ get_header(); ?>
 
 <?php get_template_part('pageheader'); ?>
 
+
+
 <div class="site-body site-pad">
 	<div class="site-container">
         
@@ -34,7 +36,7 @@ get_header(); ?>
 					<select> 
 					    <option value="" selected="selected">Понуди</option> 
 					    
-					    <option value="/loans-offers">Кредити</option> 
+					    <option value="/loan-offers">Кредити</option> 
 					    <option value="/deposits-offers">Депозити</option> 
 					    <option value="/auto-liability-offers">Автоодговорност</option> 
 					    <option value="/travel-insurance-offers">Патничко Осигуруванје</option> 
@@ -75,21 +77,109 @@ get_header(); ?>
                    
                    $total = $posts->found_posts; 
 
-                  if($total > 0)
-                   { 
+                  if ($total > 0 ) 
+                   {
+                    $args_offers = array(
+                       	
+          			 	 'post_type' => 'loanoffers',   
+           				 'post_staus'=> 'publish',
+           				 'posts_per_page' => -1
+           				);
+           
+                 	 $offers_posts = new WP_Query( $args_offers );
+                    $totalo = $offers_posts->found_posts; 
+				
 
-					  echo "Show loans offers here!";
-	               }
+              //loop           
+           			 if( $offers_posts->have_posts()): ?>
+							<ul>
+							<?php while( $offers_posts->have_posts() ) : $offers_posts->the_post(); 
+
+
+								$post_id = get_the_ID() ?>
+								<li>
+									<a href="<?php the_permalink(); ?>"><?php the_title(); ?>
+								<?php the_post_thumbnail(array(200,200));?> <?php the_excerpt();?></a><br/> </li>
+
+							
+							
+								<li>	<?php the_field( "fieldd_bank", $post_id );
+						 				//echo $fieldd_bank;?>
+						 				
+						 		</li>
+						 	
+						 		<li>	<?php the_field( "fieldd_kategory", $post_id );
+						 			//	echo $fieldd_kategory;?>
+						 				 
+
+						 		</li>
+
+                                 <?php  
+                                 while ( have_rows('fieldd_kamatna_stapka_vo_prv_period', $post_id) ) : the_row();
+                                  
+									       echo "<li>".the_sub_field('fieldd_kamatna_stapka')."</li>";
+									       echo "<li>".the_sub_field('fieldd_fiksna_promenliva')."</li>";
+									       echo "<li>".the_sub_field('fieldd_period_na_fiksnost')."</li>";
+									        
+									endwhile;?>
+
+                                  <?php  
+                                     while ( have_rows('fieldd_kamatna_stapka_vo_vtor_period', $post_id) ) : the_row();
+                                  
+									       echo "<li>".the_sub_field('fieldd_kamatna_stapka_2')."</li>";
+									       echo "<li>".the_sub_field('fieldd_fiksna_promenliva_2')."</li>";
+									       echo "<li>".the_sub_field('fieldd_period_na_fiksnost_2')."</li>";
+									        
+									endwhile;?>
+								  <?php  
+                                     while ( have_rows('fieldd_kamatna_stapka_vo_tret_period', $post_id) ) : the_row();
+                                  
+									       echo "<li>".the_sub_field('fieldd_kamatna_stapka_3')."</li>";
+									       echo "<li>".the_sub_field('fieldd_fiksna_promenliva_3')."</li>";
+									       echo "<li>".the_sub_field('fieldd_period_na_fiksnost_3')."</li>";
+									        
+									endwhile;?>
+									
+								
+                                 <li>	<?php the_field( "fieldd_rok_na_kreditot", $post_id );
+						 				//echo $fieldd_rok_na_kreditot;?>
+						 				
+						 		</li>
+						 		 <li>	<?php the_field( "fieldd_valuta", $post_id );
+						 			//	echo $fieldd_valuta;?>
+						 				
+						 		</li>
+						 			 <li>	<?php the_field( "fieldd_iznos_na_kredit", $post_id );
+						 			//	echo $fieldd_iznos_na_kredit;?>
+						 				
+						 		</li>
+						 		  <?php  
+                                     while ( have_rows('fieldd_primer_presmetka_za_iznos_od_50.000_eur_240m', $post_id) ) : the_row();
+                                  
+									       echo "<li>".the_sub_field('fieldd_rata_1_period')."</li>";
+									       echo "<li>".the_sub_field('fieldd_rata_2_period')."</li>";
+									       echo "<li>".the_sub_field('fieldd_rata_3_period')."</li>";
+									       echo "<li>".the_sub_field('fieldd_vkupno_kamata')."</li>";
+									        
+									endwhile;?>
+						 		
+                      			<?php  endwhile; ?>
+				                  	</ul><br/>	 
+				               
+						 <?php endif; 
+ 					}
+       
 	               else
 	               {
 
                       echo "<div class='loans_form'>";
                       echo "<p>".__("За да ги видете нашите понуди за кредити ве молиме дополнете го формуларот подоле!", 'acf')."</p>";
-                      acf_form(array(
+                      acf_form($options = array(
 			                'post_content' => false,
 			                'post_title' => true,
-							'post_id'		=> 'new_post',
-							'return' => "/loans-offers/",
+							'post_id'		=> 'user_'.$user_id.'new_post',
+							'field_groups' => array(258,1470,1475),
+							'return' => "/loan-offers/",
 							'new_post'		=> array(
 								'post_type'		=> 'loans',
 								'post_status'		=> 'publish'
@@ -99,6 +189,7 @@ get_header(); ?>
 			            	)); 
                         echo "<input name='loans_loged_in_name' id='loans_loged_in_name' value='$user_info->user_login '>";
                         echo "</div>";
+
 
 	               }
                    

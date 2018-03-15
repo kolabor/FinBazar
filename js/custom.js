@@ -128,10 +128,10 @@ $(".page-template-template-health-travel-offers .healthtravel_form #acf-_post_ti
 $(".page-template-template-casco-offers .casco_form #acf-_post_title").val('Applicant: '+ $("#casco_loged_in_name").val());
 /*Home-Insurance*/
 /* Forms when user is loged in ends here */
-$(".page-template-template-houshold-offers .home_insurance_form #acf-_post_title").val('Applicant: '+ $("#houshold_loged_in_name").val());
+$(".page-template-template-houshold-offers .household_form #acf-_post_title").val('Applicant: '+ $("#houshold_loged_in_name").val());
 /*Life-Insurance*/
 /* Forms when user is loged in ends here */
-$(".page-template-template-life-insurance-offers .health_form #acf-_post_title").val('Applicant: '+ $("#life-insurance_loged_in_name").val());
+$(".page-template-template-life-insurance-offers .lifeinsurance_form #acf-_post_title").val('Applicant: '+ $("#life-insurance_loged_in_name").val());
 
 /* If client is registered and clicks yes radio button reddirect to login page */
      
