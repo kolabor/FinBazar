@@ -72,11 +72,80 @@ get_header(); ?>
                    
                    $total = $posts->found_posts; 
 
-                  if($total > 0)
+                   if($total > 0)
                    { 
 
-					  echo "Show auto-liability offers here!";
-	               }
+                    $args_offers = array(
+                       	
+          			 	 'post_type' => 'autoliabilityoffers',   
+           				 'post_staus'=> 'publish',
+           				 'posts_per_page' => -1
+           				);
+           
+                 	 $offers_posts = new WP_Query( $args_offers );
+                    $totalo = $offers_posts->found_posts; 
+				
+
+              //loop           
+           			 if( $offers_posts->have_posts()): ?>
+							<ul>
+							<?php while( $offers_posts->have_posts() ) : $offers_posts->the_post(); 
+
+
+								$post_id = get_the_ID() ?>
+								<li>
+									<a href="<?php the_permalink(); ?>"><?php the_title(); ?>
+								<?php the_post_thumbnail(array(200,200));?> <?php the_excerpt();?></a><br/> </li>
+
+							
+							
+								<li>	<?php the_field( "fieldd_provajder", $post_id );
+						 				//echo $fieldd_bank;?>
+						 				
+						 		</li>
+						 	
+						 		<li>	<?php the_field( "fieldd_godishna_cena", $post_id );
+						 			//	echo $fieldd_kategory;?>
+						 				 
+
+						 		</li>
+						 		<li>	<?php the_field( "fieldd_mesecna_cena", $post_id );
+						 			//	echo $fieldd_kategory;?>
+						 				 
+
+						 		</li>
+						 		<li>	<?php the_field( "fieldd_licna_nesreqa_pokritie", $post_id );
+						 			//	echo $fieldd_kategory;?>
+						 				 
+
+						 		</li>
+
+                                 <li>	<?php the_field( "fieldd_podarok_avtomobil", $post_id );
+						 				//echo $fieldd_rok_na_kreditot;?>
+						 				
+						 		</li>
+						 		   <li>	<?php the_field( "fieldd_motorna_pravna_zashtita", $post_id );
+						 				//echo $fieldd_rok_na_kreditot;?>
+						 				
+						 		</li>
+						 		   <li>	<?php the_field( "fieldd_vozenje_vo_stranstvo", $post_id );
+						 				//echo $fieldd_rok_na_kreditot;?>
+						 				
+						 		</li>
+						 		 <li>	<?php the_field( "fieldd_locni_paboti_pokrivaat", $post_id );
+						 				//echo $fieldd_rok_na_kreditot;?>
+						 				
+						 		</li>
+						 		 <li>	<?php the_field( "fieldd_zatvoranje_na_zvucna_oprema", $post_id );
+						 				//echo $fieldd_rok_na_kreditot;?>
+						 				
+						 		</li>
+						 								 		
+                      			<?php  endwhile; ?>
+				                  	</ul><br/>	 
+				               
+						 <?php endif; 
+ 					}	     
 	               else
 	               {
 
@@ -86,11 +155,7 @@ get_header(); ?>
 			                'post_content' => false,
 			                'post_title' => true,
 							'post_id'		=> 'new_post',
-<<<<<<< HEAD
-							'return' => "/profile",
-=======
 							'return' => "/auto-liability-offers",
->>>>>>> 63496c026cbf3279e191c6117ae102ee98cd0f44
 							'new_post'		=> array(
 								'post_type'		=> 'autoliability',
 								'post_status'		=> 'publish'

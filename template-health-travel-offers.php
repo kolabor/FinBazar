@@ -106,36 +106,31 @@ get_header(); ?>
 						 				
 						 		</li>
 						 	
-						 		<li>	<?php the_field( "fieldd_mesecna_premija", $post_id );
+						 		<li>	<?php the_field( "fieldd_cena_za_ednikratko_patuvanje", $post_id );
 						 			//	echo $fieldd_kategory;?>
 						 				 
 
 						 		</li>
-						 		<li>	<?php the_field( "fieldd_online_aplikacija", $post_id );
+						 		<li>	<?php the_field( "fieldd_godishna_pokrivka_cena", $post_id );
 						 			//	echo $fieldd_kategory;?>
 						 				 
 
 						 		</li>
-						 		<li>	<?php the_field( "fieldd_pokrijte_za_vreme_na_procesot_na_aplikacija", $post_id );
+						 		<li>	<?php the_field( "fieldd_mediciski", $post_id );
 						 			//	echo $fieldd_kategory;?>
 						 				 
 
 						 		</li>
 
-
-                                 <?php  
-                                 while ( have_rows('fieldd_pokrijte_za_vreme_na_procesot_na_aplikacija', $post_id) ) : the_row();
-                                 	 while ( have_rows('fieldd_zivotno_pokritie', $post_id) ) : the_row();
-                                  
-									       echo "<li>".the_sub_field('fieldd_namaluvanje_na_pokritieto')."</li>";
-									       echo "<li>".the_sub_field('fieldd_period_na_pokrivanje')."</li>";
-									       echo "<li>".the_sub_field('fieldd_kriticna_bolest_ili_zivotno_osiguruvanje')."</li>";
-									   endwhile;
-									        
-									endwhile;?>
-
-                                 								
-                                 <li>	<?php the_field( "fieldd_brzina_na_postavuvanje_politika", $post_id );
+                                 <li>	<?php the_field( "fieldd_ponishtuvanje_i_patuvanje", $post_id );
+						 				//echo $fieldd_rok_na_kreditot;?>
+						 				
+						 		</li>
+						 		   <li>	<?php the_field( "fieldd_bagash_i_pari", $post_id );
+						 				//echo $fieldd_rok_na_kreditot;?>
+						 				
+						 		</li>
+						 		   <li>	<?php the_field( "fieldd_pravni_i_politicki_detali", $post_id );
 						 				//echo $fieldd_rok_na_kreditot;?>
 						 				
 						 		</li>

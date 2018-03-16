@@ -102,22 +102,22 @@ get_header(); ?>
 							
 							
 								<li>	<?php the_field( "fieldd_provajder", $post_id );
-						 				//echo $fieldd_bank;?>
+						 				?>
 						 				
 						 		</li>
 						 	
 						 		<li>	<?php the_field( "fieldd_mesecna_premija", $post_id );
-						 			//	echo $fieldd_kategory;?>
+						 			?>
 						 				 
 
 						 		</li>
 						 		<li>	<?php the_field( "fieldd_online_aplikacija", $post_id );
-						 			//	echo $fieldd_kategory;?>
+						 			?>
 						 				 
 
 						 		</li>
 						 		<li>	<?php the_field( "fieldd_pokrijte_za_vreme_na_procesot_na_aplikacija", $post_id );
-						 			//	echo $fieldd_kategory;?>
+						 			?>
 						 				 
 
 						 		</li>
@@ -136,7 +136,7 @@ get_header(); ?>
 
                                  								
                                  <li>	<?php the_field( "fieldd_brzina_na_postavuvanje_politika", $post_id );
-						 				//echo $fieldd_rok_na_kreditot;?>
+						 				?>
 						 				
 						 		</li>
 						 								 		

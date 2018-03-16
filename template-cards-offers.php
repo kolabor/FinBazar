@@ -74,11 +74,84 @@ get_header(); ?>
                    
                    $total = $posts->found_posts; 
 
-                  if($total > 0)
+                    if($total > 0)
                    { 
 
-					  echo "Show cards offers here!";
-	               }
+                    $args_offers = array(
+                       	
+          			 	 'post_type' => 'cardoffer',   
+           				 'post_staus'=> 'publish',
+           				 'posts_per_page' => -1
+           				);
+           
+                 	 $offers_posts = new WP_Query( $args_offers );
+                    $totalo = $offers_posts->found_posts; 
+				
+
+              //loop           
+           			 if( $offers_posts->have_posts()): ?>
+							<ul>
+							<?php while( $offers_posts->have_posts() ) : $offers_posts->the_post(); 
+
+
+								$post_id = get_the_ID() ?>
+								<li>
+									<a href="<?php the_permalink(); ?>"><?php the_title(); ?>
+								<?php the_post_thumbnail(array(200,200));?> <?php the_excerpt();?></a><br/> </li>
+
+							
+							
+								<li>	<?php the_field( "fieldd_izdavac", $post_id );
+						 				//echo $fieldd_bank;?>
+						 				
+						 		</li>
+						 	
+						 		<li>	<?php the_field( "fieldd_naziv", $post_id );
+						 			//	echo $fieldd_kategory;?>
+						 				 
+
+						 		</li>
+						 		<li>	<?php the_field( "fieldd_foto", $post_id );
+						 			//	echo $fieldd_kategory;?>
+						 				 
+
+						 		</li>
+						 		
+						 		   <li> <?php  
+                                 while ( have_rows('fieldd_nacin_na_otplata', $post_id) ) : the_row();
+                                  
+
+              						  echo "<li>".the_sub_field('fieldd_1')."</li>";
+             						  echo "<li>".the_sub_field('fieldd_2')."</li>";
+             						  
+                 
+         						endwhile;?></li>
+
+         						<li>	<?php the_field( "fieldd_kamata", $post_id );
+						 			//	echo $fieldd_kategory;?>
+						 				 
+
+						 		</li>
+
+
+                                 <li>	<?php the_field( "fieldd_provizija_za_podiganje_na_sredstvata_od_prodazno_mesto", $post_id );
+						 				//echo $fieldd_rok_na_kreditot;?>
+						 				
+						 		</li>
+						 		   <li>	<?php the_field( "fieldd_provizija_za_podiganje_od_bankomati", $post_id );
+						 				//echo $fieldd_rok_na_kreditot;?>
+						 				
+						 		</li>
+						 		   <li>	<?php the_field( "fieldd_godishna_clenarina", $post_id );
+						 				//echo $fieldd_rok_na_kreditot;?>
+						 				
+						 		</li>
+						 			  						 								 		
+                      			<?php  endwhile; ?>
+				                  	</ul><br/>	 
+				               
+						 <?php endif; 
+ 					}	        
 	               else
 	               {
 

@@ -78,8 +78,87 @@ get_header(); ?>
                   if($total > 0)
                    { 
 
-					  echo "Show deposits offers here!";
-	               }
+                    $args_offers = array(
+                       	
+          			 	 'post_type' => 'depositoffer',   
+           				 'post_staus'=> 'publish',
+           				 'posts_per_page' => -1
+           				);
+           
+                 	 $offers_posts = new WP_Query( $args_offers );
+                    $totalo = $offers_posts->found_posts; 
+				
+
+              //loop           
+           			 if( $offers_posts->have_posts()): ?>
+							<ul>
+							<?php while( $offers_posts->have_posts() ) : $offers_posts->the_post(); 
+
+
+								$post_id = get_the_ID() ?>
+								<li>
+									<a href="<?php the_permalink(); ?>"><?php the_title(); ?>
+								<?php the_post_thumbnail(array(200,200));?> <?php the_excerpt();?></a><br/> </li>
+
+							
+							
+								<li>	<?php the_field( "fieldd_banka_type", $post_id );
+						 				//echo $fieldd_bank;?>
+						 				
+						 		</li>
+						 	
+						 		<li>	<?php the_field( "fieldd_rok", $post_id );
+						 			//	echo $fieldd_kategory;?>
+						 				 
+
+						 		</li>
+						 		<li>	<?php the_field( "fieldd_kamata", $post_id );
+						 			//	echo $fieldd_kategory;?>
+						 				 
+
+						 		</li>
+						 		<li>	<?php the_field( "fieldd_otvoreno", $post_id );
+						 			//	echo $fieldd_kategory;?>
+						 				 
+
+						 		</li>
+
+                                 <li>	<?php the_field( "fieldd_shtedenje", $post_id );
+						 				//echo $fieldd_rok_na_kreditot;?>
+						 				
+						 		</li>
+						 		   <li>	<?php the_field( "fieldd_oreceno", $post_id );
+						 				//echo $fieldd_rok_na_kreditot;?>
+						 				
+						 		</li>
+						 		   <li>	<?php the_field( "fieldd_minimalen_vlog", $post_id );
+						 				//echo $fieldd_rok_na_kreditot;?>
+						 				
+						 		</li>
+						 			   <li>	<?php the_field( "fieldd_maksimalen_vlog", $post_id );
+						 				//echo $fieldd_rok_na_kreditot;?>
+						 				
+						 		</li>
+						 			   <li>	<?php the_field( "fieldd_valuta", $post_id );
+						 				//echo $fieldd_rok_na_kreditot;?>
+						 				
+						 		</li>
+						 		</li>
+						 			   <li>	<?php the_field( "fieldd_fiksna_promenliva", $post_id );
+						 				//echo $fieldd_rok_na_kreditot;?>
+						 				
+						 		</li>
+						 		</li>
+						 			   <li>	<?php the_field( "fieldd_bonus", $post_id );
+						 				//echo $fieldd_rok_na_kreditot;?>
+						 				
+						 		</li>
+						 								 		
+                      			<?php  endwhile; ?>
+				                  	</ul><br/>	 
+				               
+						 <?php endif; 
+ 					}	        
 	               else
 	               {
 

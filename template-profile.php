@@ -256,8 +256,12 @@ do_action( 'wp_login', $user_login );*/
  </div>
 </div>
 </div>
+</div>
+</div>
+<?php } ?> 
+</div>
+</div>
 
-
-} 
-?>            
 <?php get_footer(); ?>
+
+
